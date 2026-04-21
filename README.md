@@ -1,4 +1,4 @@
-# memgov
+# Memphis Meetings
 
 Human-annotated meeting archive for public bodies (starting with Memphis City Council).
 

@@ -1,0 +1,53 @@
+{% set title = "Meetings" %}
+{% set root_path = "." %}
+{% extends "base.html" %}
+
+{% block content %}
+{% if stats.total_meetings %}
+<section class="panel">
+  <h2>At a glance</h2>
+  <dl class="stat-list">
+    <div><dt>Meetings</dt><dd>{{ stats.total_meetings }}</dd></div>
+    {% if stats.total_hours %}<div><dt>Hours of record</dt><dd>{{ stats.total_hours }}</dd></div>{% endif %}
+    {% for tag in stats.top_tags %}
+    <div><dt><a href="tags/{{ tag.slug }}.html">{{ tag.label }}</a></dt><dd>{{ tag.minutes }} min total</dd></div>
+    {% endfor %}
+  </dl>
+</section>
+{% endif %}
+
+<section class="panel">
+  <h2>Meetings</h2>
+  <ul class="list">
+    {% for meeting in meetings %}
+    <li>
+      <a href="meetings/{{ meeting.id }}.html">{{ meeting.title }}</a>
+      <span class="muted">{{ meeting.date }}</span>
+      {% if meeting.summary %}
+      <p>{{ meeting.summary }}</p>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="panel">
+  <h2>People</h2>
+  <p class="muted">Browse council members and named speakers directly.</p>
+  <ul class="chips">
+    <li><a href="people/index.html">All people</a></li>
+    {% for person in people[:12] %}
+    <li><a href="people/{{ person.id }}.html">{{ person.name }}</a></li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="panel">
+  <h2>Tags</h2>
+  <ul class="chips">
+    {% for tag in tags %}
+    <li><a href="tags/{{ tag }}.html">{{ tag }}</a></li>
+    {% endfor %}
+  </ul>
+</section>
+{% endblock %}

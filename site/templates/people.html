@@ -1,0 +1,28 @@
+{% set title = "People" %}
+{% set root_path = ".." %}
+{% extends "base.html" %}
+
+{% block content %}
+<section class="panel">
+  <h2>People Directory</h2>
+  <p class="muted">Council members and named speakers found in annotations.</p>
+</section>
+
+<section class="panel">
+  <ul class="list people-list">
+    {% for person in people %}
+    <li>
+      <a href="{{ person.id }}.html">{{ person.name }}</a>
+      {% if person.district %}<span class="muted">District {{ person.district }}</span>{% endif %}
+      <p class="muted">
+        {% if person.speaking_count %}{{ person.speaking_count }} speaking turns{% else %}0 speaking turns{% endif %}
+        · {% if person.mention_count %}{{ person.mention_count }} mentions{% else %}0 mentions{% endif %}
+        · {% if person.vote_count %}{{ person.vote_count }} votes{% else %}0 votes{% endif %}
+      </p>
+    </li>
+    {% else %}
+    <li class="muted">No people found yet.</li>
+    {% endfor %}
+  </ul>
+</section>
+{% endblock %}

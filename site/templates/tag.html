@@ -1,0 +1,18 @@
+{% set title = "Tag: " + tag_label %}
+{% set root_path = ".." %}
+{% extends "base.html" %}
+
+{% block content %}
+<section class="panel">
+  <h2>Tag: {{ tag_label }}</h2>
+  <ul class="list">
+    {% for entry in entries %}
+    <li>
+      <a href="../meetings/{{ entry.meeting_id }}.html#c{{ entry.chunk_index }}">{{ entry.meeting_title }}</a>
+      <span class="muted">{{ entry.start | clock }}</span>
+      {% if entry.summary %}<p>{{ entry.summary }}</p>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endblock %}

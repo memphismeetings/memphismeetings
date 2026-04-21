@@ -1,0 +1,38 @@
+site:
+  title: Memphis Meetings
+  subtitle: Human-annotated records of Memphis public meetings · memphismeetings.org
+  base_url: ""
+  output_dir: docs
+
+bodies:
+  - id: memphis-city-council
+    name: Memphis, TN City Council
+    short_name: City Council
+    meetings_path: data/processed/meetings
+    councilpeople:
+      - id: jana-swearengen-washington
+        name: Jana Swearengen Washington
+      - id: rhonda-logan
+        name: Rhonda Logan
+      - id: jerri-green
+        name: Jerri Green
+      - id: pearl-eva-walker
+        name: Pearl Eva Walker
+      - id: philip-spinosa
+        name: Philip Spinosa
+      - id: edmund-ford-sr
+        name: Edmund Ford, Sr.
+      - id: michalyn-easter-thomas
+        name: Michalyn Easter-Thomas
+      - id: jb-smiley-jr
+        name: JB Smiley, Jr.
+      - id: janika-white
+        name: Janika White
+      - id: yolanda-cooper-sutton
+        name: Yolanda Cooper-Sutton
+      - id: chase-carlisle
+        name: Chase Carlisle
+      - id: j-ford-canale
+        name: J. Ford Canale
+      - id: jeff-warren
+        name: Dr. Jeff Warren

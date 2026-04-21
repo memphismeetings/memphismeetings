@@ -1,0 +1,77 @@
+{% set title = person.name %}
+{% set root_path = ".." %}
+{% extends "base.html" %}
+
+{% block content %}
+<section class="panel">
+  <h2>{{ person.name }}</h2>
+  {% if person.district %}<p class="muted">District {{ person.district }}</p>{% endif %}
+</section>
+
+{% if stats.recent_meeting_count or stats.top_tags_year or stats.vote_tally_year %}
+<section class="panel">
+  <h3>Past 12 months</h3>
+  <dl class="stat-list">
+    {% if stats.recent_meeting_count %}
+    <div><dt>Active meetings</dt><dd>{{ stats.recent_meeting_count }}</dd></div>
+    {% endif %}
+    {% for tag in stats.top_tags_year %}
+    <div><dt><a href="../tags/{{ tag.slug }}.html">{{ tag.label }}</a></dt><dd>{{ tag.minutes }} min</dd></div>
+    {% endfor %}
+    {% for vote_type, count in stats.vote_tally_year.items() %}
+    <div><dt>{{ vote_type }}</dt><dd>{{ count }}</dd></div>
+    {% endfor %}
+  </dl>
+</section>
+{% endif %}
+
+<section class="panel">
+  <h3>Speaking turns</h3>
+  <ul class="list">
+    {% for item in speaking_turns %}
+    <li>
+      <a href="../meetings/{{ item.meeting_id }}.html#c{{ item.chunk_index }}">{{ item.meeting_title }}</a>
+      <span class="muted">{{ item.start | clock }}</span>
+      {% if item.text %}<p>{{ item.text }}</p>{% endif %}
+    </li>
+    {% else %}
+    <li class="muted">No speaking turns logged yet.</li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="panel">
+  <h3>Mentions</h3>
+  <ul class="list">
+    {% for item in mentions %}
+    <li>
+      <a href="../meetings/{{ item.meeting_id }}.html#c{{ item.chunk_index }}">{{ item.meeting_title }}</a>
+      <span class="muted">{{ item.start | clock }}</span>
+      {% if item.summary %}<p>{{ item.summary }}</p>{% endif %}
+    </li>
+    {% else %}
+    <li class="muted">No mentions logged yet.</li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="panel">
+  <h3>Votes</h3>
+  <table>
+    <thead>
+      <tr><th>Meeting</th><th>Motion</th><th>Vote</th></tr>
+    </thead>
+    <tbody>
+      {% for vote in votes %}
+      <tr>
+        <td><a href="../meetings/{{ vote.meeting_id }}.html">{{ vote.meeting_title }}</a></td>
+        <td>{{ vote.motion }}</td>
+        <td>{{ vote.vote }}</td>
+      </tr>
+      {% else %}
+      <tr><td colspan="3" class="muted">No votes logged yet.</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>
+{% endblock %}

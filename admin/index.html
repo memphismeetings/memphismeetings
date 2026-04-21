@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Meeting Annotation Tool</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Meeting Annotation Tool</h1>
+      <p>Local-only workflow for human summaries, tags, mentions, and votes.</p>
+    </header>
+
+    <section class="card setup">
+      <label>Meeting JSON
+        <input type="file" id="meetingFile" accept="application/json">
+      </label>
+      <label>Existing Annotation JSON (optional)
+        <input type="file" id="annotationFile" accept="application/json">
+      </label>
+      <button id="loadBtn">Load</button>
+      <p id="status"></p>
+    </section>
+
+    <section id="editor" class="card hidden">
+      <div class="topbar">
+        <button id="prevBtn">Previous</button>
+        <p id="progress"></p>
+        <button id="nextBtn">Next</button>
+      </div>
+
+      <section class="video-panel">
+        <iframe id="videoFrame" title="Meeting video reference" allowfullscreen loading="lazy"></iframe>
+        <div class="actions small-actions video-actions">
+          <button id="syncVideoBtn" type="button">Jump Video To Chunk</button>
+          <label class="inline-check"><input id="autoSyncVideo" type="checkbox" checked> Auto-sync on chunk change</label>
+          <a id="openVideoLink" href="#" target="_blank" rel="noopener noreferrer">Open on YouTube</a>
+        </div>
+      </section>
+
+      <article>
+        <h2 id="chunkTitle"></h2>
+      </article>
+
+      <fieldset>
+        <legend>Speaker Lines <span id="turnCount" class="muted"></span></legend>
+        <div id="linesGrid"></div>
+      </fieldset>
+
+      <details>
+        <summary>Transcript Display Override</summary>
+        <fieldset>
+          <legend>Transcript Display</legend>
+          <label>Display Mode
+            <select id="displayMode">
+              <option value="raw">Raw</option>
+              <option value="compact">Compact Paragraph</option>
+              <option value="sentences">Sentence Per Line</option>
+            </select>
+          </label>
+          <label>Display Text Override (optional)
+            <textarea id="displayText" rows="4"></textarea>
+          </label>
+          <div class="actions small-actions">
+            <button id="applyModeBtn" type="button">Apply Mode To Text</button>
+            <button id="resetDisplayBtn" type="button">Reset Override</button>
+          </div>
+          <p class="muted">Preview used by static site:</p>
+          <pre id="displayPreview" class="chunk"></pre>
+        </fieldset>
+      </details>
+
+      <label>Section Summary
+        <textarea id="summary" rows="3"></textarea>
+      </label>
+
+      <label>Tags (comma-separated)
+        <input type="text" id="tags">
+      </label>
+
+      <fieldset>
+        <legend>Mentioned Councilpeople</legend>
+        <div class="member-add">
+          <input id="newMemberName" type="text" placeholder="Add member name for mentions/speakers/votes">
+          <button id="addMemberBtn" type="button">Add Member</button>
+        </div>
+        <div id="mentions"></div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Votes</legend>
+        <div id="votes"></div>
+        <button id="addVoteBtn" type="button">Add Vote</button>
+      </fieldset>
+
+      <label>Notes
+        <textarea id="notes" rows="3"></textarea>
+      </label>
+
+      <div class="actions">
+        <button id="saveBtn">Save In Browser</button>
+        <button id="downloadBtn">Download Annotation JSON</button>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

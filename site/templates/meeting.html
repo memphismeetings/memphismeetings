@@ -1,0 +1,107 @@
+{% set title = meeting.title %}
+{% set root_path = ".." %}
+{% extends "base.html" %}
+
+{% block content %}
+<article class="panel">
+  <h2>{{ meeting.title }}</h2>
+  <p class="muted">{{ meeting.date }} | {{ meeting.body_name }}</p>
+  <p><a href="{{ meeting.youtube_url }}">Watch on YouTube</a></p>
+  {% if meeting.summary %}<p>{{ meeting.summary }}</p>{% endif %}
+  {% if meeting.global_tags %}
+  <ul class="chips">
+    {% for tag in meeting.global_tags %}
+    <li><a href="../tags/{{ tag }}.html">{{ tag }}</a></li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</article>
+
+{% if meeting.stats.total_sections %}
+<section class="panel">
+  <h3>At a glance</h3>
+  <dl class="stat-list">
+    {% for tag in meeting.stats.top_tags %}
+    <div><dt><a href="../tags/{{ tag.slug }}.html">{{ tag.label }}</a></dt><dd>{{ tag.minutes }} min</dd></div>
+    {% endfor %}
+    {% if meeting.stats.total_votes %}
+    <div><dt>Votes recorded</dt><dd>{{ meeting.stats.total_votes }}</dd></div>
+    {% endif %}
+    <div><dt>Annotated</dt><dd>{{ meeting.stats.annotated_sections }} of {{ meeting.stats.total_sections }} sections</dd></div>
+  </dl>
+</section>
+{% endif %}
+
+<section class="panel">
+  <h3>Annotated Sections</h3>
+  <p class="muted">Transcript text is available per section when expanded.</p>
+  <ol class="transcript">
+    {% for section in meeting.sections %}
+    <li id="c{{ section.chunk_index }}">
+      <p class="timestamp">
+        <a href="{{ meeting.youtube_url }}&t={{ section.start | int }}s">{{ section.start | clock }}</a>
+      </p>
+      {% if section.speaker_name %}
+      <p class="muted speaker-line">
+        Speaker:
+        {% if section.speaker_id %}
+        <a href="../people/{{ section.speaker_id }}.html">{{ section.speaker_name }}</a>
+        {% else %}
+        {{ section.speaker_name }}
+        {% endif %}
+      </p>
+      {% endif %}
+      {% if section.summary %}<p class="summary">{{ section.summary }}</p>{% endif %}
+      <details class="transcript-details">
+        <summary>Show transcript{% if section.lines %} ({{ section.lines | length }} turns){% endif %}</summary>
+        {% if section.lines %}
+        <dl class="transcript-lines">
+          {% for line in section.lines %}
+          {% if line.text %}
+          <div class="transcript-line">
+            <dt>{% if line.speaker_id %}<a href="../people/{{ line.speaker_id }}.html">{{ line.speaker_name }}</a>{% elif line.speaker_name %}{{ line.speaker_name }}{% else %}&mdash;{% endif %}</dt>
+            <dd>{{ line.text }}</dd>
+          </div>
+          {% endif %}
+          {% endfor %}
+        </dl>
+        {% else %}
+        <p class="transcript-text">{{ section.display_text }}</p>
+        {% endif %}
+      </details>
+      {% if section.tags %}
+      <ul class="chips">
+        {% for tag in section.tags %}
+        <li><a href="../tags/{{ tag }}.html">{{ tag }}</a></li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+      {% if section.mentions %}
+      <p class="muted">
+        People:
+        {% for person in section.mentions %}
+        <a href="../people/{{ person.id }}.html">{{ person.name }}</a>{% if not loop.last %}, {% endif %}
+        {% endfor %}
+      </p>
+      {% endif %}
+      {% if section.votes %}
+      <table>
+        <thead>
+          <tr><th>Motion</th><th>Member</th><th>Vote</th></tr>
+        </thead>
+        <tbody>
+          {% for vote in section.votes %}
+          <tr>
+            <td>{{ vote.motion }}</td>
+            <td><a href="../people/{{ vote.person_id }}.html">{{ vote.person_name }}</a></td>
+            <td>{{ vote.vote }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+{% endblock %}
