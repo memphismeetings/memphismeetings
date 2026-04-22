@@ -54,6 +54,8 @@ const els = {
   saveBtn: document.querySelector('#saveBtn'),
   downloadBtn: document.querySelector('#downloadBtn'),
   addVoteBtn: document.querySelector('#addVoteBtn'),
+  rollCall: document.querySelector('#rollCall'),
+  addRollCallBtn: document.querySelector('#addRollCallBtn'),
 };
 
 function secToClock(seconds) {
@@ -96,6 +98,7 @@ function buildEmptyAnnotation(meeting) {
       summary: '',
       tags: [],
       mentions: [],
+      roll_call: [],
       votes: [],
       notes: '',
     })),
@@ -189,6 +192,7 @@ function sectionAt(index) {
       summary: '',
       tags: [],
       mentions: [],
+      roll_call: [],
       votes: [],
       notes: '',
     };
@@ -484,6 +488,40 @@ function renderVotes(votes = []) {
   votes.forEach((v) => els.votes.appendChild(voteRow(v)));
 }
 
+function rollCallRow(entry = { person_id: '', presence: '' }) {
+  const row = document.createElement('div');
+  row.className = 'vote-row';
+
+  const people = state.meeting.councilpeople || [];
+  const existingPerson = people.find((p) => p.id === entry.person_id);
+  const memberCb = makeCombobox(people, entry.person_id, existingPerson ? existingPerson.name : '');
+  memberCb.querySelector('.combobox-input').placeholder = 'Member...';
+
+  const presenceInput = document.createElement('select');
+  presenceInput.className = 'rollcall-presence';
+  presenceInput.innerHTML = `
+    <option value="">Presence</option>
+    <option value="present">present</option>
+    <option value="absent">absent</option>
+    <option value="excused">excused</option>
+    <option value="late">late</option>
+  `;
+  presenceInput.value = entry.presence || '';
+
+  const remove = document.createElement('button');
+  remove.type = 'button';
+  remove.textContent = 'Remove';
+  remove.addEventListener('click', () => row.remove());
+
+  row.append(memberCb, presenceInput, remove);
+  return row;
+}
+
+function renderRollCall(entries = []) {
+  els.rollCall.innerHTML = '';
+  entries.forEach((e) => els.rollCall.appendChild(rollCallRow(e)));
+}
+
 function saveCurrentSection() {
   if (!state.meeting || !state.annotation) return;
   const { section } = sectionAt(state.index);
@@ -526,6 +564,18 @@ function saveCurrentSection() {
       };
     })
     .filter((v) => v.motion || v.person_id || v.vote);
+
+  section.roll_call = [...els.rollCall.querySelectorAll('.vote-row')]
+    .map((row) => {
+      const memberCb = row.querySelector('.combobox');
+      const presence = row.querySelector('.rollcall-presence');
+      return {
+        person_id: memberCb ? memberCb.getId() : '',
+        person_name: memberCb ? memberCb.getName() : '',
+        presence: presence ? presence.value : '',
+      };
+    })
+    .filter((e) => e.person_id || e.person_name || e.presence);
 }
 
 function render() {
@@ -544,6 +594,7 @@ function render() {
   els.notes.value = section.notes || '';
   renderMentions(section.mentions || []);
   renderVotes(section.votes || []);
+  renderRollCall(section.roll_call || []);
   renderDisplayPreview();
   syncVideoToCurrentChunk();
   els.prevBtn.disabled = state.index <= 0;
@@ -625,6 +676,7 @@ els.nextBtn.addEventListener('click', () => navigate(1));
 els.saveBtn.addEventListener('click', persist);
 els.downloadBtn.addEventListener('click', download);
 els.addVoteBtn.addEventListener('click', () => els.votes.appendChild(voteRow()));
+els.addRollCallBtn.addEventListener('click', () => els.rollCall.appendChild(rollCallRow()));
 els.displayMode.addEventListener('change', renderDisplayPreview);
 els.displayText.addEventListener('input', renderDisplayPreview);
 els.addMemberBtn.addEventListener('click', addMemberFromInput);

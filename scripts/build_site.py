@@ -263,6 +263,15 @@ def merge_sections(
                 "tags": [slugify(t) for t in section.get("tags", []) if t],
                 "raw_tags": [t.strip() for t in section.get("tags", []) if t and t.strip()],
                 "mentions": mention_objs,
+                "roll_call": [
+                    {
+                        "person_id": rc.get("person_id", ""),
+                        "person_name": people_by_id.get(rc.get("person_id", ""), {}).get("name", rc.get("person_name", rc.get("person_id", ""))),
+                        "presence": rc.get("presence", ""),
+                    }
+                    for rc in section.get("roll_call", [])
+                    if rc.get("person_id") or rc.get("person_name")
+                ],
                 "votes": votes,
                 "notes": section.get("notes", ""),
             }

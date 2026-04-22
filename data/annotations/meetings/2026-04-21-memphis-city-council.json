@@ -82,7 +82,8 @@
       ],
       "mentions": [],
       "votes": [],
-      "notes": ""
+      "notes": "",
+      "roll_call": []
     },
     {
       "chunk_index": 1,
@@ -170,7 +171,54 @@
       ],
       "mentions": [],
       "votes": [],
-      "notes": ""
+      "notes": "",
+      "roll_call": [
+        {
+          "person_id": "chase-carlisle",
+          "person_name": "Chase Carlisle",
+          "presence": ""
+        },
+        {
+          "person_id": "michalyn-easter-thomas",
+          "person_name": "Michalyn Easter-Thomas",
+          "presence": ""
+        },
+        {
+          "person_id": "jerri-green",
+          "person_name": "Jerri Green",
+          "presence": ""
+        },
+        {
+          "person_id": "rhonda-logan",
+          "person_name": "Rhonda Logan",
+          "presence": ""
+        },
+        {
+          "person_id": "philip-spinosa",
+          "person_name": "Philip Spinosa",
+          "presence": ""
+        },
+        {
+          "person_id": "pearl-eva-walker",
+          "person_name": "Pearl Eva Walker",
+          "presence": ""
+        },
+        {
+          "person_id": "jeff-warren",
+          "person_name": "Dr. Jeff Warren",
+          "presence": ""
+        },
+        {
+          "person_id": "janika-white",
+          "person_name": "Janika White",
+          "presence": ""
+        },
+        {
+          "person_id": "jana-swearengen-washington",
+          "person_name": "Jana Swearengen Washington",
+          "presence": ""
+        }
+      ]
     },
     {
       "chunk_index": 2,

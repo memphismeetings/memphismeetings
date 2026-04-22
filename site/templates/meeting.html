@@ -84,6 +84,21 @@
         {% endfor %}
       </p>
       {% endif %}
+      {% if section.roll_call %}
+      <table>
+        <thead>
+          <tr><th>Member</th><th>Presence</th></tr>
+        </thead>
+        <tbody>
+          {% for entry in section.roll_call %}
+          <tr>
+            <td>{% if entry.person_id %}<a href="../people/{{ entry.person_id }}.html">{{ entry.person_name }}</a>{% else %}{{ entry.person_name }}{% endif %}</td>
+            <td>{{ entry.presence }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      {% endif %}
       {% if section.votes %}
       <table>
         <thead>
