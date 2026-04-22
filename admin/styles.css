@@ -126,6 +126,52 @@ button {
   font-size: 0.82em;
 }
 
+/* ─ Combobox ────────────────────────────────────────────────────── */
+.combobox {
+  position: relative;
+  width: 100%;
+}
+
+.combobox-input {
+  width: 100%;
+}
+
+.combobox-list {
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 0;
+  right: 0;
+  z-index: 200;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  margin: 0;
+  padding: 0.2rem 0;
+  list-style: none;
+  max-height: 220px;
+  overflow-y: auto;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.13);
+}
+
+.combobox-item {
+  padding: 0.28rem 0.55rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.combobox-item:hover,
+.combobox-item.is-active {
+  background: #e5eef2;
+}
+
+.combobox-item mark {
+  background: #fff3b0;
+  padding: 0;
+}
+
 .line-carry {
   padding: 0.15rem 0.25rem;
   font-size: 0.85rem;
@@ -180,6 +226,23 @@ button {
 
 .member-add input {
   width: 100%;
+}
+
+.kbd-hints {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin: 0.5rem 0 0;
+  line-height: 1.8;
+}
+
+kbd {
+  display: inline-block;
+  font: 0.78rem ui-monospace, SFMono-Regular, Menlo, monospace;
+  background: #f0f0ed;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  padding: 0 0.3rem;
+  line-height: 1.5;
 }
 
 #status {

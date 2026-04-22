@@ -225,56 +225,158 @@ function councilpersonById(personId) {
   return (state.meeting.councilpeople || []).find((p) => p.id === personId) || null;
 }
 
-function speakerOptionsHtml(selectedId, selectedCustomName) {
-  const people = state.meeting.councilpeople || [];
-  let html = '<option value="">Unknown</option>';
-  for (const p of people) {
-    const sel = p.id === selectedId ? ' selected' : '';
-    html += `<option value="${p.id}"${sel}>${p.name}</option>`;
+function escapeHtml(str) {
+  return String(str || '').replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function makeCombobox(options, initialId, initialCustomName) {
+  const container = document.createElement('div');
+  container.className = 'combobox';
+
+  const input = document.createElement('input');
+  input.type = 'text';
+  input.className = 'combobox-input';
+  input.autocomplete = 'off';
+  input.spellcheck = false;
+
+  const list = document.createElement('ul');
+  list.className = 'combobox-list';
+  list.hidden = true;
+
+  let _id = initialId || '';
+  let _activeIndex = -1;
+
+  if (_id) {
+    const person = options.find((p) => p.id === _id);
+    input.value = person ? person.name : '';
+  } else {
+    input.value = initialCustomName || '';
   }
-  const customSel = (!selectedId && selectedCustomName) ? ' selected' : '';
-  html += `<option value="${CUSTOM_SPEAKER}"${customSel}>Custom...</option>`;
-  return html;
+
+  function buildList(query) {
+    list.innerHTML = '';
+    _activeIndex = -1;
+    const q = (query || '').toLowerCase();
+    const addItem = (id, name) => {
+      const li = document.createElement('li');
+      li.className = 'combobox-item';
+      li.dataset.id = id;
+      li.dataset.name = name;
+      if (q && name) {
+        const i = name.toLowerCase().indexOf(q);
+        if (i >= 0) {
+          li.innerHTML = escapeHtml(name.slice(0, i))
+            + '<mark>' + escapeHtml(name.slice(i, i + q.length)) + '</mark>'
+            + escapeHtml(name.slice(i + q.length));
+        } else {
+          li.textContent = name;
+        }
+      } else {
+        li.textContent = name || '\u2014 Unknown';
+      }
+      list.appendChild(li);
+    };
+    addItem('', '');
+    for (const opt of options) {
+      if (!q || opt.name.toLowerCase().includes(q)) addItem(opt.id, opt.name);
+    }
+  }
+
+  function setActive(i) {
+    const items = [...list.querySelectorAll('.combobox-item')];
+    items.forEach((el, j) => el.classList.toggle('is-active', j === i));
+    _activeIndex = i;
+    if (items[i]) items[i].scrollIntoView({ block: 'nearest' });
+  }
+
+  function commit(id, name) {
+    _id = id;
+    input.value = name;
+    list.hidden = true;
+    _activeIndex = -1;
+  }
+
+  function openList() {
+    buildList(input.value);
+    list.hidden = false;
+  }
+
+  container.getId = () => _id;
+  container.getName = () => input.value.trim();
+  container.setSelection = (id, name) => { _id = id; input.value = name; };
+
+  input.addEventListener('focus', openList);
+  input.addEventListener('input', () => { _id = ''; buildList(input.value); list.hidden = false; });
+  input.addEventListener('keydown', (e) => {
+    const items = [...list.querySelectorAll('.combobox-item')];
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      if (list.hidden) openList();
+      setActive(Math.min(_activeIndex + 1, items.length - 1));
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      setActive(Math.max(_activeIndex - 1, 0));
+    } else if (e.key === 'Enter') {
+      if (!list.hidden && _activeIndex >= 0 && items[_activeIndex]) {
+        e.preventDefault();
+        e.stopPropagation();
+        const li = items[_activeIndex];
+        commit(li.dataset.id, li.dataset.name);
+      } else if (!list.hidden) {
+        e.preventDefault();
+        e.stopPropagation();
+        list.hidden = true;
+      }
+    } else if (e.key === 'Escape') {
+      e.preventDefault();
+      list.hidden = true;
+    }
+  });
+  input.addEventListener('blur', () => {
+    setTimeout(() => { if (!container.contains(document.activeElement)) list.hidden = true; }, 130);
+  });
+  list.addEventListener('mousedown', (e) => {
+    const li = e.target.closest('.combobox-item');
+    if (!li) return;
+    e.preventDefault();
+    commit(li.dataset.id, li.dataset.name);
+  });
+
+  container.append(input, list);
+  return container;
 }
 
 function lineRow(line) {
   const div = document.createElement('div');
   div.className = 'line-row';
 
-  const wrap = document.createElement('div');
-  wrap.className = 'line-speaker-wrap';
+  const people = state.meeting.councilpeople || [];
+  const cb = makeCombobox(people, line.speaker_id, line.speaker_name);
 
-  const sel = document.createElement('select');
-  sel.className = 'line-speaker-select';
-  sel.innerHTML = speakerOptionsHtml(line.speaker_id, line.speaker_name);
-
-  const custom = document.createElement('input');
-  custom.type = 'text';
-  custom.className = 'line-speaker-custom' + (sel.value === CUSTOM_SPEAKER ? '' : ' hidden');
-  custom.placeholder = 'Name...';
-  custom.value = (!line.speaker_id && line.speaker_name) ? line.speaker_name : '';
-
-  sel.addEventListener('change', () => {
-    custom.classList.toggle('hidden', sel.value !== CUSTOM_SPEAKER);
-    if (sel.value !== CUSTOM_SPEAKER) custom.value = '';
+  const cbInput = cb.querySelector('.combobox-input');
+  cbInput.addEventListener('keydown', (e) => {
+    if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key === 'ArrowDown') {
+      e.preventDefault();
+      const rows = [...els.linesGrid.querySelectorAll('.line-row')];
+      const start = rows.indexOf(div);
+      for (let i = start + 1; i < rows.length; i++) {
+        const tgt = rows[i].querySelector('.combobox');
+        if (tgt) tgt.setSelection(cb.getId(), cb.getName());
+      }
+    }
   });
-
-  wrap.append(sel, custom);
 
   const carry = document.createElement('button');
   carry.type = 'button';
   carry.className = 'line-carry';
-  carry.title = 'Carry this speaker to all turns below';
+  carry.title = 'Carry speaker to all turns below (Ctrl+Shift+\u2193)';
   carry.textContent = '\u2193';
   carry.addEventListener('click', () => {
     const rows = [...els.linesGrid.querySelectorAll('.line-row')];
     const start = rows.indexOf(div);
     for (let i = start + 1; i < rows.length; i++) {
-      const s = rows[i].querySelector('.line-speaker-select');
-      const c = rows[i].querySelector('.line-speaker-custom');
-      s.value = sel.value;
-      c.value = custom.value;
-      c.classList.toggle('hidden', s.value !== CUSTOM_SPEAKER);
+      const tgt = rows[i].querySelector('.combobox');
+      if (tgt) tgt.setSelection(cb.getId(), cb.getName());
     }
   });
 
@@ -282,7 +384,7 @@ function lineRow(line) {
   text.className = 'line-text';
   text.textContent = line.text;
 
-  div.append(wrap, carry, text);
+  div.append(cb, carry, text);
   return div;
 }
 
@@ -347,20 +449,17 @@ function voteRow(vote = { motion: '', person_id: '', vote: '' }) {
   row.className = 'vote-row';
 
   const motion = document.createElement('input');
+  motion.className = 'vote-motion';
   motion.value = vote.motion || '';
   motion.placeholder = 'Motion';
 
-  const member = document.createElement('select');
-  member.innerHTML = `<option value="">Member</option>`;
-  for (const p of state.meeting.councilpeople || []) {
-    const opt = document.createElement('option');
-    opt.value = p.id;
-    opt.textContent = p.name;
-    if (p.id === vote.person_id) opt.selected = true;
-    member.appendChild(opt);
-  }
+  const people = state.meeting.councilpeople || [];
+  const existingPerson = people.find((p) => p.id === vote.person_id);
+  const memberCb = makeCombobox(people, vote.person_id, existingPerson ? existingPerson.name : '');
+  memberCb.querySelector('.combobox-input').placeholder = 'Member...';
 
   const voteInput = document.createElement('select');
+  voteInput.className = 'vote-outcome';
   voteInput.innerHTML = `
     <option value="">Vote</option>
     <option value="yes">yes</option>
@@ -376,7 +475,7 @@ function voteRow(vote = { motion: '', person_id: '', vote: '' }) {
   remove.textContent = 'Remove';
   remove.addEventListener('click', () => row.remove());
 
-  row.append(motion, member, voteInput, remove);
+  row.append(motion, memberCb, voteInput, remove);
   return row;
 }
 
@@ -391,16 +490,15 @@ function saveCurrentSection() {
 
   const rows = [...els.linesGrid.querySelectorAll('.line-row')];
   const lines = rows.map((row) => {
-    const sel = row.querySelector('.line-speaker-select');
-    const custom = row.querySelector('.line-speaker-custom');
+    const cb = row.querySelector('.combobox');
+    const speakerId = cb ? cb.getId() : '';
+    const rawName = cb ? cb.getName() : '';
     const turnText = row.querySelector('.line-text').textContent;
-    const speakerId = sel.value === CUSTOM_SPEAKER ? '' : sel.value;
-    const customName = sel.value === CUSTOM_SPEAKER ? custom.value.trim() : '';
     const person = speakerId ? councilpersonById(speakerId) : null;
     return {
       text: turnText,
       speaker_id: speakerId,
-      speaker_name: customName || (person ? person.name : ''),
+      speaker_name: rawName || (person ? person.name : ''),
     };
   });
   section.lines = lines;
@@ -418,11 +516,13 @@ function saveCurrentSection() {
 
   section.votes = [...els.votes.querySelectorAll('.vote-row')]
     .map((row) => {
-      const [motion, personId, vote] = row.querySelectorAll('input,select');
+      const motionInput = row.querySelector('.vote-motion');
+      const memberCb = row.querySelector('.combobox');
+      const voteOutcome = row.querySelector('.vote-outcome');
       return {
-        motion: motion.value.trim(),
-        person_id: personId.value,
-        vote: vote.value,
+        motion: motionInput ? motionInput.value.trim() : '',
+        person_id: memberCb ? memberCb.getId() : '',
+        vote: voteOutcome ? voteOutcome.value : '',
       };
     })
     .filter((v) => v.motion || v.person_id || v.vote);
@@ -489,6 +589,7 @@ function download() {
 
 function navigate(direction) {
   saveCurrentSection();
+  localStorage.setItem(state.storageKey, JSON.stringify(state.annotation));
   const next = state.index + direction;
   if (next < 0 || next >= state.meeting.transcript.length) return;
   state.index = next;
@@ -543,3 +644,61 @@ els.resetDisplayBtn.addEventListener('click', () => {
   renderDisplayPreview();
 });
 els.syncVideoBtn.addEventListener('click', () => syncVideoToCurrentChunk(true));
+
+// ── Keyboard shortcuts ──────────────────────────────────────────────────────
+document.addEventListener('keydown', (e) => {
+  if (!state.meeting) return;
+  const mod = e.ctrlKey || e.metaKey;
+  if (!mod) return;
+
+  // Ctrl/⌘+S → save
+  if (e.key === 's' && !e.shiftKey && !e.altKey) {
+    e.preventDefault();
+    persist();
+    return;
+  }
+
+  // Ctrl/⌘+Shift+D → download
+  if (e.key === 'd' && e.shiftKey && !e.altKey) {
+    e.preventDefault();
+    download();
+    return;
+  }
+
+  // Ctrl/⌘+Enter → save + next chunk
+  if (e.key === 'Enter' && !e.shiftKey && !e.altKey) {
+    // Only intercept when not inside a combobox list (let combobox handle its own Enter)
+    if (document.activeElement && document.activeElement.classList.contains('combobox-input')) return;
+    e.preventDefault();
+    persist();
+    navigate(1);
+    return;
+  }
+
+  // Ctrl/⌘+Shift+Enter → save + previous chunk
+  if (e.key === 'Enter' && e.shiftKey && !e.altKey) {
+    if (document.activeElement && document.activeElement.classList.contains('combobox-input')) return;
+    e.preventDefault();
+    persist();
+    navigate(-1);
+    return;
+  }
+
+  // Ctrl/⌘+] → next chunk (no save)
+  if (e.key === ']' && !e.shiftKey && !e.altKey) {
+    const tag = document.activeElement ? document.activeElement.tagName : '';
+    if (tag === 'TEXTAREA' || tag === 'INPUT') return;
+    e.preventDefault();
+    navigate(1);
+    return;
+  }
+
+  // Ctrl/⌘+[ → previous chunk (no save)
+  if (e.key === '[' && !e.shiftKey && !e.altKey) {
+    const tag = document.activeElement ? document.activeElement.tagName : '';
+    if (tag === 'TEXTAREA' || tag === 'INPUT') return;
+    e.preventDefault();
+    navigate(-1);
+    return;
+  }
+});
