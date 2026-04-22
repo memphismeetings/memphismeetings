@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ title }} | {{ site.title }}</title>
   <link rel="stylesheet" href="{{ root_path }}/assets/style.css">
+  {% block extra_head %}{% endblock %}
 </head>
 <body>
   <header class="site-header">
@@ -14,13 +15,15 @@
       <a href="{{ root_path }}/index.html">Meetings</a>
       <a href="{{ root_path }}/people/index.html">People</a>
       <a href="{{ root_path }}/tags/index.html">Tags</a>
+      <a href="{{ root_path }}/search/index.html">Search</a>
     </nav>
   </header>
-  <main>
+  <main {% block main_attrs %}data-pagefind-body{% endblock %}>
     {% block content %}{% endblock %}
   </main>
   <footer class="site-footer">
     <p>Human-annotated public record archive. <a href="https://github.com/memphismeetings/memphismeetings">GitHub</a></p>
   </footer>
+  {% block extra_scripts %}{% endblock %}
 </body>
 </html>

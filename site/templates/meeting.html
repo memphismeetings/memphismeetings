@@ -4,8 +4,8 @@
 
 {% block content %}
 <article class="panel">
-  <h2>{{ meeting.title }}</h2>
-  <p class="muted">{{ meeting.date }} | {{ meeting.body_name }}</p>
+  <h2 data-pagefind-meta="title">{{ meeting.title }}</h2>
+  <p class="muted" data-pagefind-meta="date:{{ meeting.date }}, type:Meeting">{{ meeting.date }} | {{ meeting.body_name }}</p>
   <p><a href="{{ meeting.youtube_url }}">Watch on YouTube</a></p>
   {% if meeting.summary %}<p>{{ meeting.summary }}</p>{% endif %}
   {% if meeting.global_tags %}
@@ -73,7 +73,7 @@
       </p>
       {% endif %}
       {% if section.summary %}<p class="summary">{{ section.summary }}</p>{% endif %}
-      <details class="transcript-details">
+      <details class="transcript-details" data-pagefind-ignore>
         <summary>Show transcript{% if section.lines %} ({{ section.lines | length }} turns){% endif %}</summary>
         {% if section.lines %}
         <dl class="transcript-lines">

@@ -3,7 +3,9 @@ from __future__ import annotations
 import argparse
 import re
 import shutil
+import subprocess
 from collections import defaultdict
+from html import escape
 from pathlib import Path
 from typing import Any
 
@@ -169,6 +171,79 @@ def person_last_name_sort_key(name: str) -> tuple[str, str]:
     if len(parts) == 1:
         return (parts[0].lower(), "")
     return (parts[-1].lower(), " ".join(parts[:-1]).lower())
+
+
+def transcript_search_text(section: dict[str, Any]) -> str:
+    lines = []
+    for line in section.get("lines", []) or []:
+        text = str(line.get("text", "")).strip()
+        if not text:
+            continue
+        speaker = str(line.get("speaker_name", "")).strip()
+        lines.append(f"{speaker}: {text}" if speaker else text)
+    if lines:
+        return "\n".join(lines)
+    return str(section.get("display_text") or section.get("text") or "").strip()
+
+
+def render_transcript_search_doc(meeting: dict[str, Any], section: dict[str, Any]) -> str:
+    transcript_text = transcript_search_text(section)
+    speaker_names = ", ".join(
+        speaker.get("name", "")
+        for speaker in section.get("speakers", [])
+        if speaker.get("name")
+    )
+    title = f"{meeting['title']} - {sec_to_clock(section['start'])}"
+    target_url = f"meetings/{meeting['id']}.html#c{section['chunk_index']}"
+    return f"""<!doctype html>
+<html lang=\"en\">
+<head>
+  <meta charset=\"utf-8\">
+  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
+  <meta name=\"robots\" content=\"noindex\">
+  <title>{escape(title)}</title>
+</head>
+<body>
+  <main data-pagefind-body>
+    <h1 data-pagefind-meta=\"title\">{escape(title)}</h1>
+    <p data-pagefind-meta=\"meeting_title\">{escape(meeting['title'])}</p>
+    <p data-pagefind-meta=\"date:{escape(meeting['date'])}\"></p>
+    <p data-pagefind-meta=\"timestamp:{escape(sec_to_clock(section['start']))}\"></p>
+    <p data-pagefind-meta=\"target_url:{escape(target_url)}\"></p>
+    {f'<p data-pagefind-meta="speakers">{escape(speaker_names)}</p>' if speaker_names else ''}
+    <article>
+      <p>{escape(meeting['title'])}</p>
+      <p>{escape(meeting['date'])} | {escape(sec_to_clock(section['start']))}</p>
+      {f'<p>Speakers: {escape(speaker_names)}</p>' if speaker_names else ''}
+      <pre>{escape(transcript_text)}</pre>
+    </article>
+  </main>
+</body>
+</html>
+"""
+
+
+def build_pagefind_indexes(root: Path, output_dir: Path, transcript_corpus_dir: Path) -> None:
+    npx = shutil.which("npx")
+    if not npx:
+        print("Skipped Pagefind indexing: npx was not found.")
+        return
+
+    commands = [
+        [npx, "-y", "pagefind", "--site", str(output_dir), "--output-subdir", "pagefind"],
+        [
+            npx,
+            "-y",
+            "pagefind",
+            "--site",
+            str(transcript_corpus_dir),
+            "--output-path",
+            str(output_dir / "pagefind-transcripts"),
+        ],
+    ]
+
+    for command in commands:
+        subprocess.run(command, cwd=root, check=True)
 
 
 def merge_people_sources(*groups: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -464,12 +539,17 @@ def main() -> None:
     cfg = yaml.safe_load((root / parsed.config).read_text(encoding="utf-8"))
 
     output_dir = root / cfg["site"].get("output_dir", "docs")
+    build_dir = root / "build"
+    transcript_corpus_dir = build_dir / "transcript-search"
     template_dir = root / "site" / "templates"
     static_dir = root / "site" / "static"
 
     if output_dir.exists():
         shutil.rmtree(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
+    if transcript_corpus_dir.exists():
+        shutil.rmtree(transcript_corpus_dir)
+    transcript_corpus_dir.mkdir(parents=True, exist_ok=True)
 
     shutil.copytree(static_dir, output_dir / "assets", dirs_exist_ok=True)
 
@@ -478,6 +558,7 @@ def main() -> None:
     index_template = env.get_template("index.html")
     person_template = env.get_template("person.html")
     people_template = env.get_template("people.html")
+    search_template = env.get_template("search.html")
     tags_template = env.get_template("tags.html")
     tag_template = env.get_template("tag.html")
 
@@ -491,6 +572,7 @@ def main() -> None:
     people_tag_entries: dict[str, list[dict[str, Any]]] = defaultdict(list)
     tag_total_seconds: dict[str, tuple[float, str]] = {}
     all_people: dict[str, dict[str, Any]] = {}
+    transcript_search_docs: list[dict[str, Any]] = []
 
     for meeting_path in sorted((root / "data" / "processed" / "meetings").glob("*.json")):
         meeting = load_json(meeting_path, {})
@@ -609,6 +691,15 @@ def main() -> None:
         }
         meetings.append(meeting_record)
 
+        for section in sections:
+            if transcript_search_text(section):
+                transcript_search_docs.append(
+                    {
+                        "meeting": meeting_record,
+                        "section": section,
+                    }
+                )
+
         html = meeting_template.render(site=cfg["site"], meeting=meeting_record)
         write(output_dir / "meetings" / f"{meeting['id']}.html", html)
 
@@ -714,6 +805,20 @@ def main() -> None:
 
     tags_html = tags_template.render(site=cfg["site"], tags=sorted_tags)
     write(output_dir / "tags" / "index.html", tags_html)
+
+    search_html = search_template.render(site=cfg["site"])
+    write(output_dir / "search" / "index.html", search_html)
+
+    for entry in transcript_search_docs:
+        meeting_record = entry["meeting"]
+        section = entry["section"]
+        transcript_html = render_transcript_search_doc(meeting_record, section)
+        write(
+            transcript_corpus_dir / f"{meeting_record['id']}-c{section['chunk_index']}.html",
+            transcript_html,
+        )
+
+    build_pagefind_indexes(root, output_dir, transcript_corpus_dir)
 
     print(f"Built static site in {output_dir.relative_to(root)}")
 

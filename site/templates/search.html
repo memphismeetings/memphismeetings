@@ -1,0 +1,32 @@
+{% set title = "Search" %}
+{% set root_path = ".." %}
+{% extends "base.html" %}
+
+{% block main_attrs %}{% endblock %}
+
+{% block content %}
+<section class="panel">
+  <h2>Search</h2>
+  <p class="muted">Search annotated records by default, or switch to transcript corpus search to dig through all ingested meetings.</p>
+</section>
+
+<section class="panel search-shell" id="searchApp"
+  data-root-path="{{ root_path }}"
+  data-general-bundle="{{ root_path }}/pagefind/"
+  data-transcript-bundle="{{ root_path }}/pagefind-transcripts/">
+  <div class="search-mode-tabs" role="tablist" aria-label="Search mode">
+    <button type="button" class="search-mode is-active" data-mode="general" aria-pressed="true">Everything but transcripts</button>
+    <button type="button" class="search-mode" data-mode="transcripts" aria-pressed="false">All transcripts</button>
+  </div>
+
+  <label for="searchInput">Search terms</label>
+  <input id="searchInput" class="search-input" type="search" placeholder="Search meetings, people, tags, votes, or transcripts">
+  <p class="muted search-help" id="searchHelp">Default mode prioritizes meeting titles, summaries, people, tags, votes, and roll call without indexing transcript bodies.</p>
+  <p class="muted search-status" id="searchStatus">Type to search.</p>
+  <div class="search-results" id="searchResults"></div>
+</section>
+{% endblock %}
+
+{% block extra_scripts %}
+  <script type="module" src="{{ root_path }}/assets/search.js"></script>
+{% endblock %}

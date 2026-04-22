@@ -205,6 +205,68 @@ td {
   padding: 1.2rem 0 2rem;
 }
 
+.search-meta {
+  display: none;
+}
+
+.search-shell {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.search-mode-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.search-mode {
+  appearance: none;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.search-mode.is-active {
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 10%, white);
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.7rem 0.85rem;
+  border: 1px solid var(--line);
+  background: #fffdfa;
+  color: var(--ink);
+  font: inherit;
+}
+
+.search-help,
+.search-status {
+  margin: 0;
+}
+
+.search-results {
+  min-height: 2rem;
+}
+
+.search-result {
+  margin: 0;
+}
+
+.search-result h3 {
+  margin: 0 0 0.2rem;
+  font-size: 1.05rem;
+}
+
+.search-result p {
+  margin: 0.2rem 0 0;
+}
+
 @media (max-width: 700px) {
   body {
     font-size: 16px;

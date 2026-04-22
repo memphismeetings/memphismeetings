@@ -4,7 +4,8 @@
 
 {% block content %}
 <section class="panel">
-  <h2>{{ person.name }}</h2>
+  <h2 data-pagefind-meta="title">{{ person.name }}</h2>
+  <p class="search-meta" data-pagefind-meta="type:Person">Person</p>
   {% if person.district %}<p class="muted">District {{ person.district }}</p>{% endif %}
 </section>
 

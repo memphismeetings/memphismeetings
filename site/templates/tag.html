@@ -4,7 +4,8 @@
 
 {% block content %}
 <section class="panel">
-  <h2>Tag: {{ tag_label }}</h2>
+  <h2 data-pagefind-meta="title">Tag: {{ tag_label }}</h2>
+  <p class="search-meta" data-pagefind-meta="type:Tag">Tag</p>
   <ul class="list">
     {% for entry in entries %}
     <li>
