@@ -38,10 +38,6 @@
       "name": "Michalyn Easter-Thomas"
     },
     {
-      "id": "paul-young",
-      "name": "Paul Young"
-    },
-    {
       "id": "pearl-eva-walker",
       "name": "Pearl Eva Walker"
     },
@@ -222,8 +218,8 @@
     },
     {
       "chunk_index": 2,
-      "speaker_id": "",
-      "speaker_name": "",
+      "speaker_id": "jana-swearengen-washington",
+      "speaker_name": "Jana Swearengen Washington",
       "lines": [
         {
           "text": "White",
@@ -247,32 +243,37 @@
         },
         {
           "text": "thank you welcome to the April 21st 2026 special called meeting of the Memphis City Council. Meetings of the council shall be conducted in an orderly manner to ensure the public has the full opportunity to be heard and the deliberate process of the council is retained at all times. Our council staff member has meeting agendas available upfront. Mr. Clay, please raise your hand. as well as comment request cards for members of the public wishing to be heard on this specific item. All those wishing to speak on an item must turn in their comment card to staff before that item is called. If you are not here to speak on a specific item, you can note your request to give comment at the end of the meeting. As chair, I will only recognize citizens that properly registered to speak by submitting a completed comment request card to council staff. Madame controller, if you will please call item number one.",
-          "speaker_id": "",
-          "speaker_name": ""
+          "speaker_id": "jana-swearengen-washington",
+          "speaker_name": "Jana Swearengen Washington"
         },
         {
           "text": "Thank you, Madam Chair. Item number one is presentation of the mayor's fiscal year 2027 proposed budget.",
-          "speaker_id": "",
-          "speaker_name": ""
+          "speaker_id": "jana-swearengen-washington",
+          "speaker_name": "Jana Swearengen Washington"
         },
         {
           "text": "Thank you, mayor. We are in your hands.",
-          "speaker_id": "",
-          "speaker_name": ""
+          "speaker_id": "jana-swearengen-washington",
+          "speaker_name": "Jana Swearengen Washington"
         },
         {
           "text": "All right. Thank you, Chairwoman, and thank you, city council, for uh having me here today. This is obviously a big deal for all of us. This is our third budget together. Um and I feel like this is a strong budget that you all will appreciate and so this budget was really built with a clear focus of delivering for the people of our city. And uh I look forward to getting into it with you. We're going to do this in a presentation style. Um, and so we'll get the screen ready momentarily. And there you go. Uh, so I'm going to go on to the to the next slide. Um, and so as I",
-          "speaker_id": "",
-          "speaker_name": ""
+          "speaker_id": "paul-young",
+          "speaker_name": "Paul Young"
         }
       ],
       "display_mode": "raw",
       "display_text": "",
-      "summary": "",
-      "tags": [],
+      "summary": "The Chairwoman opens the meeting and explains contact cards. Item number one is the mayor's fiscal year 2027 proposed budget.",
+      "tags": [
+        "budget",
+        "proposed budget",
+        "paul young"
+      ],
       "mentions": [],
       "votes": [],
-      "notes": ""
+      "notes": "",
+      "roll_call": []
     },
     {
       "chunk_index": 3,
