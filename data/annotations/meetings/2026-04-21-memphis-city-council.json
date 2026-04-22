@@ -38,6 +38,10 @@
       "name": "Michalyn Easter-Thomas"
     },
     {
+      "id": "paul-young",
+      "name": "Paul Young"
+    },
+    {
       "id": "pearl-eva-walker",
       "name": "Pearl Eva Walker"
     },
@@ -277,41 +281,49 @@
     },
     {
       "chunk_index": 3,
-      "speaker_id": "",
-      "speaker_name": "",
+      "speaker_id": "paul-young",
+      "speaker_name": "Paul Young",
       "lines": [
         {
           "text": "mentioned, this is a budget that did not happen overnight. We thought very strategically over it. And so this slide really outlines the timeline of how we got here. We started in January uh, with a budget kickoff. U, we went through the next few months identifying what the gaps were. Uh we worked to identify where the cost pressures were going to be. Uh we wanted to identify what solutions we could find to address those cost pressures. We worked with every single division uh to get to where we are today. This was not a paper exercise. We challenged all of the numbers in every division to make sure that when we brought this budget to you, it was something that we could stand behind. Uh go to the next slide. And um I want to also note that we didn't just use assumptions when we came into this. We built it based on hard decisions. Our team worked with the University of Memphis to uh do revenue estimates because we wanted an independent voice on how we're going to determine what the revenues will look like moving forward. Uh we wanted to reset it so that it could reflect some of the true costs that we're seeing. We knew that we had some unavoidable increases, things like pension costs, health care costs, uh compensation costs. Uh we wanted to make sure that we were able to absorb those things. We evaluated more than $150 million worth of pressures and reduction opportunities. Uh we reviewed about $ 38.2 million worth of division requests. So when we went to the divisions, we asked them what things they needed or wanted to do to advance in their area. There were about $38 million worth of requests. And of course, not everything that was submitted could be funded. So we made significant tradeoffs as we went through the process. Uh but that is how we delivered a fully vetted FY27 budget. Uh so some of the priorities uh are priorities that have carried us through uh this administration. We have a focus",
-          "speaker_id": "",
-          "speaker_name": ""
+          "speaker_id": "paul-young",
+          "speaker_name": "Paul Young"
         }
       ],
       "display_mode": "raw",
       "display_text": "",
-      "summary": "",
-      "tags": [],
+      "summary": "Paul Young goes over his fiscal year 2027 proposed budget.",
+      "tags": [
+        "paul young"
+      ],
       "mentions": [],
       "votes": [],
-      "notes": ""
+      "notes": "",
+      "roll_call": []
     },
     {
       "chunk_index": 4,
-      "speaker_id": "",
-      "speaker_name": "",
+      "speaker_id": "paul-young",
+      "speaker_name": "Paul Young",
       "lines": [
         {
           "text": "on developing thriving neighborhoods and obviously that's rooted in addressing public safety and removing blight. Uh we have a focus on building up housing in the core of our city. We have an emphasis on developing our workforce in our young people. And then we have an emphasis on ensuring that we use culture as an economic driver because we believe that's an area where we have an competitive advantage. Um, and so before I go into the depths of FY27, I just want to do a really quick recap of some of the things that we've achieved in FY 26. Um, so just looking at uh some of the things that we've done around uh blight and restoring some of the pride in our neighborhood by removing trash. Over 600 tons of uh debris has been collected. 86,000 bags of trash, 25,000 tires collected. Our teams have been out there doing the hard work um on violence prevention. As you know, with our joint office in place, we have been working to invest in nonprofits that are doing the intervention and prevention work to address public safety in tandem uh with the work that is happening with our law enforcement partners. Uh we have been doing work to assist the community. So about 1,700 expungements have taken place. 326 driver's license reinstatements. And all of that equates to about 106,000 economic impact of having uh those individuals being able to go about their daily lives getting to and from work. So this is assisting the community. Uh our teams have been serving with excellence. We've had about 350,000 uh emergency calls. Uh and one of the things that we're really proud of is that we have a 95% uh of those 95% of those calls were answered within 20 seconds. And so our communications professors professionals through fire and police are doing amazing work to make sure that they are",
-          "speaker_id": "",
-          "speaker_name": ""
+          "speaker_id": "paul-young",
+          "speaker_name": "Paul Young"
         }
       ],
       "display_mode": "raw",
       "display_text": "",
       "summary": "",
-      "tags": [],
+      "tags": [
+        "paul young",
+        "budget",
+        "budget proposal"
+      ],
       "mentions": [],
       "votes": [],
-      "notes": ""
+      "notes": "",
+      "roll_call": []
     },
     {
       "chunk_index": 5,
