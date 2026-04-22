@@ -44,9 +44,11 @@
 
 <section class="panel">
   <h2>Tags</h2>
+  <p class="muted">Browse all tags ranked by how often they appear.</p>
   <ul class="chips">
-    {% for tag in tags %}
-    <li><a href="tags/{{ tag }}.html">{{ tag }}</a></li>
+    <li><a href="tags/index.html">All tags</a></li>
+    {% for tag in tags[:24] %}
+    <li><a href="tags/{{ tag.slug }}.html">{{ tag.label }}</a></li>
     {% endfor %}
   </ul>
 </section>

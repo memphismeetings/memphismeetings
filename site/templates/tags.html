@@ -1,0 +1,27 @@
+{% set title = "Tags" %}
+{% set root_path = ".." %}
+{% extends "base.html" %}
+
+{% block content %}
+<section class="panel">
+  <h2>Tags Directory</h2>
+  <p class="muted">All tags ordered by total instances across annotations.</p>
+</section>
+
+<section class="panel">
+  <ul class="list people-list">
+    {% for tag in tags %}
+    <li>
+      <a href="{{ tag.slug }}.html">{{ tag.label }}</a>
+      <p class="muted">
+        {% if tag.instance_count == 1 %}1 instance{% else %}{{ tag.instance_count }} instances{% endif %}
+        · {% if tag.meeting_count == 1 %}1 meeting{% else %}{{ tag.meeting_count }} meetings{% endif %}
+        {% if tag.minutes %}· {{ tag.minutes }} min tagged{% endif %}
+      </p>
+    </li>
+    {% else %}
+    <li class="muted">No tags found yet.</li>
+    {% endfor %}
+  </ul>
+</section>
+{% endblock %}

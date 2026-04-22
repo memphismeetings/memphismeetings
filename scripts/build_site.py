@@ -425,6 +425,7 @@ def main() -> None:
     index_template = env.get_template("index.html")
     person_template = env.get_template("person.html")
     people_template = env.get_template("people.html")
+    tags_template = env.get_template("tags.html")
     tag_template = env.get_template("tag.html")
 
     bodies = {body["id"]: body for body in cfg.get("bodies", [])}
@@ -605,13 +606,31 @@ def main() -> None:
         )
         write(output_dir / "tags" / f"{tag_slug}.html", tag_html)
 
+    tags_records = []
+    for tag_slug, entries in tags_map.items():
+        if not entries:
+            continue
+        tag_label = entries[0]["label"]
+        meeting_count = len({entry["meeting_id"] for entry in entries})
+        total_seconds, _ = tag_total_seconds.get(tag_slug, (0.0, tag_label))
+        tags_records.append(
+            {
+                "slug": tag_slug,
+                "label": tag_label,
+                "instance_count": len(entries),
+                "meeting_count": meeting_count,
+                "minutes": max(1, round(total_seconds / 60)) if total_seconds > 0 else 0,
+            }
+        )
+    sorted_tags = sorted(tags_records, key=lambda x: (-x["instance_count"], x["label"].lower()))
+
     sorted_meetings = sorted(meetings, key=lambda x: x["date"], reverse=True)
     site_stats = compute_site_stats(sorted_meetings, tag_total_seconds)
     sorted_people = sorted(people_records, key=lambda x: x["name"])
     index_html = index_template.render(
         site=cfg["site"],
         meetings=sorted_meetings,
-        tags=sorted(tags_map.keys()),
+        tags=sorted_tags,
         stats=site_stats,
         people=sorted_people,
     )
@@ -619,6 +638,9 @@ def main() -> None:
 
     people_html = people_template.render(site=cfg["site"], people=sorted_people)
     write(output_dir / "people" / "index.html", people_html)
+
+    tags_html = tags_template.render(site=cfg["site"], tags=sorted_tags)
+    write(output_dir / "tags" / "index.html", tags_html)
 
     print(f"Built static site in {output_dir.relative_to(root)}")
 
