@@ -279,6 +279,55 @@ def merge_sections(
     return merged
 
 
+def group_consecutive_sections(sections: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Collapse consecutive sections with the same speaker into one display entry.
+
+    All metadata from the first section is kept as the group header. Lines from
+    subsequent sections are appended. Tags, mentions, roll_call, and votes are
+    merged (tags/mentions deduped). The end timestamp extends to the last section.
+    Sections without a speaker_id are never merged.
+    """
+    if not sections:
+        return []
+
+    grouped: list[dict[str, Any]] = []
+    for section in sections:
+        current_id = section.get("speaker_id", "")
+        if (
+            current_id
+            and grouped
+            and grouped[-1].get("speaker_id") == current_id
+        ):
+            prev = grouped[-1]
+            prev["lines"].extend(section["lines"])
+            prev["end"] = section["end"]
+            # Merge summaries, skipping blanks
+            existing_summary = prev.get("summary", "")
+            new_summary = section.get("summary", "")
+            if new_summary and new_summary != existing_summary:
+                prev["summary"] = f"{existing_summary} {new_summary}".strip() if existing_summary else new_summary
+            # Merge tags (preserve order, dedupe by slug)
+            seen_tags = set(prev["tags"])
+            for slug, label in zip(section["tags"], section["raw_tags"]):
+                if slug not in seen_tags:
+                    prev["tags"].append(slug)
+                    prev["raw_tags"].append(label)
+                    seen_tags.add(slug)
+            # Merge mentions (dedupe by id)
+            seen_mentions = {p["id"] for p in prev["mentions"]}
+            for p in section["mentions"]:
+                if p["id"] not in seen_mentions:
+                    prev["mentions"].append(p)
+                    seen_mentions.add(p["id"])
+            # Append roll_call and votes
+            prev["roll_call"].extend(section["roll_call"])
+            prev["votes"].extend(section["votes"])
+        else:
+            grouped.append(dict(section))
+
+    return grouped
+
+
 def merge_adjacent_speaking_turns(turns: list[dict[str, Any]]) -> list[dict[str, Any]]:
     """Merge adjacent speaking entries into larger continuous turns.
 
@@ -476,7 +525,7 @@ def main() -> None:
             "body_name": meeting.get("body_name", body.get("name", "")),
             "youtube_url": meeting["youtube_url"],
             "summary": annotation.get("meeting_summary", ""),
-            "sections": sections,
+            "sections": group_consecutive_sections(sections),
             "roll_call": meeting_roll_call,
             "global_tags": [slugify(tag) for tag in annotation.get("global_tags", []) if tag],
             "global_tag_labels": [tag.strip() for tag in annotation.get("global_tags", []) if tag and tag.strip()],
