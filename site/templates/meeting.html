@@ -17,6 +17,25 @@
   {% endif %}
 </article>
 
+{% if meeting.roll_call %}
+<section class="panel">
+  <h3>Roll Call</h3>
+  <table>
+    <thead>
+      <tr><th>Member</th><th>Presence</th></tr>
+    </thead>
+    <tbody>
+      {% for entry in meeting.roll_call %}
+      <tr>
+        <td>{% if entry.person_id %}<a href="../people/{{ entry.person_id }}.html">{{ entry.person_name }}</a>{% else %}{{ entry.person_name }}{% endif %}</td>
+        <td>{{ entry.presence }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>
+{% endif %}
+
 {% if meeting.stats.total_sections %}
 <section class="panel">
   <h3>At a glance</h3>

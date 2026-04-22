@@ -408,6 +408,15 @@ def main() -> None:
                     }
                 )
 
+        # Aggregate roll call entries across all sections (first occurrence per person wins)
+        roll_call_by_person: dict[str, dict] = {}
+        for section in sections:
+            for entry in section.get("roll_call", []):
+                pid = entry.get("person_id") or entry.get("person_name", "")
+                if pid and pid not in roll_call_by_person:
+                    roll_call_by_person[pid] = entry
+        meeting_roll_call = list(roll_call_by_person.values())
+
         meeting_record = {
             "id": meeting["id"],
             "title": meeting["title"],
@@ -417,6 +426,7 @@ def main() -> None:
             "youtube_url": meeting["youtube_url"],
             "summary": annotation.get("meeting_summary", ""),
             "sections": sections,
+            "roll_call": meeting_roll_call,
             "global_tags": [slugify(tag) for tag in annotation.get("global_tags", []) if tag],
             "global_tag_labels": [tag.strip() for tag in annotation.get("global_tags", []) if tag and tag.strip()],
             "stats": compute_meeting_stats(sections),
