@@ -60,14 +60,16 @@
       <p class="timestamp">
         <a href="{{ meeting.youtube_url }}&t={{ section.start | int }}s">{{ section.start | clock }}</a>
       </p>
-      {% if section.speaker_name %}
+      {% if section.speakers %}
       <p class="muted speaker-line">
-        Speaker:
-        {% if section.speaker_id %}
-        <a href="../people/{{ section.speaker_id }}.html">{{ section.speaker_name }}</a>
+        Speakers:
+        {% for speaker in section.speakers %}
+        {% if speaker.id %}
+        <a href="../people/{{ speaker.id }}.html">{{ speaker.name }}</a>{% if not loop.last %}, {% endif %}
         {% else %}
-        {{ section.speaker_name }}
+        {{ speaker.name }}{% if not loop.last %}, {% endif %}
         {% endif %}
+        {% endfor %}
       </p>
       {% endif %}
       {% if section.summary %}<p class="summary">{{ section.summary }}</p>{% endif %}

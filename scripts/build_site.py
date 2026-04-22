@@ -222,6 +222,20 @@ def merge_sections(
                 {"text": line.get("text", ""), "speaker_id": lid, "speaker_name": lname}
             )
 
+        # Build ordered unique speakers for display on the section header.
+        speakers: list[dict[str, str]] = []
+        seen_speakers: set[str] = set()
+        for line in resolved_lines:
+            lid = line.get("speaker_id", "")
+            lname = line.get("speaker_name", "")
+            key = lid or normalize_person_name(lname)
+            if not key or key in seen_speakers or not lname:
+                continue
+            speakers.append({"id": lid, "name": lname})
+            seen_speakers.add(key)
+        if not speakers and speaker_name:
+            speakers = [{"id": speaker_id, "name": speaker_name}]
+
         display_mode = section.get("display_mode", "raw")
         if resolved_lines:
             parts = [
@@ -256,6 +270,7 @@ def merge_sections(
                 "text": chunk.get("text", ""),
                 "speaker_id": speaker_id,
                 "speaker_name": speaker_name,
+                "speakers": speakers,
                 "lines": resolved_lines,
                 "display_mode": display_mode,
                 "display_text": display_text,
@@ -319,6 +334,13 @@ def group_consecutive_sections(sections: list[dict[str, Any]]) -> list[dict[str,
                 if p["id"] not in seen_mentions:
                     prev["mentions"].append(p)
                     seen_mentions.add(p["id"])
+            # Merge speakers (dedupe by id, then name)
+            seen_speakers = {sp.get("id") or normalize_person_name(sp.get("name", "")) for sp in prev.get("speakers", [])}
+            for sp in section.get("speakers", []):
+                key = sp.get("id") or normalize_person_name(sp.get("name", ""))
+                if key and key not in seen_speakers:
+                    prev.setdefault("speakers", []).append(sp)
+                    seen_speakers.add(key)
             # Append roll_call and votes
             prev["roll_call"].extend(section["roll_call"])
             prev["votes"].extend(section["votes"])
