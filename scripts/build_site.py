@@ -279,6 +279,56 @@ def merge_sections(
     return merged
 
 
+def merge_adjacent_speaking_turns(turns: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Merge adjacent speaking entries into larger continuous turns.
+
+    This reduces artificial split points from chunking (e.g. 2-minute transcript chunks)
+    while preserving links to the first chunk where the turn starts.
+    """
+    if not turns:
+        return []
+
+    merged: list[dict[str, Any]] = []
+    for turn in turns:
+        current = dict(turn)
+        current.setdefault("line_index", 0)
+        current.setdefault("_last_chunk_index", int(current.get("chunk_index", 0)))
+        current.setdefault("_last_line_index", int(current.get("line_index", 0)))
+
+        if not merged:
+            merged.append(current)
+            continue
+
+        prev = merged[-1]
+        same_meeting = prev.get("meeting_id") == current.get("meeting_id")
+        prev_chunk = int(prev.get("_last_chunk_index", prev.get("chunk_index", 0)))
+        prev_line = int(prev.get("_last_line_index", 0))
+        curr_chunk = int(current.get("chunk_index", 0))
+        curr_line = int(current.get("line_index", 0))
+
+        # Merge when the same person continues in immediately adjacent lines/chunks.
+        is_continuation = same_meeting and (
+            (curr_chunk == prev_chunk and curr_line == prev_line + 1)
+            or (curr_chunk == prev_chunk + 1)
+        )
+
+        if is_continuation:
+            prev_text = str(prev.get("text", "")).strip()
+            curr_text = str(current.get("text", "")).strip()
+            if curr_text:
+                prev["text"] = f"{prev_text} {curr_text}".strip() if prev_text else curr_text
+            prev["_last_chunk_index"] = curr_chunk
+            prev["_last_line_index"] = curr_line
+        else:
+            merged.append(current)
+
+    for item in merged:
+        item.pop("_last_chunk_index", None)
+        item.pop("_last_line_index", None)
+        item.pop("line_index", None)
+    return merged
+
+
 def write(path: Path, content: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(content, encoding="utf-8")
@@ -377,7 +427,7 @@ def main() -> None:
                         }
                     )
 
-            for line in section.get("lines", []):
+            for line_index, line in enumerate(section.get("lines", [])):
                 pid = line.get("speaker_id", "")
                 if not pid:
                     continue
@@ -387,6 +437,7 @@ def main() -> None:
                         "meeting_title": meeting["title"],
                         "start": section["start"],
                         "chunk_index": section["chunk_index"],
+                        "line_index": line_index,
                         "text": line.get("text", ""),
                         "meeting_date": meeting["date"],
                     }
@@ -441,7 +492,11 @@ def main() -> None:
     for person in sorted(all_people.values(), key=lambda x: x["name"]):
         mentions = sorted(people_mentions.get(person["id"], []), key=lambda x: (x["meeting_id"], x["start"]))
         votes = sorted(people_votes.get(person["id"], []), key=lambda x: (x["meeting_id"], x["start"]))
-        speaking_turns = sorted(people_speaking.get(person["id"], []), key=lambda x: (x["meeting_id"], x["start"]))
+        speaking_turns_raw = sorted(
+            people_speaking.get(person["id"], []),
+            key=lambda x: (x["meeting_id"], x["chunk_index"], x.get("line_index", 0), x["start"]),
+        )
+        speaking_turns = merge_adjacent_speaking_turns(speaking_turns_raw)
         person_stats = compute_person_stats(
             people_tag_entries.get(person["id"], []),
             people_votes.get(person["id"], []),
