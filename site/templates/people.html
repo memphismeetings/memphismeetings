@@ -20,7 +20,7 @@
   <ul class="list people-list">
     {% for person in people %}
     <li>
-      <a href="{{ person.id }}.html">{{ person.name }}</a>
+      <a href="{{ person.id }}.html">{{ person.directory_name or person.name }}</a>
       {% if person.district %}<span class="muted">District {{ person.district }}</span>{% endif %}
       <p class="muted">
         {% if person.speaking_count %}{{ person.speaking_count }} speaking turns{% else %}0 speaking turns{% endif %}

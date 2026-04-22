@@ -118,6 +118,59 @@ def normalize_person_name(name: str) -> str:
     return re.sub(r"\s+", " ", str(name or "").strip()).lower()
 
 
+def person_directory_display_name(name: str) -> str:
+    """Format a person name for directory display as "Last, First".
+
+    This is intentionally lightweight and only used on the people directory pages.
+    """
+    clean = re.sub(r"\s+", " ", str(name or "").strip())
+    if not clean or "," in clean:
+        return clean
+
+    title_tokens = {"mr", "mr.", "mrs", "mrs.", "ms", "ms.", "dr", "dr."}
+    suffix_tokens = {"jr", "jr.", "sr", "sr.", "ii", "iii", "iv", "v"}
+
+    parts = clean.split(" ")
+    prefix: list[str] = []
+    while parts and parts[0].lower() in title_tokens:
+        prefix.append(parts.pop(0))
+
+    suffix: list[str] = []
+    while parts and parts[-1].rstrip(",").lower() in suffix_tokens:
+        suffix.insert(0, parts.pop().rstrip(","))
+
+    if len(parts) < 2:
+        return clean
+
+    last = parts[-1]
+    first = " ".join(prefix + parts[:-1]).strip()
+    display = f"{last}, {first}" if first else last
+    if suffix:
+        display = f"{display}, {' '.join(suffix)}"
+    return display
+
+
+def person_last_name_sort_key(name: str) -> tuple[str, str]:
+    clean = re.sub(r"\s+", " ", str(name or "").strip())
+    if not clean:
+        return ("", "")
+
+    title_tokens = {"mr", "mr.", "mrs", "mrs.", "ms", "ms.", "dr", "dr."}
+    suffix_tokens = {"jr", "jr.", "sr", "sr.", "ii", "iii", "iv", "v"}
+
+    parts = clean.split(" ")
+    while parts and parts[0].lower() in title_tokens:
+        parts.pop(0)
+    while parts and parts[-1].rstrip(",").lower() in suffix_tokens:
+        parts.pop()
+
+    if not parts:
+        return ("", "")
+    if len(parts) == 1:
+        return (parts[0].lower(), "")
+    return (parts[-1].lower(), " ".join(parts[:-1]).lower())
+
+
 def merge_people_sources(*groups: list[dict[str, Any]]) -> list[dict[str, Any]]:
     seen: dict[str, dict[str, Any]] = {}
     for group in groups:
@@ -587,6 +640,7 @@ def main() -> None:
             {
                 "id": person["id"],
                 "name": person["name"],
+                "directory_name": person_directory_display_name(person["name"]),
                 "district": person.get("district", ""),
                 "mention_count": len(mentions),
                 "vote_count": len(votes),
@@ -627,11 +681,12 @@ def main() -> None:
     sorted_meetings = sorted(meetings, key=lambda x: x["date"], reverse=True)
     site_stats = compute_site_stats(sorted_meetings, tag_total_seconds)
     sorted_people = sorted(people_records, key=lambda x: x["name"])
+    people_alpha_directory = sorted(people_records, key=lambda x: person_last_name_sort_key(x["name"]))
     people_by_activity = sorted(
         people_records,
         key=lambda x: (
             -(x["speaking_count"] + x["mention_count"] + x["vote_count"]),
-            x["name"].lower(),
+            person_last_name_sort_key(x["name"]),
         ),
     )
     index_html = index_template.render(
@@ -652,7 +707,7 @@ def main() -> None:
 
     people_alpha_html = people_template.render(
         site=cfg["site"],
-        people=sorted_people,
+        people=people_alpha_directory,
         sort_mode="alpha",
     )
     write(output_dir / "people" / "alpha.html", people_alpha_html)
