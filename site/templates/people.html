@@ -6,6 +6,14 @@
 <section class="panel">
   <h2>People Directory</h2>
   <p class="muted">Council members and named speakers found in annotations.</p>
+  <p class="muted">
+    Sort:
+    {% if sort_mode == "activity" %}
+    <strong>Total activity</strong> · <a href="alpha.html">Alphabetical</a>
+    {% else %}
+    <a href="index.html">Total activity</a> · <strong>Alphabetical</strong>
+    {% endif %}
+  </p>
 </section>
 
 <section class="panel">

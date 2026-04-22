@@ -627,6 +627,13 @@ def main() -> None:
     sorted_meetings = sorted(meetings, key=lambda x: x["date"], reverse=True)
     site_stats = compute_site_stats(sorted_meetings, tag_total_seconds)
     sorted_people = sorted(people_records, key=lambda x: x["name"])
+    people_by_activity = sorted(
+        people_records,
+        key=lambda x: (
+            -(x["speaking_count"] + x["mention_count"] + x["vote_count"]),
+            x["name"].lower(),
+        ),
+    )
     index_html = index_template.render(
         site=cfg["site"],
         meetings=sorted_meetings,
@@ -636,8 +643,19 @@ def main() -> None:
     )
     write(output_dir / "index.html", index_html)
 
-    people_html = people_template.render(site=cfg["site"], people=sorted_people)
+    people_html = people_template.render(
+        site=cfg["site"],
+        people=people_by_activity,
+        sort_mode="activity",
+    )
     write(output_dir / "people" / "index.html", people_html)
+
+    people_alpha_html = people_template.render(
+        site=cfg["site"],
+        people=sorted_people,
+        sort_mode="alpha",
+    )
+    write(output_dir / "people" / "alpha.html", people_alpha_html)
 
     tags_html = tags_template.render(site=cfg["site"], tags=sorted_tags)
     write(output_dir / "tags" / "index.html", tags_html)
