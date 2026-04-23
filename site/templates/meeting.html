@@ -7,6 +7,21 @@
   <h2 data-pagefind-meta="title">{{ meeting.title }}</h2>
   <p class="muted" data-pagefind-meta="date:{{ meeting.date }}, type:Meeting">{{ meeting.date }} | {{ meeting.body_name }}</p>
   <p><a href="{{ meeting.youtube_url }}">Watch on YouTube</a></p>
+  {% if meeting.materials_count %}
+  <details>
+    <summary>Materials ({{ meeting.materials_count }})</summary>
+    <ul class="list">
+      {% for material in meeting.materials %}
+      <li>
+        <a href="{{ material.url }}">{{ material.title }}</a>
+        <span class="muted">{{ material.type | replace("-", " ") | title }}</span>
+        {% if material.published_date %}<span class="muted">· {{ material.published_date }}</span>{% endif %}
+        {% if material.source %}<span class="muted">· {{ material.source }}</span>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </details>
+  {% endif %}
   {% if meeting.summary %}<p>{{ meeting.summary }}</p>{% endif %}
   {% if meeting.global_tags %}
   <ul class="chips">
@@ -57,6 +72,11 @@
   <ol class="transcript">
     {% for section in meeting.sections %}
     <li id="c{{ section.chunk_index }}">
+      {% if section.chunk_indices %}
+      {% for chunk_idx in section.chunk_indices %}
+      {% if chunk_idx != section.chunk_index %}<span id="c{{ chunk_idx }}"></span>{% endif %}
+      {% endfor %}
+      {% endif %}
       <p class="timestamp">
         <a href="{{ meeting.youtube_url }}&t={{ section.start | int }}s">{{ section.start | clock }}</a>
       </p>

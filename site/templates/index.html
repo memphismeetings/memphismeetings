@@ -24,6 +24,7 @@
     <li>
       <a href="meetings/{{ meeting.id }}.html">{{ meeting.title }}</a>
       <span class="muted">{{ meeting.date }}</span>
+      {% if meeting.materials_count %}<span class="muted"> · {{ meeting.materials_count }} materials</span>{% endif %}
       {% if meeting.summary %}
       <p>{{ meeting.summary }}</p>
       {% endif %}

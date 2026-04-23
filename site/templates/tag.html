@@ -11,6 +11,7 @@
     <li>
       <a href="../meetings/{{ entry.meeting_id }}.html#c{{ entry.chunk_index }}">{{ entry.meeting_title }}</a>
       <span class="muted">{{ entry.start | clock }}</span>
+      {% if entry.materials_count %}<span class="muted"> · {{ entry.materials_count }} materials</span>{% endif %}
       {% if entry.summary %}<p>{{ entry.summary }}</p>{% endif %}
     </li>
     {% endfor %}

@@ -110,6 +110,7 @@ def main() -> None:
             "meeting_id": meeting_id,
             "meeting_summary": "",
             "global_tags": [],
+            "materials": [],
             "sections": [
                 {
                     "chunk_index": chunk["chunk_index"],

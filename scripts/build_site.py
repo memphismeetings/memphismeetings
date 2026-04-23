@@ -80,6 +80,15 @@ def compute_person_stats(
     }
 
 
+def compute_roll_call_tally(entries: list[dict[str, Any]]) -> dict[str, int]:
+    tally: dict[str, int] = defaultdict(int)
+    for entry in entries:
+        presence = str(entry.get("presence", "")).strip().lower()
+        if presence:
+            tally[presence] += 1
+    return dict(tally)
+
+
 def compute_site_stats(
     meetings: list[dict[str, Any]],
     tag_total_seconds: dict[str, tuple[float, str]],
@@ -184,6 +193,30 @@ def transcript_search_text(section: dict[str, Any]) -> str:
     if lines:
         return "\n".join(lines)
     return str(section.get("display_text") or section.get("text") or "").strip()
+
+
+def normalize_materials(annotation: dict[str, Any]) -> list[dict[str, str]]:
+    normalized: list[dict[str, str]] = []
+    for item in annotation.get("materials", []) or []:
+        if not isinstance(item, dict):
+            continue
+        url = str(item.get("url", "")).strip()
+        if not url:
+            continue
+        title = str(item.get("title", "")).strip() or "Document"
+        material_type = str(item.get("type", "")).strip() or "other"
+        source = str(item.get("source", "")).strip()
+        published_date = str(item.get("published_date", "")).strip()
+        normalized.append(
+            {
+                "type": material_type,
+                "title": title,
+                "url": url,
+                "source": source,
+                "published_date": published_date,
+            }
+        )
+    return normalized
 
 
 def render_transcript_search_doc(meeting: dict[str, Any], section: dict[str, Any]) -> str:
@@ -435,6 +468,8 @@ def group_consecutive_sections(sections: list[dict[str, Any]]) -> list[dict[str,
 
     grouped: list[dict[str, Any]] = []
     for section in sections:
+        section_copy = dict(section)
+        section_copy["chunk_indices"] = [section["chunk_index"]]
         current_id = section.get("speaker_id", "")
         if (
             current_id
@@ -444,6 +479,7 @@ def group_consecutive_sections(sections: list[dict[str, Any]]) -> list[dict[str,
             prev = grouped[-1]
             prev["lines"].extend(section["lines"])
             prev["end"] = section["end"]
+            prev.setdefault("chunk_indices", []).append(section["chunk_index"])
             # Merge summaries, skipping blanks
             existing_summary = prev.get("summary", "")
             new_summary = section.get("summary", "")
@@ -473,7 +509,7 @@ def group_consecutive_sections(sections: list[dict[str, Any]]) -> list[dict[str,
             prev["roll_call"].extend(section["roll_call"])
             prev["votes"].extend(section["votes"])
         else:
-            grouped.append(dict(section))
+            grouped.append(section_copy)
 
     return grouped
 
@@ -567,6 +603,7 @@ def main() -> None:
     meetings: list[dict[str, Any]] = []
     people_mentions: dict[str, list[dict[str, Any]]] = defaultdict(list)
     people_votes: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    people_roll_calls: dict[str, list[dict[str, Any]]] = defaultdict(list)
     people_speaking: dict[str, list[dict[str, Any]]] = defaultdict(list)
     tags_map: dict[str, list[dict[str, Any]]] = defaultdict(list)
     people_tag_entries: dict[str, list[dict[str, Any]]] = defaultdict(list)
@@ -581,6 +618,8 @@ def main() -> None:
 
         annotation_path = root / "data" / "annotations" / "meetings" / f"{meeting['id']}.json"
         annotation = load_json(annotation_path, default={"sections": [], "global_tags": []})
+        meeting_materials = normalize_materials(annotation)
+        materials_count = len(meeting_materials)
 
         body = bodies.get(meeting["body_id"], {})
         people = merge_people_sources(
@@ -604,6 +643,7 @@ def main() -> None:
                         "label": label,
                         "meeting_id": meeting["id"],
                         "meeting_title": meeting["title"],
+                        "materials_count": materials_count,
                         "start": section["start"],
                         "chunk_index": section["chunk_index"],
                         "summary": section["summary"],
@@ -666,6 +706,21 @@ def main() -> None:
                     }
                 )
 
+            for roll_call in section.get("roll_call", []):
+                pid = roll_call.get("person_id")
+                if not pid:
+                    continue
+                people_roll_calls[pid].append(
+                    {
+                        "meeting_id": meeting["id"],
+                        "meeting_title": meeting["title"],
+                        "presence": roll_call.get("presence", ""),
+                        "start": section["start"],
+                        "chunk_index": section["chunk_index"],
+                        "meeting_date": meeting["date"],
+                    }
+                )
+
         # Aggregate roll call entries across all sections (first occurrence per person wins)
         roll_call_by_person: dict[str, dict] = {}
         for section in sections:
@@ -683,6 +738,8 @@ def main() -> None:
             "body_name": meeting.get("body_name", body.get("name", "")),
             "youtube_url": meeting["youtube_url"],
             "summary": annotation.get("meeting_summary", ""),
+            "materials": meeting_materials,
+            "materials_count": materials_count,
             "sections": group_consecutive_sections(sections),
             "roll_call": meeting_roll_call,
             "global_tags": [slugify(tag) for tag in annotation.get("global_tags", []) if tag],
@@ -708,6 +765,8 @@ def main() -> None:
     for person in sorted(all_people.values(), key=lambda x: x["name"]):
         mentions = sorted(people_mentions.get(person["id"], []), key=lambda x: (x["meeting_id"], x["start"]))
         votes = sorted(people_votes.get(person["id"], []), key=lambda x: (x["meeting_id"], x["start"]))
+        roll_calls = sorted(people_roll_calls.get(person["id"], []), key=lambda x: (x["meeting_id"], x["start"]))
+        roll_call_tally = compute_roll_call_tally(roll_calls)
         speaking_turns_raw = sorted(
             people_speaking.get(person["id"], []),
             key=lambda x: (x["meeting_id"], x["chunk_index"], x.get("line_index", 0), x["start"]),
@@ -723,6 +782,8 @@ def main() -> None:
             person=person,
             mentions=mentions,
             votes=votes,
+            roll_calls=roll_calls,
+            roll_call_tally=roll_call_tally,
             speaking_turns=speaking_turns,
             stats=person_stats,
         )

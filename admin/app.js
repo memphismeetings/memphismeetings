@@ -56,6 +56,8 @@ const els = {
   addVoteBtn: document.querySelector('#addVoteBtn'),
   rollCall: document.querySelector('#rollCall'),
   addRollCallBtn: document.querySelector('#addRollCallBtn'),
+  materials: document.querySelector('#materials'),
+  addMaterialBtn: document.querySelector('#addMaterialBtn'),
 };
 
 function secToClock(seconds) {
@@ -88,6 +90,7 @@ function buildEmptyAnnotation(meeting) {
     councilpeople: (meeting.councilpeople || []).map((p) => ({ id: p.id, name: p.name })),
     meeting_summary: '',
     global_tags: [],
+    materials: [],
     sections: meeting.transcript.map((c) => ({
       chunk_index: c.chunk_index,
       speaker_id: '',
@@ -119,6 +122,7 @@ function normalizeAnnotation(meeting, annotationInput) {
     councilpeople: Array.isArray(annotation.councilpeople) ? annotation.councilpeople : fallback.councilpeople,
     meeting_summary: String(annotation.meeting_summary || ''),
     global_tags: Array.isArray(annotation.global_tags) ? annotation.global_tags : [],
+    materials: Array.isArray(annotation.materials) ? annotation.materials : [],
     sections: rawSections,
   };
 }
@@ -522,9 +526,40 @@ function renderRollCall(entries = []) {
   entries.forEach((e) => els.rollCall.appendChild(rollCallRow(e)));
 }
 
+function materialRow(material = { url: '' }) {
+  const row = document.createElement('div');
+  row.className = 'material-row';
+
+  const link = document.createElement('input');
+  link.type = 'text';
+  link.className = 'material-url';
+  link.placeholder = 'https://...';
+  link.value = material.url || '';
+
+  const remove = document.createElement('button');
+  remove.type = 'button';
+  remove.textContent = 'Remove';
+  remove.addEventListener('click', () => row.remove());
+
+  row.append(link, remove);
+  return row;
+}
+
+function renderMaterials(materials = []) {
+  els.materials.innerHTML = '';
+  materials.forEach((material) => els.materials.appendChild(materialRow(material)));
+}
+
 function saveCurrentSection() {
   if (!state.meeting || !state.annotation) return;
   const { section } = sectionAt(state.index);
+
+  state.annotation.materials = [...els.materials.querySelectorAll('.material-row')]
+    .map((row) => {
+      const urlInput = row.querySelector('.material-url');
+      return { url: urlInput ? urlInput.value.trim() : '' };
+    })
+    .filter((item) => item.url);
 
   const rows = [...els.linesGrid.querySelectorAll('.line-row')];
   const lines = rows.map((row) => {
@@ -595,6 +630,7 @@ function render() {
   renderMentions(section.mentions || []);
   renderVotes(section.votes || []);
   renderRollCall(section.roll_call || []);
+  renderMaterials(state.annotation.materials || []);
   renderDisplayPreview();
   syncVideoToCurrentChunk();
   els.prevBtn.disabled = state.index <= 0;
@@ -677,6 +713,7 @@ els.saveBtn.addEventListener('click', persist);
 els.downloadBtn.addEventListener('click', download);
 els.addVoteBtn.addEventListener('click', () => els.votes.appendChild(voteRow()));
 els.addRollCallBtn.addEventListener('click', () => els.rollCall.appendChild(rollCallRow()));
+els.addMaterialBtn.addEventListener('click', () => els.materials.appendChild(materialRow()));
 els.displayMode.addEventListener('change', renderDisplayPreview);
 els.displayText.addEventListener('input', renderDisplayPreview);
 els.addMemberBtn.addEventListener('click', addMemberFromInput);

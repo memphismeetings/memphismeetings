@@ -211,6 +211,13 @@ button {
   margin-bottom: 0.4rem;
 }
 
+.material-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+
 #mentions {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));

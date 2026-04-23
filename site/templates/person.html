@@ -57,6 +57,28 @@
 </section>
 
 <section class="panel">
+  <h3>Roll Call</h3>
+  {% if roll_call_tally %}
+  <p class="muted">
+    {% for presence, count in roll_call_tally.items() %}
+    {{ presence | title }}: {{ count }}{% if not loop.last %} · {% endif %}
+    {% endfor %}
+  </p>
+  {% endif %}
+  <ul class="list">
+    {% for item in roll_calls %}
+    <li>
+      <a href="../meetings/{{ item.meeting_id }}.html#c{{ item.chunk_index }}">{{ item.meeting_title }}</a>
+      <span class="muted">{{ item.start | clock }}</span>
+      {% if item.presence %}<p>{{ item.presence | title }}</p>{% endif %}
+    </li>
+    {% else %}
+    <li class="muted">No roll call entries logged yet.</li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="panel">
   <h3>Votes</h3>
   <table>
     <thead>
