@@ -1,0 +1,1974 @@
+{
+  "meeting_id": "2026-01-27-memphis-city-council",
+  "meeting_summary": "",
+  "global_tags": [],
+  "materials": [],
+  "sections": [
+    {
+      "chunk_index": 0,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "The regular meeting of the January 27th, 2026 meeting will now begin. Sergeant-at-arms, if you will please call our January 27, 2026 council meeting to order.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Oh yes. Yes. This honorable council of the city of Memphis is hereby called to order for the transaction of business pursuant to adjournment.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you so much. I would like to recognize our chaplain of the day, Pastor Kenneth Lewis of Briarwood Community Church. He's been invited by Councilwoman Logan. Pastor Lewis, if you will please lead us in prayer at this time. Thank you, Councilwoman Sergean Washington. And uh please um pray with me. Father God, we thank you for your many blessings upon us because you are good. We receive much good from you. We thank you even through this weather event that you have kept things as well as they are. Uh father we are we thankful for those who have worked hard to uh keep the streets in order, keep the power functioning and to keep people well protected. And God, we know that there are some who are still um in trouble and and have needs and we pray for them right now. Father, uh we thank you for this new day. We thank you for this the the means you have provided for this council to meet and although father it is uh less than ideal but Lord it is sufficient for this time. Oh God you have ordained government Lord you have you have provided it for the peaceful and orderly function of our",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 1,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "society. And Lord, we know that government functions best when it is ordered according to your divine will. Government is your minister. And these council persons, Lord, they are your anointed, your ministers. May they minister in truth, in righteousness, and justice. We pray Lord your wisdom upon each of them. Pray for your guidance. We pray that your purposes may prevail as they conduct this meeting, the business affairs of this city. We pray Lord for council um for councilwoman, our chair uh chairperson sigen Washington as she leads this council today. We pray for each of the council persons Lord um as they uh as they participate in this meeting today. Uh Lord, we pray for each of them. For Councilwoman Logan, Councilwa Woman Green, Councilwoman Walker, Councilwoman Spinosa, Councilwoman Ford, Councilwoman Easter Thomas, Councilman Smiley, Councilwoman White, Councilwoman Cooper Sutton, Councilwoman Carlile, Councilwoman Canali, and Councilman Warren. Lord, may your peace and your wisdom rest upon each of them. May you bless them, Father God, their families, their overall well-being as they seek the good of the city, uh that its citizens, all of us may live a quiet, peaceable, and prosperous life for your glory. We pray, Father God, where there may be proness to conflict, there be cooperation. Uh where there's misunderstanding, may there may be communication and understanding. We pray, Father God, that whatever is needed to overcome, you would give them the grace to do so. May they know, Lord, they're prayed for, they're supported, and while their jobs are uh challenging",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 2,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "in some regards, Father, we know that you have set them apart to do it. And may they do it to the best of their ability and seeking your glory and your will. It's in the name of Christ Jesus, the savior of the world, that we pray. Amen.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Amen.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you. So,",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "thank you so much for that beautiful prayer. Councilwoman Logan, you are recognized at this time.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you, Chairwoman, and amen to that prayer. I'm going to read into your hearing the resolution. Be it hereby known that Pastor Kenneth Lewis of Briwood Community Church in recognition of a life of exemplary and outstanding service to this city, his meritorious involvement in humanitarian affairs and his demonstrated concern for governmental process has been appointed chaplain of the day of the Memphis City Council. Pastor Lewis is hereby entitled to all of the honors, rights, privileges, and prerogatives appertaining to the office and the to display of this certificate given on this day, the 27th of January by chairman Jana Swaring Washington, and presented by myself, Rhonda Logan, member of the Memphis City Council. And I so move.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you so much.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you. Thank you, Pastor Lewis, for being with us and offering such a wonderful prayer.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "The pleasure is all mine. Thank you for all for serving our city.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Dr. Warren, if you will please lead us with the pledge of allegiance at this time.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Stand if you're able. I pledge allegiance to the flag of the United States of America",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "and to the republic for which it stands.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "One nation under God, indivisible, with liberty and justice for all.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Justice for all.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you, Dr. Warren. Madame",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 3,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "Controller, if you will please call the role. Thank you, Chairwoman Swingington Washington. Council members Canali",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "here.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Carlile,",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "present.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Cooper Sutton,",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "present.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Ford, thank you. Ford,",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "present.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Green,",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "present.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Logan,",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "present. Smiley Jr.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Absolutely.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Walker",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "present.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Warren",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "present.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "White",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "present.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Chairwoman Swearington Washington",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "present. Madame Chairwoman, you have a quorum.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Mr. Thomas is present.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Spinosa Thomas",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "and Spinosa. Thank you.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes. Thank you.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you, Madam Controller. I believe Vice Chairman Carlile has read the minutes for our January 13, 2026 meeting.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes, ma'am. Madam Chair, I've reviewed the minutes and found them to be in order and I move for the adoption of the January 13, 2026 meeting minutes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Second.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "All right. It has been properly moved by Vice Chair Carile, second by Councilman Warren. Madame Controller, if you will please conduct a roll call vote to approve the minutes of the January 13, 2026 meeting.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you. Council member Canali.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes. Carlile.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Hi",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Cooper Sutton.",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 4,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "Easter Thomas English.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Ford. Ford.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Green. Thank you. Green.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Logan. I",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Venosa.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Smiley",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "indeed. Yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Walker.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Warren.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "I",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "White.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Chairwoman Swearington Washington. I",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "may I please revisit the vote for Cooper Sutton.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes. Could you please I had to walk away for a minute.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "And I What are we voting on?",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "These were the minutes and you have they did pass.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes. Yes. Yes. I'm sorry I had to walk away. Yes. Yes. Yes. For me, please.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Madam Chair, I've concluded the roll call for the minutes. Thank you. That item passes. Welcome to the January 27, 2026 regular meeting of the Memphis City Council. Meetings of the council shall be conducted in an orderly manner to ensure the public has the full opportunity to be heard and the deliberate process of the council is retained at all times. due to the declarations of a state of emergency by the president of the United States, the governor of Tennessee, and the mayor of Memphis relating to the inclement weather. The council has determined that is necessary that the meeting be conducted by electronic or other means of communication in order to protect the",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 5,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "health, safety, and welfare of the public. city employees, council staff, and members of the council. We have received a number of public comments and will share them as each item is called. Public comments that have been received for held items will be included in the official record of this meeting. The holes and withdrawals. Items one, two, three, 18, 19, and 20 will be held until February 3rd, 2026. Item number 22 will be held until February 24th, 2026. Madame controller, if you will please call items number 24. We will do our add-ons and same night minutes which is item which are items 24 25 and 27. Madame controller please call item number 24.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you. Item number 24 is a resolution to amend the council rules of procedure all council districts. This resolution is sponsored by council members wearing Washington and Canali and there is a request for same night minutes. All right, this item has been properly moved by Councilman Carile. It's been seconded by Councilman Dr. Warren. Are there any questions or council members wishing to speak on this item? Thank you, madame controller. If you will please prepare the screens to vote on item number 24.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you. Council member Canali.",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 6,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "Yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Carlilele.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "I",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Cooper Sutton.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Easter Thomas.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes. Ford,",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Green,",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Logan,",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Izza,",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Smiley,",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "no.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Walker,",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Warren,",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "hi. White. Chairwoman swaring Washington.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "I that item passes. Madame controller, please call item number 25.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Item number 25 on our add-on.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Sorry, is an appointment.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "My mic wasn't I'm sorry my mic wouldn't turn on. I apologize. I mean that it already so it's fine.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "It's fine.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Okay, I've got it. Thank you. Have everyone vote? I'm on item number 25 now. Chairwoman,",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "item number 25",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "is an appointment to Memphis Light Gas and Water Board.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "There's an appointment of Kevin Kevin Woods, an appointment and a reappoint of Carl Pson. There is a request for same night minutes. Thank you, Madame Controller. Councilwoman White, you are recognized.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you, Chairwoman. Um, the committee met and recommended approval and I shall move.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Second.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "All right. This item has been properly moved by Councilwoman White, seconded by",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 7,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "Councilman Dr. Warren. Are there any questions of council members wishing to speak on this item? Thank you. Madame controller, please prepare the screens to vote on or do a roll call roll call vote on item number 25.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you. Finale.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Carlilele.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Hi.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Cooper Sutton. I",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Easter Thomas.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Ford.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Green.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Logan.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "I",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Venosa.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Smiley.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes. Ma'am",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Walker. Yes,",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Warren.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Hi,",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "White.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes,",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "you're awoman swearing in Washington.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "I That passes. Madame Controller, if you will please call item number 27. Item number 27 is a resolution to approve and ratify the chairperson's decision to conduct the January 27th, 2026 council meeting remotely. All council districts, this resolution is sponsored by Carlile and there's a request for same night minutes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "All right. This item has been moved by Chairman Car, Vice Chairman Carlile, seconded by Dr. Warren. Vice Chairman, you are recognized at this time.",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 8,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "Thank you, Madam Chair. I'm just moving the item.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Okay, I have you down and Dr. Warren has seconded.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes, ma'am. We're headed to a vote at your discretion.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Are there any questions from council members on this item? All right. Question chairwoman, if I can make an announcement, my apologies. We This item on the minutes show it as voting before 24 and 25 for the council record.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Okay. So, noted.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "You broke up a little bit, Brooke.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Oh, I'm sorry. All right. For Go ahead.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Uhuh. You go ahead. We can repeat it",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "for this item in the record. Could you please show it as being voted on before 24 and 25? It was supposed to be first on the agenda. My apologies. Did you get that, Madam Controller?",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes, ma'am. Thank you.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "All right. If there are no other questions or concerns, madame controller, if you will please call for a roll vote.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Council member Canali,",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Carlile,",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Cooper Sutton,",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Easter Thomas,",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "yes. Ford,",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "yes. Green.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Logan,",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "IOSA.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Smiley.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Walker.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 9,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "Warren.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Hi.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "White. Yes. Chairwoman swaring Washington.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "I that item passes. We're now at our consent agenda. Agenda, which are items 4 through 7 and item number 26. Madame Controller, please call the consent agenda items 4 through 7 and number 26 with same night minutes on item number seven. Thank you very much. Item number four on our consent agenda is up for first reading. An ordinance renaming Monroe Avenue between Front Street and Riverside Drive as Hyde Square. Up for first reading, ordinance number 5968 is sponsored by the Memphis City Council. On our add-on agenda, item number 26, an ordinance to amend article 13, section 2-370 of the code of ordinances relative to arbitration of labor disputes, impass procedures, all council districts. This is requested by the city council. There is a request to add this on to consent agenda for first reading. Item number five is up for second reading. Ordinance number 5967 is sponsored by council members Canali, Wearingen, Washington, and Spinosa for our engineering division. Item number six, a resolution approving the engineering plans for Main Street Plaza phase 1 and accepting bonds as security. There is a request for same night minutes. The contract number is CR-5490. Item number seven is a resolution accepting public improvements for Harmony at Morning Grove, Morningwood",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 10,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "Plan development phase 4 and releasing bond. There is a request for same night minutes. That contract number is CR-5436. Chairwoman Fluren Washington. That concludes our consent agenda items.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you, Madam Controller. Can I get a motion for the adoption of the consent agenda?",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "I so moved, Madam Chair. This is Carile.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Second.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Can I get a",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you. It has been properly moved by Vice Chair Carile, second by Councilman Dr. Warren. Madame Controller, if you will please conduct a roll call vote for the consent agenda.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Council member, I believe I'm sorry. Madam Chair, I believe Councilwoman Walker is in the queue.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Okay, Councilwoman Walker, you are recognized at this time. Thank you, Vice Chair.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you, Vice Chair. Thank you, Madame Chair. So, okay. So the one dealing with not with the MLGW board but the other MLGW item was that in this group that was just read off",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "which MLGW",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "about the salaries the MLGW salaries and",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "that is on the consent agenda. It won't be final until third reading. This it is on the consent agenda.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Okay. But but it is on here now. It's just not the final reading.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "It is not the final reading. Yes, ma'am.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "So, can I ask a question on this item?",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Uh, yes. You would need to make a motion to separate the item to begin discussion on it unless it's something that you can hold till the third and final reading.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Is there a way that we can just talk about it in um committee?",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 11,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "Yes, it will be back in committee before third and final reading.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Okay. All right. Um Okay. I yield the floor. Thank you.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you, Councilman.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Okay.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you, Madame Controller. If you will please conduct the roll call vote for the consent agenda.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you, Council Member Canali. Yes,",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Carlile.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Hi,",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Cooper Sutton.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes, ma'am.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Easter Thomas.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes. Ford.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Green.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Logan,",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "I venosa.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes. Smiley.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes, ma'am.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Walker.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Warren.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "I",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "White.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Chairwoman Swaren Washington.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "I. That item passes. We are now at our MLGW fiscal consent agenda which are items 8 through 17. Madame controller, if you will please call the MLGW fiscal consent agenda.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you, Chairwoman. Item number eight is a resolution awarding 60-month purchase orders for high accuracy voltage instrument transformers through Rich Instrument Transformers, Inc. and Trench Limited in an amount not to exceed $1,600,000. Item number nine is a resolution approving renewal to contract number",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 12,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "12668 Internet service provider Netters with AT&T Corporation to renew the current contract in the funded amount of $84,000. Item number 10 is a resolution approving increase to contract number 12669 MLGWIL survey 2025 with TDW Inc. to increase the current contract in the funded amount of $35,186. Item number 11 is a resolution awarding a purchase order for brackets 1PH transformers to ATG Supply LLC in the amount of $179,3870. Item number 12 is a resolution approving the ratification of purchase order number 7042163 with Engineered Ceiling Components LLC for Concrete Standards in the amount of $92,62618. Item number 13 is a resolution awarding contract number 12544 Allen pumping station area re-roof to B4PI Inc. in the funded amount [clears throat] of $35,550 30. Item number 14 is a resolution approving a 12month extension in the amount of $5 million for purchase order number 7041731 with universal scaffold and equipment for medium voltage EPR cable. Item",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 13,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "number 15 is a resolution awarding a purchase order for regulators 23 KV1PH432 KVA to Howard Industries Incorporated in the amount of $28,794. Item number 16 is a resolution awarding contract number 12611, Furrier Services to Texan LLC doing business as Diligent Delivery Systems in the funded amount of $158,4271. And our final item is number 17, a resolution approving the increase and change to contract number 12483 survey administration solutions with corn ferry to increase and change the current contract in the funded amount of $76,68. Chairwoman Washington, that concludes our MLGW fiscal consent items. Thank you, Madame Controller. Councilwoman Walker, you are recognized at this time.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you, Madame Chair. The committee met with a favorable recommendation and I so moved.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Second.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "All right. It has been properly moved by Councilwoman Walker, second by Councilwoman Councilman Dr. Warren. Madame controller, if you will please conduct a roll call count on that agenda, the MLGW fiscal consent agenda.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you. Council members Canali.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Carlau.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Hi.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Cooper Sussen.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes, ma'am.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Easter Thomas. Yes. Ford,",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 14,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Green,",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Logan,",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "hi.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Venosa,",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Smiley.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Absolutely.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Walker.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes. Warren",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "I",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "White.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Chairwoman Fington Washington.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "I. That item passes. We are now at our regular agenda items which are items number 21 and 23. Madame Controller, will you please call item number 21?",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you. Chairwoman swearing in Washington. Item number 21 is a resolution to allocate, appropriate, and transfer $150,000 from the Memphis Parks Cover Line project number PK241000 to parks critical needs contingency project number PK to be announced to make emergency repairs to aquatic facilities, community centers, and senior centers and other assets to mitigate critical service disruption. All council districts, this resolution is sponsored by the administration.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you, madame controller. Dr. Warren, you are recognized at this time.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you, Madam Chair. Committee met recommended approval and I so moved.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Second.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "All right,",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Carlile.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you. It has been properly moved by Dr. War. It has been seconded by Councilman Carile. Are there any council members wishing to speak on this item? Thank you, madame controller. If you",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 15,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "will please call a roll call vote for item number 21.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Cooper Sutton.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes. Easter Thomas.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Hello.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Uhoh.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Lost their mic.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Okay. Ford.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes. Give me one second. I'm pulling up the um Okay. Ford followed by Green.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes. Logan.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Hi.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Spinosa.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Smiley.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you. Spinosa. Smiley.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Good job, Brooke. Yes. Walker. Council Walker.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you. Councilman Dr. Warren",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "I",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Councilwoman White",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "is now exiting",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "and chairwoman Swanson Washington.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "I that item passes. Madame controller if you will please call item number 23. Okay. Item number 23 is a resolution to transfer and appropriate the construction funds in the amount of $367,793.80 from the drainage ST cover line project number ST 03205 to Meline drain Improvements project number ST 02031",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 16,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "for constructions funds to upgrade the drainage system near Meline Circle District 7 Super District 8. This resolution is sponsored by the administration.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "All right, Councilman Smiley, you are recognized at this time.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Recommended approval and I so move.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Second.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "All right. It has been properly moved by Councilman Smiley,",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "seconded by Councilman Warren. Madame Controller, if you will. Thank I got it. Valerie. Yeah, we're on the roll call. Valerie,",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "we're on item number 23. If you'll please do a roll call vote for item number 23.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you. Council member Canali.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Carlile.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Cooper Sutton.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes. Ma'am.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Easter Thomas.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes. Ford. Yes,",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Green.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes,",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Logan.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Hi,",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Mosa.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes,",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Smiley.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Glad to have you back. Yes, [laughter]",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "glad to be back, Smiley. Walker,",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Warren,",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "hi. White.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Chairwoman swearing in Washington.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "I that item passes. We're now at our same night minutes. Vice Chair Carile, would you please read the same night minutes into record?",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes, ma'am. The same night minutes are items 6, 7, 24, 25, and 27. And I so",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 17,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "move",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "second Warren.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "All right. It has been moved by Vice Chair Carlile. It has been second by Councilman Warren. Madame Controller, if you will please conduct a roll call for the same nightm minute items.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you. Council members Canali.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Carile. Hi. Cooper Sutton.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Easter Thomas.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes. Ford.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Green.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Logan.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Hi.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Spinosa.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes. Smiley.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes, ma'am.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Walker.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Warren.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "I",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "White.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Chairwoman Swearington Washington.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Hi.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "That item passes. All right. To my knowledge, we do not have any general public comment cards based on the items that we voted on today. Is that correct, Brooke?",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes, ma'am. That's correct.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Okay. All right. So, that brings us to the end of our meeting agenda. I will entertain a motion to recess this meeting.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "I move. I so move, Madam Chair.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Second.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "All right. It has been moved by Vice Chair Carile. It has been seconded by Councilman Dr. Warren. This meeting is now recessed. Thank you so much for your",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 18,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "cooperation and collaboration.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Stay warm and safe. Thank you to the staff. Thank you everybody. Bye.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Great teamwork. Great team work.",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    }
+  ]
+}

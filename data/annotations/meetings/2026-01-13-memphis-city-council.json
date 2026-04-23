@@ -1,0 +1,1362 @@
+{
+  "meeting_id": "2026-01-13-memphis-city-council",
+  "meeting_summary": "",
+  "global_tags": [],
+  "materials": [],
+  "sections": [
+    {
+      "chunk_index": 0,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "Sergeant-at-arms, please call our December 16, 2025 council meeting to order. I would like to recognize our chaplain of the day, Pastor Preston Porn Dexter of Life Church, invited by Councilwoman Logan. Pastor Porn Dexter, please lead us in prayer. Lord Jesus, how we thank you for today, this day. This is your day, Father. We're starting off this year, this new year, recognizing what your what your word says. Unless the Lord keepeth the city, the watchman wakes in vain. And God, today we're asking you to just preside over every aspect of this meeting. give us ideas and thoughts and that we can have before you as we seek to do your will and your business in this place. I thank you for the mind of Christ being in this place. God, protect the council people, council men and women as they do their job. Protect the city as as they do their jobs. Glorify yourself in this place. No flesh will glory in your sight. We give you the blessings. We do this in Jesus's name. Amen.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Amen. I aliance to the flag of the United States of America and to the republic for which it stands. One nation under God, indivisible, with liberty and justice for all.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Councilwoman Logan, you're recognized at this time. [clears throat]",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 1,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "Good afternoon everyone. Uh chairwoman, I want to note a correction. Um pastor point is the pastor of Egypt Baptist Church. I think it has um m print there. I'm going to read Thank you so much for being here. We want to read this into your hearing. We appreciate you being here for today. The city of Memphis by the city council. Greetings. Be it hereby known that Pastor Preston Po Dexter in recognition of a life of exemplary qualities, outstanding service to the city, meritorious involvement in humanitarian affairs and demonstrated concern for governmental process has been appointed chaplain of the day of the M Memphis City Council and hereby is entitled to all of the honors, rights, privileges, and prerogatives at pertaining to the office and to the display of this certificate given under this seal this 13th day of January 2026. Janice Wingen Washington chairwoman presented by Ronda Logan, member of the council. Thank you so much. We really appreciate you being here. Want to give this gift to you. Thank you so much, Madame Controller. If you will please call the role.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you. Chairwoman swearing in Washington Council members Canali Carile Cooper Sutton Easter Thomas",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Ford Green Logan",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Spinosa",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Smiley",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Walker",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Warren",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "White Janice Swearington Washington Chairwoman present.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Madam Chairwoman, you have a quorum.",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 2,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "Thank you, Madam Controller. I believe Vice Chairman Carlile has read the minutes for our December 16th, 2025 meeting.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you, Madam Chair. I've reviewed the minutes and find them to be in order, and I move for the adoption of the December 16th, 2025 meeting minutes. I need the screen. I don't tr.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Can I get a second? All right. It has been properly moved by Vice Chair Carile and seconded by Councilman Spinosa. All right. Move it to a vote, please. Will you give us a voting screen for the minutes? Canali, yes. Carile, yes. Easter Thomas, yes. Ford, yes. Green, yes. Logan, yes. Spinosa, yes. Walker, yes. Warren, yes. White, yes. Swagen, Washington, yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "All right, it's been approved. Welcome to the January 13, 2026 regular meeting of the Memphis City Council. Meetings of the city council shall be conducted in an orderly manner to ensure that the public has the full opportunity to be heard and the deliberate process of the council is retained at all times. The sergeant at arms has meeting agendas available upfront as well as comment request cards for members of the public wishing to be heard on a specific item. All those wishing to speak on an item must turn in",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 3,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "their comment card to the sergeant-at-arms before the item is called. If you are not here to speak on a specific item, you can note your request to give general comment at the end of the meeting. As chair, I will only recognize citizens that properly register to speak by submitting a completed comment card to the sergeant at arms. Members of the audience and persons addressing the council will not be permitted to engage in gossip, make defamatory, personal, slanderous or profane comments, or use vulgar language. The chairperson of the council may maintain order by giving any persons who are in violation of the stated rules of decorum a warning to cease any volat by the council chambers or by giving an order for security personnel to remove any disruptive person in the council's chamber who refuses to leave voluntarily. These rules are posted on the doors as you enter the chamber and as you pick up the comment cards. An example of an 11 by17 poster is also posted on the door. Signs larger than the permitted size are prohibited and will be removed from the chamber. Before we begin, it is an honor to serve as your chairwoman of this majority womanled council. Hey, and today we celebrate the initiative and excellent service of women. I would like to wish the distinguished ladies of Delta Sigma Theta incororated a happy 113th Founders Day. Councilwoman Issa Thomas,",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 4,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "Miss T.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you, chair. Um and also just shout out to the lovely Delta deers we have in the audience who we saw Mrs. Primus um and that who are here with us today and thank you chairwoman for recognizing.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "You're welcome. If there are any ladies of Delta Sigma Theta if you will please stand at this time. Happy Founders Day. All right. And then of course I would be remiss without welcoming my sisters of Alpha Kappa Alpha. They will be having our founders day on Thursday. Any AKs here?",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Myself included. And then the distinguished women of Zetafa will be celebrating on Friday. Any Zetas in the audience? Well, we definitely want to celebrate sisterhood. All right, with that being said, we will continue on talking about our holes and our withdrawals. Item number 20 will be held until February 3rd, 2026. Item number 21 will be held until February 24th, 2026. And item number 22 and item number 30 will be held until January 27, 2026. Item number three will be withdrawn and item number 31 will also be withdrawn. We will now start with our presentations. Madame Comproller, if you will please call item number one. Item number one is a resolution approving an honorary street name change for Commodore Primis District 6, Super District 8. This resolution is sponsored by Councilwoman White. Yes, you are recognized.",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 5,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "You all can hear me. Thank you so much, Mr. Commodore Primus and Mrs. Primus. Would you all please come down? Work up.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yeah. Come on down, Mrs. Primus. You all been doing this thing together. And anybody who would like to stand with the icon, Mr. Primus, you're welcome to come at this time as well.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Hello.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Whereas upon occasion, the city council approved the naming of specified public roads to honor those who have served and enriched this community. and Commodore Primus Senior is a remarkable example of a dedicated educator, community leader, and advocate who is deserving of this city's recognition and gratitude. I want to stop right here and say Mr. Primus was my principal when I was in elementary school where he served at Graves for 29 years. He started in education back in 1963 and has been a principal since 1970. Isn't that right? And you just retired when, Mr. Primus?",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "12 years ago.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "12 years ago. So that's how long that he has been serving the students and the children, the youth of Memphis City Schools, Shelby County. Mr. Primus is also a proud member of Omega Sci-Fi as we can see back here in the back who have come to support him. And we also have Mrs. Emma Primus, his beautiful wife, who has been by his side through it all. Mr. Primus is a gift to this city. Um throughout his career, he's implemented pioneering in initiatives that reshaped our public school system. He introduced groundbreaking parental",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 6,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "involvement programs at he also was the principal at Robert R. Church Elementary and that's exactly where this street um his street placard will stand is in front of the Robert Church Elementary where he introduced peer mediation, conflict resolution and resources for parents alongside um upcoming initiatives like chess, math, dance clubs, and a family math and science workshop to support parents with homework. These efforts not only fostered self-esteem and helped students discover their hidden talents. Mr. Primus' legacy is one of transformative leadership, unwavering dedication to youth, and a deep belief in the power of education to uplift communities and change lives. His impact continues to resonate throughout Memphis and beyond. Now therefore be it resolved by the city council of Memphis, Tennessee that congratulations and a heartfelt appreciation are extended to Mr. Commodore Primus Senior for his many contributions to education and civic life and that Mill branch road between East Range Road and David Drive shall be designated and always remembered as Mr. Commodore C. Primus Senior Way. Be it further resolved that the city engineer is requested to affix suitable signs so designated such public road signed by myself Janica White. Thank you, Mr. Prime, for your dedication.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you so very much. I am really at a loss for words at this particular point because what I did during the course of my um years working with the children was to just simply try to provide an",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 7,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "atmosphere where children could learn, teachers could teach and I would be remissed if I didn't give credit to those who supported me during that time. It was simply a labor of love. But I just thank you for this uh reclam now this this uh proclamation and the street naming. I am totally at a loss for words. So all I can say at this point is thank you. Thank you. Thank you.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Madame controller please show that that has been approved by acclamation.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you madam chair. Madame Comproller, if you would please call item number two.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Item number two is a resolution honoring the life and ministry of Bishop Jerry L. Ivory, Senior. This resolution is sponsored by Councilman Warren.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Councilman Dr. Warren, you are recognized at this time.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you, Madam Chair. Um, I appreciate the opportunity to recognize uh one of my patients and a person I think has been incredibly u influential on Memphis and our planet. Whereas on occasion, the Memphis City Council seeks to sees fit to memorialize those whose lives leave a legacy of commitment to their fellow citizens, Bishop Jerry L. Ivory, Senior is one such Memphian. And whereas Jerry L. Ivory was born on July 23rd, 1954 as the fourth of 11 children to Joseph Lee Ivory Senior and Ruby Miller. A stroke suffered as an infant left him with eye and speech problems. At two years old,",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 8,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "he fell down a flight of stairs and doctors believed his injuries to be fatal. His [snorts] mother and father, however, who were elder members of Temple Church of God in Christ believed God for his healing. And whereas Jerry Ivory not only survived but flourished, overcoming his speech impediment and graduating from Southside High School and Memphis State University with master's and doctorate level degrees. And whereas baptized as a teenager at Pentecostal Evangelistic Church of God in Christ, Jerry Ivory felt a call to preach at the age of 16. However, believing that education and training were critically important to ministerial success, he waited until the age of 30 to formally accept his call. After becoming an elder in the church of God in Christ KIC, he accepted his first pastoral assignment at Trinity KIC. And whereas [snorts] after faithfully serving at Trinity, Pastor Ivory was assigned to Word of Life COGIC in the Walter Simmons housing project, reflecting both the confidence of his superiors and his commitment to the communities in need. He also served terms as secretary for the Tennessee fifth jurisdiction, the Tennessee Eastern First Jurisdiction, and the Philippines jurisdiction. And whereas in 2007, Jerry Ivory Senior was appointed to serve as director of missions for Kenya, East Africa. He traveled to the country more than 50 times and in 2014 became the jurisdictional prelate for the Kenya East Africa first jurisdiction. In this role, he supported the founding of multiple schools, played a key role in the development of the area's first Kjuk Hospital, and established several orphanages, one of which was recognized by local government",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 9,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "authorities and featured on Nairobi television as a model institution. And whereas locally, Bishop Vivey founded and served as executive director of the Urban Family Ministry CDC, a faith-based state licensed drug and alcohol treatment program that was [clears throat] recognized by the state of Tennessee as a model. He served various roles in numerous professional settings and augmenting that experience by serving on boards of various nonprofit organizations. And whereas Bishop Ivory in his pastor at Word of Life renamed Worlds Outreach Church in 2006 has implemented ministries including a soup kitchen, walk up Snackpack program, food pantry, community garden, sheltering services for homeless, and whereas Bishop Aubrey completed his earthly assignment on December 12th, 2025. In addition to his legacy of service, he leaves the cherished memory besides his devoted church and jurisdictional family to his wife, Lady Valerie D. Rogers Ivory, six children, two grandchildren, and 10 siblings. Now, therefore, be it resolved that the Memphis City Council offers its sincere condolences to the family of Bishop Ivory. And be it further resolved that though ink and parchment are most inadequate to commemorate such a life of devotion, we nonetheless do inscribe these words with honor and respect as we remember Bishop Jerry L. Ivory, Senior, and commend his example to all citizens of this city in which he served so faithfully. Give it today my my hand, Jeffrey Warren, District 93. Thank you, Madam Chair. Welcome.",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 10,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "On behalf of the Ivory family and where Redeemer's Outreach Church, we thank you for the resolution that you have honored our leader, my husband, with that we are committed to continue serving the great citizens and community that he loved in this great Memphis, Tennessee area. We are going to continue to serve everyone and be the example church and uh agency that we all know that we need here due to all the changes. We love each and every member of Memphis and we are committed to do what God has asked us to do and that is to serve outside of the four walls of our church. be an example to show God's love and compassion to God's people. Thank you all so much.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Madame controller, if you can show that that has been approved by acclamation.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you. So noted. Madame Controller, please call the fiscal consent agenda items 10, items 40 and 41 with same night minutes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you very much. Item number 10 on our regular agenda is a resolution to accept grant funding in the amount of 1,430,311 from the US Department of Homeland Security all council districts. This resolution is sponsored by fire services. There is a request for same night minutes. Item number 40 is a resolution to accept revenue payment in the amount of 1,800,000 from M Street Fiber Memphis LLC for permits pertaining to the fiber optic route in the public right of way. All",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 11,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "council districts, this resolution is sponsored by the administration. That was a request to add this on to the fiscal consent agenda and same night minutes. Item number 41 is a resolution to amend the FY2026 operating budget all council districts. This resolution is sponsored by Councilwoman Walker. There was a request to add on to the fiscal consent agenda and for same night minutes. Madam Chairwoman, that concludes our fiscal consent agenda items.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you. It has been properly moved by Vice Chairman Carile, seconded by Councilman Spinosa. Madame controller, if you'll please prepare the screen of the vote on the fiscal consent agenda. Carile. Yes. Cooper Sutton. Yes. Easter Thomas. Yes. Ford. Yes. Green. Yes. Logan. Yes. Spinosa. Yes. Walker. Yes. Warren. Yes. Swingington Washington. Yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "That item passes. Add-ons and same night minutes. 23 24 27 28 29 34 35 36 37 38 and 39. Madame controller please call item number 23. Thank you, Madam Chair. One moment, please. Item number 23 is a resolution to allocate appropriate and transfer a sum",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 12,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "total of4 million4004,454,265.86 86 cents in Accelerate Memphis funds from various projects to the acquisition of the engineering sign shop, project 30A1401 and the construction engineering and inspection CI and program management contract for Accelerate Memphis 30A10001 districts three, four, five, and six super districts eight and nine. This resolution is sponsored by the administration.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Vice Chairman Carlile, you are recognized at this time.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you, Madam Chairman. The committee met recommends approval and I move.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "All right. Are there any questions or council members wishing to speak on this item? Madame controller, please prepare the screens to vote on item number 23. Yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Canali. Yes. Carile. Yes. Cooper Sutton. Yes. Easter Thomas. Yes. Ford. Yes. Green. Yes. Spinosa. Yes. Walker. Yes. Warren. Yes. White. Yes. Chairwoman Swaren Washington. Yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "That item passes. Madame controller, please call item number 24. Item number 24, it should display on the board momentarily, is a resolution to allocate, appropriate, and transfer a sum total of $2,500,000 to Chelsea Avenue Green Line, project number PW01255 with $944,424 from Memphis Parks Capital Reserve,",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 13,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "PK2510. 104 and1,555,576 from Southeastern Industrial Road Improvements PW01279 to replace Accelerate Memphis funds removed due to the expenditure deadline. District 7, Super District 8. This resolution is sponsored by the administration.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Vice Chairman Carlile, you are recognized.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you, Madam Chair. Committee met recommends approval and I so move.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Look at my screen. My screen is stuck.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "It has been motioned by Vice Chairman Carlile.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Do it again.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Okay. And seconded by Councilman Warren. All right, cast your votes. Canali, yes. Carlile, yes. Cooper Sutton, yes. Easter Thomas, yes. Ford, yes. Green, yes. Spinosa, yes. Walker, yes. Warren, yes. White. Yes. Chairwoman swearing in Washington. Yes. That item passed. Items 23 and items 28 are substitutions. Please note. All right. Madame controller, if you will please call item number 27. Item number 27 is a resolution to transfer gender separation project number FS25002",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 14,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "from general services to fire services and appropriate funds in the amount of 1,972,371 in contract construction for gender separation project number FS25002. all council districts. This resolution is sponsored by the administration. There is a request for same night minutes for this item. Council Canali, you are recognized at this time.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you, Madam Chair. The committee met recommended approval and I so move.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Are there any questions from council members? Madame controller, please prepare the screens to vote on item number 27. It was properly moved by Councilman Canali. Seconded by Spinosa Canal, yes. Carlile, yes. Cooper Sutton, yes. Easter Thomas, yes. Ford, yes. Green, yes. Logan, yes. Walker, yes. Warren, yes. White, yes. Chairwoman Swearington Washington, yes. That item passes. Madame controller, please call item number 28. Item number 28 is a resolution to allocate, appropriate, and transfer 2,183,689.86 86 cents in Accelerate Memphis funds from Engineering Chelsea Green Line project number GAA3101 to 10 Memphis parks projects which can be completed by the accelerated Memphis expenditure deadline of June 30th, 2026. Districts 1, 2, 4, 5, 6, and 7, super",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 15,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "districts 8 and 9. This resolution is sponsored by the administration.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Vice Chairman Carlile, you're recognized.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you, Madam Chair. The committee met recommends approval and I so move.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "If it's been moved by Vice Chair Carile, seconded by Councilwoman Dr. Easter Thomas. Madame Controller, if you will please prepare the the screens to vote. Canali, yes. Carile, yes. Cooper, Sutton, yes. Easter Thomas, yes. Ford, yes. Green, yes. Logan, yes. Spinosa, yes. Warren, yes. Chairwoman swearing in Washington, yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Walker, yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Walker, please show Council Member Walker is voting yes on this item. Mr. Salsbury. That item passes. Madame controller, if you will please call item number 29. Item number 29 is a resolution to allocate appropriate and transfer a sum total of 730,144 cents from Memphis Parks Capital Reserve project number PK25104 to four Memphis Parks projects district 1 and 5 Super District 9. Again, that amount is $730,10044. This resolution is sponsored by the administration Vice Chairman Carlile, you are recognized.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you, Madam Chair. The committee met recommends approval and I so move.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "It's been moved by Vice Chair Carile. It's been second by Councilman Spinosa. Madame Comproller, if you will please prepare the SK the screens to vote for item number 29.",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 16,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "Canal, yes. Carlile, yes. Cooper Sutton, yes. Easter Thomas, yes. Ford, yes. Green, yes. Logan, yes. Spinosa, yes. Walker, yes. Warren, yes. Chairwoman Swearing Washington, yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "That item passes. Madame Comproller, please call item number 34. for my add-ons. Item number 34 are that's they are appointments to the animal shelter advisory board. We have Nina Wingfield and Sabine Langanger. And there's a request for same night minutes. All right. Are there any council members wishing to speak on this item? Madame controller, if you would please prepare the screen to vote for item number 34.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Councilwoman White, did you want to say anything at this time?",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "I like committee today with Councilwoman White. Councilwoman White, you were not there this morning. So committee met on this item recommended a unanimous approval. So I'll move that for Chairwoman White.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you. Madame Controller, if you will please prepare the screen to vote for item 34. Canali. Yes. Carile. Yes. Cooper Sutton. Yes. Easter Thomas. Yes. Ford. Yes. Green. Yes. Logan. Yes. Spinosa. Yes. Walker. Yes. Warren. Yes. White. Yes. Chairwoman swearing in Washington. Yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 17,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "That item is approved. Madame controller. Please call item number 35. Item number 35 is a substitute resolution to appropriate $1,500,000 in FYCIP funding for the new Mount Mariah Police Station project PD02 016 District 4 Super District 8. This resolution is sponsored by the administration and there is a request for same night minutes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Councilman Canali, you are recognized.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you, Madam Chair. The committee met",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "recommends approval and I so move.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "It has been properly moved by Councilman Canali, seconded by Councilman Dr. Warren. Madame Controller, if you will please prepare the screen. Canali, yes. Carile, yes. Cooper Sutton, yes. Easter Thomas, yes. Ford, yes. Green, yes. Logan, yes. Spinosa, yes. Walker, yes. Warren, yes. White, yes. Chairwoman Swaren, Washington, yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "That item is approved. Madame Controller, please call item number 36. Item number 36 is a resolution to transfer downtown command center project number IT01 0008 from IT services to police services and appropriate FY2026 CIP funds in the amount of $1 million in other cost to downtown command center project number IT010008 for the execution of phase two of the project district 6 and super district 8.",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 18,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "This resolution is sponsored by the administration. There's a request for same night minutes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Councilman Canali, you are recognized.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you, Madam Chair. The committee met recommends approval and I so move.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "If you'll move it electronically.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "It's been moved by Councilman Canali, second by Councilman Spinosa. Would you please prepare the screen to vote, Madam Controller? Canali, yes. Carile, yes. Cooper Sutton, yes. Easter Thomas, yes. Ford, yes. Green, yes. Logan, yes. Spinosa, yes. Walker, yes. Warren, yes. White, yes. Chairwoman Swearing Washington. Yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "That item passes. Madame Controller, please call item number 37. Item number 37 is a resolution amending the fiscal year 2026 capital improvements program CIP budget to change the funding source for architecture and engineering A&E activities in the styles wastewater treatment facility bioolids upgrades SW4011 rehab existing sewer cover line SW242000 and Tde ARP sewer competitive SW050006 projects from sewer fund capital pay go to sewer revenue bond financing all council districts this resolution is sponsored by the administration there is request for same night minutes for this item",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "council you are recognized",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "thank you madam chair the committee met and recommend approval and I so move",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "it is properly been moved by councilman",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 19,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "canali seconded by council spinosa Madame controller, if you will please prepare the screen to vote for item number 37. Canal. Yes. Carile. Yes. Cooper Sutton, yes. Easter Thomas, yes. Ford, yes. Green, yes. Logan, yes. Bossa, yes. Walker, yes. Warren, yes. White, yes. Chairwoman Swearington Washington, yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "That item passes. Madame Comproller, please call item number 38. Item number 38 is a resolution amending the fiscal year 2026 capital improvements program budget to change the funding source for architecture and engineering activities in the south plant expansion project number S02033 from sewer fund capital payo to sewer revenue bonds financing district 6 super district 8. This resolution is sponsored by the administration. There is a request for same night minutes. Councilman Canali, you're recognized at this time.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you, Madam Chair. The committee met recommended approval and I so moved.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "All right. It's been moved by Councilman Canali, second by Councilman Spinosa. Madame Comproller, if you will please prepare the screens to vote for item number 38.",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 20,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "Canali, yes. Carile, yes. Cooper Sutton, yes. Easter Thomas, yes. Ford, yes. Green, yes. Logan, yes. Spinosa, yes. Walker, yes. Warren, yes. White, yes. Chairwoman Swearington Washington, yes. That item passes. Madame Controller, would you please call item number 39?",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Item number 39 is a resolution amending the task force on city employee compensation and directing the preparation of a compensation review package. All council districts, this resolution is sponsored by Councilwoman White and there is a request for same night minutes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Vice Chairman Carile, you are recognized.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you, Madam Chair. The committee met recommends approval and I so move.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "It has been moved by Carlile, second by Councilwoman Logan.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Councilman Canali, you are recognized at this time.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you, Madam Chair. Council Carl, would you briefly state what the amendments were?",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "I'd defer to the sponsor.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Uh, Councilwoman White.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes. So one amendment is that instead of the recommendations being due in March, they'll now be due in April. In addition, we have requested some additional documents um from human resources in terms of salary um salary availability and those are the only two changes. Okay. All right. There are no other questions. Any more questions? Okay.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "All right. It's been properly moved by Carlile, seconded by Council Councilwoman Logan. Madam Controller, if you will please prepare the screen to vote for item 39.",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 21,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "Canal, yes. Carlile, yes. Cooper Sutton, yes. Easter Thomas, yes. Ford, yes. Green, yes. Logan, yes. Nosa. Yes. Walker, yes. Warren, yes. White, yes. Chairwoman Swearing, Washington, yes. That item passes. Madame Comproller, please call the consent agenda items 5 through nine with same night minutes on items eight and nine.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you. One moment, please. Item number five on our consent agenda is an ordinance to amend the code of ordinances of the city of Memphis pertaining to contracts and salaries of the Memphis Light, Gas, and Water Division. to set limits of contracts and salaries or compensation for employees or others requiring city council approval. Up for first reading, ordinance number 5967 is sponsored by MLGW. General ordinances up for second reading. Ordinance number 5958 is sponsored by council women Easter Thomas and Green. Ordinance number 5966 is sponsored by council member Smiley, Canali, Cooper, Sutton, Easter, Thomas, Ford, Green, Spinosa, Swearington, Washington, Walker, and Warren. Madame Chair, that concludes our consent agenda items. It has been properly moved by Councilman Carlile. It has been seconded by Councilman Dr. Warren. Madame Controller, if you will please prepare the screen for the consent agenda items.",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 22,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "Canali. Yes. Carile. Yes. Cooper. Sutton. Yes. Ford, yes. Green, yes. Logan, yes. Spinosa, yes. Walker, yes. Warren, yes. Please show council member Smiley voting yes on this item. And pardon me, who else? Please show council member White as voting yes on this item. Chairwoman Swearington, Washington, yes. That passes. Madame controller, please call the MLGW fiscal consent agenda. That would take us to item number 11. A resolution to approve the joint funding agreement between the US Geological Survey Lore Mississippi Gulf Water Science Center and Memphis Light Gas and Water Division Investigation of Water Resources for a period of January 1st, 2026 to December 31st, 2027, stipulating that a sum of $916,000 will be furnished by the division and a sum of $174,000 would be furnished by the United States Department of Interior Geological Survey for continuation of the groundwater data collection program in the Memphis area. Item number 12 is a resolution awarding purchase order for F5R5600 load balancers to Logicalis, Inc. in the amount of $445,28716. Item number 13 is a resolution approving the ratification and renewal to contract number 11462 electronic board agenda solution with Granicus to ratify and renew the current contract in the funded amount of $44,54523. Item number 14 is a resolution awarding",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 23,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "purchase order for Infoblocks Hardware to Baronex Corp. in the amount of 1,121,97944. Item number 15 is a resolution awarding purchase order for illuminire flood lights a 1000 watts equivalent to ATG Supply LLC in the amount of $437,562. Item number 16, a resolution approving the ratification and extension to contract number 12230, Acceleron Prepaid with Acceleron Software LLC to ratify and extend the current contract in the funded amount of 1,837,530. Item number 17 is a resolution approving the ratification and renewal to contract number one 12347, temporary employment services for General Laborer Services with Millennium Search LLC to ratify and renew the current contract in the funded amount of $1,500,000. Item number 18 is a resolution approving the ratification and renewal to contract number 12294, temporary employment services for clerical support with Millennium Search LLC to ratify and renew the current contract in the funded amount of $200,000. And our final item, Madam Chair, is item number 19, a resolution approving the ratification and renewal to contract number one 12348, temporary employment services for skilled craftsman technical with resource management group to ratify and renew the current contract in the funded amount of $1 million.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Councilwoman Walker, you are recognized.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you, Madam Chair. The committee",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 24,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "met with a favorable recommendation and I so move.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "All right. It has been properly moved by Councilwoman Walker, second by Councilman Spinosa. Madame Comproller, please prepare the screen to vote on the MLGW fiscal consent agenda. [snorts] Canali yes. Carile yes. Cooper Sutton yes. Please show council member Green is voting yes. Ford yes. Spinosa yes. Please show council member Smiley is voting yes. Walker yes. Warren yes. White. Yes. Chairwoman Swaring Washington. Yes. That item passes. We are now at our zoning cases. Madame Controller, if you will please call item number four.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Item number four is a resolution pursuant to chapter 9.6 of the Memphis and Shelby County Unified Development Code approving a special use permit at the subject property located at 2710 South Mindenhal Road. This resolution is sponsored by the Division of Planning and Development. The case number is SUP25-26. Councilman Spinosa, you are recognized.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you, Madam Chair. Committee met on this item um at our December 16th meeting and um favorable recommendation. So, I salute.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "All right.",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 25,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "Since there are no council here to to discuss this item, madame controller, if you will please prepare the screen to vote for item number four. Canali, yes. Carile, yes. Cooper Sutton, yes. Easter Thomas, yes. Ford, yes. Green, yes. Logan, yes. Minosa, yes. Walker, yes. Warren, yes. Chairwoman Swearington Washington, yes. That item passes. We are now at our regular agenda items. Madame Controller, if you will please call item number 25. Item number 25 is an initial resolution authorizing and providing for the issuance and sale by the city of Memphis, Tennessee of storm water system revenue bonds in an aggregate principal amount not to exceed $60 million pursuant to and in accordance with the applicable provisions of the Tennessee code annotated as amended for the purposes of financing the cost the various improvements, additions, and extensions to the storm water system of the city. All council districts, this resolution is sponsored by the administration.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Councilman Canali, you're recognized at this time.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you, Madam Chair. The committee met recommended approval and I so move.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "It has been moved by Canali, second by Councilman Dr. Warren. Madame controller, if you will please prepare the screen for item 25.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you.",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 26,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "Canali, yes. Carlile, yes. Cooper Sutton, yes. Easter Thomas, yes. Ford, yes. Green, yes. Logan, yes. Spinosa, yes. Walker, yes. Warren, yes. White, yes. Swearing, Washington. Chairwoman Swearing Washington. Yes,",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "that item is approved. Madame Controller, please call item number 26. Item number 26 is a series resolution authorizing the issuance of storm water system revenue bonds of the city of Memphis, Tennessee in an aggregate principal amount not to exceed $60 million pursuant to title 68 chapter 221 part 11 of the Tennessee code annotated and title 9 chapter 21 of the Tennessee code annotated for the purpose of financing certain cost of the storm water system of the city of Memphis, prescribing the form and certain details of such bonds, and delicating to the chief financial officer of the city, the authority to determine additional details, appointing the paying and registration agent for the bonds, authorizing and providing for the negotiated or competitive sale of such bonds, and approving the preparation and distribution of a preliminary official statement. relating to such bonds and approving the form thereof. Authorizing and approving an official statement in connection with the issuance of such bonds and authorizing and ratifying certain other acts in connection with the sale and issuance of such bonds. All council districts, this resolution is sponsored by the administration.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Councilman Canal, you're recognized at this time.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you, Madam Chair. The committee met recommended approval and I so move.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "It has been moved by Councilman Canali, second by Councilman Dr. Warren. Madame",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 27,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "controller, if you will please prepare the screen. Canali, yes. Carile, yes. Cooper Sutton, yes. Easter Thomas, yes. Ford, yes. Green, yes. Logan, yes. Smiley, yes. Spinosa, yes. Walker, yes. Warren, yes. White, yes. Chairwoman Swaren, Washington, yes. That item is approved. Madame controller, if you will please call item number 32. Item number 32 is a resolution to transfer and appropriate construction funds in the amount of 276,1330 from drainage ST cover line project number ST 0325 to Lillian drainage improvements project number ST03245 for construction funds for upgrading the drainage system near Lillian Drive district 6 super District 8. This resolution is sponsored by the administration.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Councilman Smiley, you are recognized at this time.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you for recognizing me at this time. Committee may recommend approval. I so move.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "It has been moved by Councilman JB Smiley Jr. Seconded by Councilman Sinosa. Madame Controller, if you will please prepare the screen to vote. Canali, yes. Carile, yes. Cooper Sutton, yes. Easter Thomas, yes. Ford, yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 28,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "Green, yes. Logan, yes. Smiley, yes. Spinosa, yes. Walker, yes. Warren, yes. White, yes. Chairwoman Swearing, Washington, yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "That item passes. Madame Controller, if you will please call item number 33.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Item number 33 is a resolution to provide grant funding from the city of Memphis public works division to clean Memphis funding in the amount of $125,000 for clean water initiatives to be performed in various city of Memphis drainage basins. All council districts, this resolution is sponsored by the administration. Councilman Smiley, you are recognized.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you, Madam Chair. Jenna Watson, I do appreciate the honor of being recognized by you. The committee met recommend approval and I so move.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "It has been moved by Councilman Smiley, second by Councilman Spinosa. Madame Controller, if you will please prepare the screen to vote for item number 33. Canali, yes. Carile, yes. Cooper, Sutton, yes. Easter, Thomas, yes. Ford, yes. Green, yes. Logan, yes. Smiley, yes. Warren, yes. White, yes. Chairwoman Swearing, Washington, yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "That item passes. That brings us to our same night minute items. Vice Chair Carile, would you please read the same night minutes into record? Thank you, Madam Chair. The same night minute items are items 1 8 9 10 23 24 27 28 29 34 35",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 29,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "36 37 38 39 40 and 41. And I have moved. It has been moved by Vice Chair Carile, second by Councilman Spinosa. Madame Controller, if you will please do a roll call or prepare the screen for our same night minutes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Council members, please cast your votes for the same night minutes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Also, make sure eight and nine are included in this vote. Items eight and nine. Please note the record. Item eight and nine are included in the same night.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Go sit down.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Go sit down. Go sit down. Sit down.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Go sit down.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Canali. Yes. Our same night minutes items with all of them included are Canali. Yes. Carl, yes. Cooper Sutton, yes. Easter Thomas, yes. Ford, yes. Green, yes. Logan, yes. Smiley, yes. Spinosa, yes. Warren, yes. White, yes. Chairwoman swearing Washington, yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you. That pass.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "You're welcome, Madam Chair.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "We are now at the time of our public comment cards. Our first card is from Mr. Willie Gordon. If you'll please come at this time.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "[clears throat]",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes. Uh my name Willie Cordon.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "If you'll please give us your name and address for the record.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "My name is Willie Cordon. Um live at 923 Tully Street, Memphis, Tennessee 38107. And uh [clears throat] I'm speaking on something concerning our house my house being robbed in in October of this year",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 30,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "and [clears throat] um and the officers come and they didn't want to take a police report on the burglary after seeing that my door was wide open and [clears throat] a window was broken and and I've I've been It was October and haven't been arrested and my neighbors no told me who did it. And what I had to do was I had to hide from the police that I called for the burglary because when they came there they had their body cams off. You know, they wasn't thinking green. So I had to run and have from them because they were saying things like, \"Willie, you broke in your own house or you know I playing a game.\" So I had to wait until Monday to recall the police and tell them what happened that that Saturday to wait till precinct over. But like I said, this was in October and there's no arrest. All the blood evidence there which they uh I had to call the police on the police after that at that uh t uh Tuesday or Monday because they did not want to take the DNA evidence of the burglar. The burglar had broke the wonder and he had blood on my remote control on my TV and like and there's [clears throat] not haven't been an arrest. I've uh talked to someone in Mrs. Davis office uh Monday, but I haven't got response from them. But like I said, they're they're like uh dragging uh not doing uh what I'm expecting experienced law enforcement and officers",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 31,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "should be doing. We're going to have someone to reach out from MPD. We have your card and your information and we will definitely follow up with your concern. I'm so sorry that happened with you, but we will follow up with you.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you, Miss Serena Lindsay, if you will come at this time. Greetings. Good evening. How's everybody doing? Um my initial question which it was just answered. I just asked um um one of the chairwoman um council women what number six of the consent agenda actually meant in terms of to revise the zoning and subdivision regulations within the city of Memphis pertaining to correctional facilities specifically detention centers, jails and prisons like what exactly the revision was. and she did answer it for me, but if y'all want to reans answer for me, that would be great for um extra extra confirmation. I yield. You already talk with her. Okay. Thank you, Katherine Lasha. Greetings. Happy 2026. I have the same question about uh number six. I just am not clear what it is about and if we could get a more detailed explanation of that ordinance,",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 32,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "I would appreciate it. Thank you. Councilwoman Green, you are recognized.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you, Chair. It's pretty um I realize there's legal ease and the caption can be confusing, but it's actually really simple, and it's this. We are trying to make sure that nobody puts a prison or a correctional facility in a location without it going before the land use control board and coming before the city council so the public can have input. So, I know in particular Councilwoman Easter Thomas was concerned about it happening in her district and she wanted to be able to have a check on that power. I have also heard in my district concerns about it coming to Shelby Farms and I that's the reason I've co-sponsored it. We want to be able to have input. We want the public to be able to have input before something like that happens. So, it's really that straightforward. Um, and I'm sure that Councilwoman Eser Thomas, who's the original sponsor, myself, my office are happy to answer any further questions.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you, Miss Cox.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you, Miss Cox. If you'll state your full name and address for the record.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Shalisa Cox, 7705 Nash Drive. my first time ever at this podium and it's for a good cause. I want to bring attention to Memphis Housing Authority and the things that's going on in Memphis Housing Authority. I have questions concerning it and around it for the citizens and the constituents of Memphis and Shelby County. It has not been the same for the last five years. Last year coming into this year, we lost a very important person at Memphis Housing Authority that has been there for 25 plus years that took care of the",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 33,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "constituents and we know that it's not going to be the same. The section 8 department is ran by a third party company that's not out of Memphis and I'm very concerned about it and I would love to talk to anybody or any one of you guys that is interested in knowing about it. Thank you. Thank you, Miss Cox. Iana Philly.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Forgive me if I mispronounced it.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "It's pronounced Dwana. Um Um I [clears throat] first would like to thank the council people, men and women, who go above and beyond their call of duty in their job. But I'm here to address and redress accountability. [clears throat] Give me a second. Excuse me. City council members, mayor, and the members of the public. I'm here today to address who is responsible for the outcomes following the Department of Justice report and why this community is still waiting accountability. The DOJ findings were not abstract. They were grounded in community testimony, lived experiences, and documented harm. Yet, key DOJ recommendations that came directly [clears throat] from the community were denied by the mayor. Instead, the public was told and undef undefined independent agency would be chosen without public updates, timelines, or accountability measures. Even though this council controls the funding, oversight, and implementation.",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 34,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "Before reform can move forward, there must be acknowledgment of wrongdoing. The city owes this community a public apology, not as a symbolism, but as a responsibility and accountability. Without acknowledgement, there is no trust, and without trust, there is no reform. Last week, I met with the mayor's team seeking redress. That meeting was noticed. I now expect a documented response, a formal investigation, public timelines, and a clear accountability. Until wrongdoing is acknowledged, apologies are made, and reforms are enforced with deadlines, this community will continue to pay the price, and I'll be bringing all that smoke. I'll see you soon.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Missy Wayne, what's your address for the record? um as a civil rights activist and a prosay litigant against the city of Memphis. I'd rather not say, but I am in the Glenville district.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you. You're welcome. Damon Morris, [clears throat]",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "please give your us your name and address for the record. Mr. Morris.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Chairwoman. Thank you. Uh Damon Curry Morris, uh 1529 Delmore Road, Memphis, Tennessee 38114. I am here today because I am very very tired and listening to that young man that spoke uh in the beginning about this Memphis Police Department is basically running rogue at this point. I've done everything I could possibly do. I'm not in a good headsp space right now due to the fact that I have to bury an 18-year-old baby that I held in my arms when he came from the hospital.",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 35,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "I just recorded a lieutenant in internal affairs who admitted that they're monitoring my Facebook page violation of the consent decree. I also, and thank you, Councilwoman White, for the response on that email, had to keep my grandson out of school for a full week because I was fearing for his safety because another police lieutenant in internal affairs, disclosed personal information of a protected minor. And he thought it was funny. And I don't think it's funny because I take my safety and my children's safety very very seriously in this city. I've once sued the Memphis Sherby County School Board for the safety of my children that I have in the school district. Now, if I have to sue the city, I will. But I'm not going to tolerate all of this madness and corruption in this city. I'm tired [clears throat] of it. The people are tired of it. Everyone is tired of it. Somebody needs to be held accountable. Someone I'm trying to be as calm as I can, but I'm fuming mad right now. And I'm trying to be as calm as I can. But we This is going on deaf ears. And I'm not the only one that's suffering from this. You have several people coming up here to talk about this egregious police department. And on behalf of the people, they have asked me, we're going to draft the letter and we need to ask for the resignation of police chief CJ Davis. [snorts]",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you, Mr. Morris. At this time, we will have a motion to adjourn.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Move to adjourn, madam chair.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Okay.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "All right. Thank you so much.",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "votes": [],
+      "notes": ""
+    }
+  ]
+}
