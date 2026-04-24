@@ -1,18 +1,76 @@
 {
   "meeting_id": "2026-01-13-memphis-city-council",
+  "councilpeople": [
+    {
+      "id": "chase-carlisle",
+      "name": "Chase Carlisle"
+    },
+    {
+      "id": "jeff-warren",
+      "name": "Dr. Jeff Warren"
+    },
+    {
+      "id": "edmund-ford-sr",
+      "name": "Edmund Ford, Sr."
+    },
+    {
+      "id": "j-ford-canale",
+      "name": "J. Ford Canale"
+    },
+    {
+      "id": "jana-swearengen-washington",
+      "name": "Jana Swearengen Washington"
+    },
+    {
+      "id": "janika-white",
+      "name": "Janika White"
+    },
+    {
+      "id": "jb-smiley-jr",
+      "name": "JB Smiley, Jr."
+    },
+    {
+      "id": "jerri-green",
+      "name": "Jerri Green"
+    },
+    {
+      "id": "michalyn-easter-thomas",
+      "name": "Michalyn Easter-Thomas"
+    },
+    {
+      "id": "pearl-eva-walker",
+      "name": "Pearl Eva Walker"
+    },
+    {
+      "id": "philip-spinosa",
+      "name": "Philip Spinosa"
+    },
+    {
+      "id": "rhonda-logan",
+      "name": "Rhonda Logan"
+    },
+    {
+      "id": "yolanda-cooper-sutton",
+      "name": "Yolanda Cooper-Sutton"
+    }
+  ],
   "meeting_summary": "",
   "global_tags": [],
-  "materials": [],
+  "materials": [
+    {
+      "url": "https://memphistn.gov/wp-content/uploads/2026/01/Regular-Agenda-Documents-01.13.2026.pdf"
+    }
+  ],
   "sections": [
     {
       "chunk_index": 0,
       "speaker_id": "",
-      "speaker_name": "",
+      "speaker_name": "Preston Poindexter",
       "lines": [
         {
           "text": "Sergeant-at-arms, please call our December 16, 2025 council meeting to order. I would like to recognize our chaplain of the day, Pastor Preston Porn Dexter of Life Church, invited by Councilwoman Logan. Pastor Porn Dexter, please lead us in prayer. Lord Jesus, how we thank you for today, this day. This is your day, Father. We're starting off this year, this new year, recognizing what your what your word says. Unless the Lord keepeth the city, the watchman wakes in vain. And God, today we're asking you to just preside over every aspect of this meeting. give us ideas and thoughts and that we can have before you as we seek to do your will and your business in this place. I thank you for the mind of Christ being in this place. God, protect the council people, council men and women as they do their job. Protect the city as as they do their jobs. Glorify yourself in this place. No flesh will glory in your sight. We give you the blessings. We do this in Jesus's name. Amen.",
           "speaker_id": "",
-          "speaker_name": ""
+          "speaker_name": "Preston Poindexter"
         },
         {
           "text": "Amen. I aliance to the flag of the United States of America and to the republic for which it stands. One nation under God, indivisible, with liberty and justice for all.",
@@ -27,21 +85,27 @@
       ],
       "display_mode": "raw",
       "display_text": "",
-      "summary": "",
-      "tags": [],
-      "mentions": [],
+      "summary": "Opening of the meeting with a prayer and pledge of allegiance.",
+      "tags": [
+        "Egypt Baptist Church",
+        "Preston Poindexter"
+      ],
+      "mentions": [
+        "rhonda-logan"
+      ],
       "votes": [],
-      "notes": ""
+      "notes": "",
+      "roll_call": []
     },
     {
       "chunk_index": 1,
       "speaker_id": "",
-      "speaker_name": "",
+      "speaker_name": "Rhonda Logan",
       "lines": [
         {
           "text": "Good afternoon everyone. Uh chairwoman, I want to note a correction. Um pastor point is the pastor of Egypt Baptist Church. I think it has um m print there. I'm going to read Thank you so much for being here. We want to read this into your hearing. We appreciate you being here for today. The city of Memphis by the city council. Greetings. Be it hereby known that Pastor Preston Po Dexter in recognition of a life of exemplary qualities, outstanding service to the city, meritorious involvement in humanitarian affairs and demonstrated concern for governmental process has been appointed chaplain of the day of the M Memphis City Council and hereby is entitled to all of the honors, rights, privileges, and prerogatives at pertaining to the office and to the display of this certificate given under this seal this 13th day of January 2026. Janice Wingen Washington chairwoman presented by Ronda Logan, member of the council. Thank you so much. We really appreciate you being here. Want to give this gift to you. Thank you so much, Madame Controller. If you will please call the role.",
           "speaker_id": "",
-          "speaker_name": ""
+          "speaker_name": "Rhonda Logan"
         },
         {
           "text": "Thank you. Chairwoman swearing in Washington Council members Canali Carile Cooper Sutton Easter Thomas",
@@ -88,14 +152,90 @@
       "display_text": "",
       "summary": "",
       "tags": [],
-      "mentions": [],
+      "mentions": [
+        "chase-carlisle",
+        "jeff-warren",
+        "edmund-ford-sr",
+        "j-ford-canale",
+        "jana-swearengen-washington",
+        "janika-white",
+        "jb-smiley-jr",
+        "jerri-green",
+        "michalyn-easter-thomas",
+        "pearl-eva-walker",
+        "philip-spinosa",
+        "rhonda-logan",
+        "yolanda-cooper-sutton"
+      ],
       "votes": [],
-      "notes": ""
+      "notes": "",
+      "roll_call": [
+        {
+          "person_id": "chase-carlisle",
+          "person_name": "Chase Carlisle",
+          "presence": "present"
+        },
+        {
+          "person_id": "j-ford-canale",
+          "person_name": "J. Ford Canale",
+          "presence": "present"
+        },
+        {
+          "person_id": "yolanda-cooper-sutton",
+          "person_name": "Yolanda Cooper-Sutton",
+          "presence": "present"
+        },
+        {
+          "person_id": "michalyn-easter-thomas",
+          "person_name": "Michalyn Easter-Thomas",
+          "presence": "present"
+        },
+        {
+          "person_id": "edmund-ford-sr",
+          "person_name": "Edmund Ford, Sr.",
+          "presence": "present"
+        },
+        {
+          "person_id": "jerri-green",
+          "person_name": "Jerri Green",
+          "presence": "present"
+        },
+        {
+          "person_id": "jb-smiley-jr",
+          "person_name": "JB Smiley, Jr.",
+          "presence": "present"
+        },
+        {
+          "person_id": "rhonda-logan",
+          "person_name": "Rhonda Logan",
+          "presence": "present"
+        },
+        {
+          "person_id": "philip-spinosa",
+          "person_name": "Philip Spinosa",
+          "presence": "present"
+        },
+        {
+          "person_id": "janika-white",
+          "person_name": "Janika White",
+          "presence": "present"
+        },
+        {
+          "person_id": "jana-swearengen-washington",
+          "person_name": "Jana Swearengen Washington",
+          "presence": "present"
+        },
+        {
+          "person_id": "pearl-eva-walker",
+          "person_name": "Pearl Eva Walker",
+          "presence": "present"
+        }
+      ]
     },
     {
       "chunk_index": 2,
-      "speaker_id": "",
-      "speaker_name": "",
+      "speaker_id": "chase-carlisle",
+      "speaker_name": "Chase Carlisle",
       "lines": [
         {
           "text": "Thank you, Madam Controller. I believe Vice Chairman Carlile has read the minutes for our December 16th, 2025 meeting.",
@@ -104,8 +244,8 @@
         },
         {
           "text": "Thank you, Madam Chair. I've reviewed the minutes and find them to be in order, and I move for the adoption of the December 16th, 2025 meeting minutes. I need the screen. I don't tr.",
-          "speaker_id": "",
-          "speaker_name": ""
+          "speaker_id": "chase-carlisle",
+          "speaker_name": "Chase Carlisle"
         },
         {
           "text": "Can I get a second? All right. It has been properly moved by Vice Chair Carile and seconded by Councilman Spinosa. All right. Move it to a vote, please. Will you give us a voting screen for the minutes? Canali, yes. Carile, yes. Easter Thomas, yes. Ford, yes. Green, yes. Logan, yes. Spinosa, yes. Walker, yes. Warren, yes. White, yes. Swagen, Washington, yes.",
@@ -123,8 +263,75 @@
       "summary": "",
       "tags": [],
       "mentions": [],
-      "votes": [],
-      "notes": ""
+      "votes": [
+        {
+          "motion": "adoption of the December 16th, 2025 meeting minutes",
+          "person_id": "chase-carlisle",
+          "vote": "yes"
+        },
+        {
+          "motion": "adoption of the December 16th, 2025 meeting minutes",
+          "person_id": "jeff-warren",
+          "vote": "yes"
+        },
+        {
+          "motion": "adoption of the December 16th, 2025 meeting minutes",
+          "person_id": "edmund-ford-sr",
+          "vote": "yes"
+        },
+        {
+          "motion": "adoption of the December 16th, 2025 meeting minutes",
+          "person_id": "j-ford-canale",
+          "vote": "yes"
+        },
+        {
+          "motion": "adoption of the December 16th, 2025 meeting minutes",
+          "person_id": "jana-swearengen-washington",
+          "vote": "yes"
+        },
+        {
+          "motion": "adoption of the December 16th, 2025 meeting minutes",
+          "person_id": "janika-white",
+          "vote": "yes"
+        },
+        {
+          "motion": "adoption of the December 16th, 2025 meeting minutes",
+          "person_id": "jb-smiley-jr",
+          "vote": "yes"
+        },
+        {
+          "motion": "adoption of the December 16th, 2025 meeting minutes",
+          "person_id": "jerri-green",
+          "vote": "yes"
+        },
+        {
+          "motion": "adoption of the December 16th, 2025 meeting minutes",
+          "person_id": "michalyn-easter-thomas",
+          "vote": "yes"
+        },
+        {
+          "motion": "adoption of the December 16th, 2025 meeting minutes",
+          "person_id": "pearl-eva-walker",
+          "vote": "yes"
+        },
+        {
+          "motion": "adoption of the December 16th, 2025 meeting minutes",
+          "person_id": "philip-spinosa",
+          "vote": "yes"
+        },
+        {
+          "motion": "adoption of the December 16th, 2025 meeting minutes",
+          "person_id": "rhonda-logan",
+          "vote": "yes"
+        },
+        {
+          "motion": "adoption of the December 16th, 2025 meeting minutes",
+          "person_id": "yolanda-cooper-sutton",
+          "vote": "yes"
+        }
+      ],
+      "notes": "",
+      "roll_call": []
     },
     {
       "chunk_index": 3,
