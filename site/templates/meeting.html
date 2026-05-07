@@ -143,13 +143,27 @@
       {% if section.votes %}
       <table>
         <thead>
-          <tr><th>Motion</th><th>Member</th><th>Vote</th></tr>
+          <tr><th>Motion</th><th>Moved By</th><th>Seconded By</th><th>Member</th><th>Vote</th></tr>
         </thead>
         <tbody>
           {% for vote in section.votes %}
           <tr>
             <td>{{ vote.motion }}</td>
-            <td><a href="../people/{{ vote.person_id }}.html">{{ vote.person_name }}</a></td>
+            <td>
+              {% if vote.mover_id %}
+              <a href="../people/{{ vote.mover_id }}.html">{{ vote.mover_name }}</a>
+              {% else %}
+              {{ vote.mover_name or '—' }}
+              {% endif %}
+            </td>
+            <td>
+              {% if vote.seconder_id %}
+              <a href="../people/{{ vote.seconder_id }}.html">{{ vote.seconder_name }}</a>
+              {% else %}
+              {{ vote.seconder_name or '—' }}
+              {% endif %}
+            </td>
+            <td>{% if vote.person_id %}<a href="../people/{{ vote.person_id }}.html">{{ vote.person_name }}</a>{% else %}{{ vote.person_name or '—' }}{% endif %}</td>
             <td>{{ vote.vote }}</td>
           </tr>
           {% endfor %}

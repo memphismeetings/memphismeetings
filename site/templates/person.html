@@ -82,17 +82,31 @@
   <h3>Votes</h3>
   <table>
     <thead>
-      <tr><th>Meeting</th><th>Motion</th><th>Vote</th></tr>
+      <tr><th>Meeting</th><th>Motion</th><th>Moved By</th><th>Seconded By</th><th>Vote</th></tr>
     </thead>
     <tbody>
       {% for vote in votes %}
       <tr>
         <td><a href="../meetings/{{ vote.meeting_id }}.html">{{ vote.meeting_title }}</a></td>
         <td>{{ vote.motion }}</td>
+        <td>
+          {% if vote.mover_id %}
+          <a href="../people/{{ vote.mover_id }}.html">{{ vote.mover_name }}</a>
+          {% else %}
+          {{ vote.mover_name or '—' }}
+          {% endif %}
+        </td>
+        <td>
+          {% if vote.seconder_id %}
+          <a href="../people/{{ vote.seconder_id }}.html">{{ vote.seconder_name }}</a>
+          {% else %}
+          {{ vote.seconder_name or '—' }}
+          {% endif %}
+        </td>
         <td>{{ vote.vote }}</td>
       </tr>
       {% else %}
-      <tr><td colspan="3" class="muted">No votes logged yet.</td></tr>
+      <tr><td colspan="5" class="muted">No votes logged yet.</td></tr>
       {% endfor %}
     </tbody>
   </table>

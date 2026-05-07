@@ -53,6 +53,12 @@ Download the updated annotation and place it in `data/annotations/meetings/MEETI
 python scripts/build_site.py
 ```
 
+This also generates crawler discovery files in `docs/`:
+
+- `sitemap.xml`
+- `robots.txt`
+- `llms.txt`
+
 6. Publish `docs/` to GitHub Pages.
 
 ## Notes
@@ -60,3 +66,4 @@ python scripts/build_site.py
 - Static output is intentionally content-first and minimalist.
 - Deployable pages are plain HTML + CSS only.
 - Admin tool can use rich JS because it stays local.
+- Set `site.base_url` in `config.yaml` (for example `https://memphismeetings.org`) to emit absolute URLs in `sitemap.xml`, `robots.txt`, and `llms.txt`.

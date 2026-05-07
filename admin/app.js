@@ -452,18 +452,71 @@ function renderMentions(selected = []) {
   }
 }
 
-function voteRow(vote = { motion: '', person_id: '', vote: '' }) {
-  const row = document.createElement('div');
-  row.className = 'vote-row';
+function normalizeSectionVotes(rawVotes = []) {
+  if (!Array.isArray(rawVotes)) return [];
 
-  const motion = document.createElement('input');
-  motion.className = 'vote-motion';
-  motion.value = vote.motion || '';
-  motion.placeholder = 'Motion';
+  const out = [];
+  const legacyGroups = new Map();
+  for (const item of rawVotes) {
+    if (!item || typeof item !== 'object') continue;
+    if (Array.isArray(item.votes)) {
+      out.push({
+        motion: String(item.motion || ''),
+        mover_id: String(item.mover_id || ''),
+        mover_name: String(item.mover_name || ''),
+        seconder_id: String(item.seconder_id || ''),
+        seconder_name: String(item.seconder_name || ''),
+        votes: item.votes
+          .filter((v) => v && typeof v === 'object')
+          .map((v) => ({
+            person_id: String(v.person_id || ''),
+            person_name: String(v.person_name || ''),
+            vote: String(v.vote || ''),
+          }))
+          .filter((v) => v.person_id || v.person_name || v.vote),
+      });
+      continue;
+    }
+
+    const motion = String(item.motion || '');
+    const moverId = String(item.mover_id || '');
+    const moverName = String(item.mover_name || '');
+    const seconderId = String(item.seconder_id || '');
+    const seconderName = String(item.seconder_name || '');
+    const key = `${motion}||${moverId}||${moverName}||${seconderId}||${seconderName}`;
+
+    if (!legacyGroups.has(key)) {
+      legacyGroups.set(key, {
+        motion,
+        mover_id: moverId,
+        mover_name: moverName,
+        seconder_id: seconderId,
+        seconder_name: seconderName,
+        votes: [],
+      });
+    }
+    const legacyVote = {
+      person_id: String(item.person_id || ''),
+      person_name: String(item.person_name || ''),
+      vote: String(item.vote || ''),
+    };
+    if (legacyVote.person_id || legacyVote.person_name || legacyVote.vote) {
+      legacyGroups.get(key).votes.push(legacyVote);
+    }
+  }
+
+  out.push(...legacyGroups.values());
+
+  return out.filter((m) => m.motion || m.mover_id || m.mover_name || m.seconder_id || m.seconder_name || (m.votes && m.votes.length));
+}
+
+function motionVoteRow(vote = { person_id: '', person_name: '', vote: '' }) {
+  const row = document.createElement('div');
+  row.className = 'vote-row vote-row--entry';
 
   const people = state.meeting.councilpeople || [];
   const existingPerson = people.find((p) => p.id === vote.person_id);
-  const memberCb = makeCombobox(people, vote.person_id, existingPerson ? existingPerson.name : '');
+  const memberCb = makeCombobox(people, vote.person_id, vote.person_name || (existingPerson ? existingPerson.name : ''));
   memberCb.querySelector('.combobox-input').placeholder = 'Member...';
 
   const voteInput = document.createElement('select');
@@ -483,13 +536,55 @@ function voteRow(vote = { motion: '', person_id: '', vote: '' }) {
   remove.textContent = 'Remove';
   remove.addEventListener('click', () => row.remove());
 
-  row.append(motion, memberCb, voteInput, remove);
+  row.append(memberCb, voteInput, remove);
   return row;
+}
+
+function motionBlock(motion = { motion: '', mover_id: '', mover_name: '', seconder_id: '', seconder_name: '', votes: [] }) {
+  const block = document.createElement('div');
+  block.className = 'motion-block';
+
+  const head = document.createElement('div');
+  head.className = 'vote-row vote-row--motion';
+
+  const motionInput = document.createElement('input');
+  motionInput.className = 'vote-motion';
+  motionInput.value = motion.motion || '';
+  motionInput.placeholder = 'Motion';
+
+  const people = state.meeting.councilpeople || [];
+  const existingMover = people.find((p) => p.id === motion.mover_id);
+  const moverCb = makeCombobox(people, motion.mover_id, motion.mover_name || (existingMover ? existingMover.name : ''));
+  moverCb.querySelector('.combobox-input').placeholder = 'Moved by...';
+
+  const existingSeconder = people.find((p) => p.id === motion.seconder_id);
+  const seconderCb = makeCombobox(people, motion.seconder_id, motion.seconder_name || (existingSeconder ? existingSeconder.name : ''));
+  seconderCb.querySelector('.combobox-input').placeholder = 'Seconded by...';
+
+  const removeMotion = document.createElement('button');
+  removeMotion.type = 'button';
+  removeMotion.textContent = 'Remove Motion';
+  removeMotion.addEventListener('click', () => block.remove());
+
+  head.append(motionInput, moverCb, seconderCb, removeMotion);
+
+  const voteRows = document.createElement('div');
+  voteRows.className = 'motion-votes';
+  (motion.votes || []).forEach((v) => voteRows.appendChild(motionVoteRow(v)));
+
+  const addVote = document.createElement('button');
+  addVote.type = 'button';
+  addVote.className = 'add-motion-vote';
+  addVote.textContent = 'Add Member Vote';
+  addVote.addEventListener('click', () => voteRows.appendChild(motionVoteRow()));
+
+  block.append(head, voteRows, addVote);
+  return block;
 }
 
 function renderVotes(votes = []) {
   els.votes.innerHTML = '';
-  votes.forEach((v) => els.votes.appendChild(voteRow(v)));
+  normalizeSectionVotes(votes).forEach((m) => els.votes.appendChild(motionBlock(m)));
 }
 
 function rollCallRow(entry = { person_id: '', presence: '' }) {
@@ -587,18 +682,34 @@ function saveCurrentSection() {
   section.mentions = [...els.mentions.querySelectorAll('input[type="checkbox"]:checked')].map((x) => x.value);
   section.notes = els.notes.value.trim();
 
-  section.votes = [...els.votes.querySelectorAll('.vote-row')]
-    .map((row) => {
-      const motionInput = row.querySelector('.vote-motion');
-      const memberCb = row.querySelector('.combobox');
-      const voteOutcome = row.querySelector('.vote-outcome');
+  section.votes = [...els.votes.querySelectorAll('.motion-block')]
+    .map((block) => {
+      const motionInput = block.querySelector('.vote-motion');
+      const motionComboboxes = [...block.querySelectorAll('.vote-row--motion .combobox')];
+      const moverCb = motionComboboxes[0] || null;
+      const seconderCb = motionComboboxes[1] || null;
+      const votes = [...block.querySelectorAll('.vote-row--entry')]
+        .map((entryRow) => {
+          const memberCb = entryRow.querySelector('.combobox');
+          const voteOutcome = entryRow.querySelector('.vote-outcome');
+          return {
+            person_id: memberCb ? memberCb.getId() : '',
+            person_name: memberCb ? memberCb.getName() : '',
+            vote: voteOutcome ? voteOutcome.value : '',
+          };
+        })
+        .filter((v) => v.person_id || v.person_name || v.vote);
+
       return {
         motion: motionInput ? motionInput.value.trim() : '',
-        person_id: memberCb ? memberCb.getId() : '',
-        vote: voteOutcome ? voteOutcome.value : '',
+        mover_id: moverCb ? moverCb.getId() : '',
+        mover_name: moverCb ? moverCb.getName() : '',
+        seconder_id: seconderCb ? seconderCb.getId() : '',
+        seconder_name: seconderCb ? seconderCb.getName() : '',
+        votes,
       };
     })
-    .filter((v) => v.motion || v.person_id || v.vote);
+    .filter((m) => m.motion || m.mover_id || m.mover_name || m.seconder_id || m.seconder_name || m.votes.length);
 
   section.roll_call = [...els.rollCall.querySelectorAll('.vote-row')]
     .map((row) => {
@@ -711,7 +822,7 @@ els.prevBtn.addEventListener('click', () => navigate(-1));
 els.nextBtn.addEventListener('click', () => navigate(1));
 els.saveBtn.addEventListener('click', persist);
 els.downloadBtn.addEventListener('click', download);
-els.addVoteBtn.addEventListener('click', () => els.votes.appendChild(voteRow()));
+els.addVoteBtn.addEventListener('click', () => els.votes.appendChild(motionBlock()));
 els.addRollCallBtn.addEventListener('click', () => els.rollCall.appendChild(rollCallRow()));
 els.addMaterialBtn.addEventListener('click', () => els.materials.appendChild(materialRow()));
 els.displayMode.addEventListener('change', renderDisplayPreview);

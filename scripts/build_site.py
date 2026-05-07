@@ -8,6 +8,7 @@ from collections import defaultdict
 from html import escape
 from pathlib import Path
 from typing import Any
+from urllib.parse import quote
 
 import yaml
 from jinja2 import Environment, FileSystemLoader, select_autoescape
@@ -29,7 +30,7 @@ def compute_meeting_stats(sections: list[dict[str, Any]]) -> dict[str, Any]:
             tag_labels[slug] = label
         if section.get("summary"):
             annotated += 1
-        for vote in section.get("votes", []):
+        for vote in iter_section_votes(section.get("votes", [])):
             v = vote.get("vote", "").lower()
             if v:
                 vote_tally[v] += 1
@@ -217,6 +218,62 @@ def normalize_materials(annotation: dict[str, Any]) -> list[dict[str, str]]:
             }
         )
     return normalized
+
+
+def iter_section_votes(votes: list[dict[str, Any]] | None) -> list[dict[str, Any]]:
+    """Flatten section votes into member-level vote rows.
+
+    Supports both legacy flat rows and nested motion objects that contain
+    a `votes` list.
+    """
+    if not votes:
+        return []
+
+    flattened: list[dict[str, Any]] = []
+    for entry in votes:
+        if not isinstance(entry, dict):
+            continue
+
+        motion = entry.get("motion", "")
+        mover_id = entry.get("mover_id", "")
+        mover_name = entry.get("mover_name", "")
+        seconder_id = entry.get("seconder_id", "")
+        seconder_name = entry.get("seconder_name", "")
+
+        nested_votes = entry.get("votes")
+        if isinstance(nested_votes, list):
+            for member_vote in nested_votes:
+                if not isinstance(member_vote, dict):
+                    continue
+                flattened.append(
+                    {
+                        "motion": motion,
+                        "mover_id": mover_id,
+                        "mover_name": mover_name,
+                        "seconder_id": seconder_id,
+                        "seconder_name": seconder_name,
+                        "person_id": member_vote.get("person_id", ""),
+                        "person_name": member_vote.get("person_name", ""),
+                        "vote": member_vote.get("vote", ""),
+                    }
+                )
+            continue
+
+        # Legacy flat vote row.
+        flattened.append(
+            {
+                "motion": motion,
+                "mover_id": mover_id,
+                "mover_name": mover_name,
+                "seconder_id": seconder_id,
+                "seconder_name": seconder_name,
+                "person_id": entry.get("person_id", ""),
+                "person_name": entry.get("person_name", ""),
+                "vote": entry.get("vote", ""),
+            }
+        )
+
+    return flattened
 
 
 def render_transcript_search_doc(meeting: dict[str, Any], section: dict[str, Any]) -> str:
@@ -412,14 +469,34 @@ def merge_sections(
                 section.get("display_text", ""),
             )
         votes = []
-        for vote in section.get("votes", []):
+        for vote in iter_section_votes(section.get("votes", [])):
             person_id = vote.get("person_id", "")
+            if not person_id and vote.get("person_name"):
+                person_match = people_by_name.get(normalize_person_name(vote.get("person_name", "")), {})
+                person_id = person_match.get("id", "")
             person = people_by_id.get(person_id, {})
+
+            mover_id = vote.get("mover_id", "")
+            if not mover_id and vote.get("mover_name"):
+                person_match = people_by_name.get(normalize_person_name(vote.get("mover_name", "")), {})
+                mover_id = person_match.get("id", "")
+            mover = people_by_id.get(mover_id, {})
+
+            seconder_id = vote.get("seconder_id", "")
+            if not seconder_id and vote.get("seconder_name"):
+                person_match = people_by_name.get(normalize_person_name(vote.get("seconder_name", "")), {})
+                seconder_id = person_match.get("id", "")
+            seconder = people_by_id.get(seconder_id, {})
+
             votes.append(
                 {
                     "motion": vote.get("motion", ""),
                     "person_id": person_id,
-                    "person_name": person.get("name", person_id),
+                    "person_name": vote.get("person_name", "") or person.get("name", person_id),
+                    "mover_id": mover_id,
+                    "mover_name": vote.get("mover_name", "") or mover.get("name", ""),
+                    "seconder_id": seconder_id,
+                    "seconder_name": vote.get("seconder_name", "") or seconder.get("name", ""),
                     "vote": vote.get("vote", ""),
                 }
             )
@@ -569,10 +646,104 @@ def write(path: Path, content: str) -> None:
     path.write_text(content, encoding="utf-8")
 
 
+def normalize_base_url(base_url: str) -> str:
+    return str(base_url or "").strip().rstrip("/")
+
+
+def output_html_route(relative_html_path: str) -> str:
+    if relative_html_path == "index.html":
+        return "/"
+    if relative_html_path.endswith("/index.html"):
+        section_root = relative_html_path.removesuffix("/index.html")
+        return f"/{section_root}/"
+    return f"/{relative_html_path}"
+
+
+def public_url(route: str, base_url: str) -> str:
+    if not base_url:
+        return route
+    if route == "/":
+        return f"{base_url}/"
+    return f"{base_url}{quote(route)}"
+
+
+def generate_sitemap(output_dir: Path, base_url: str) -> None:
+    html_files = sorted(output_dir.rglob("*.html"))
+    entries: list[str] = []
+
+    for html_path in html_files:
+        relative_html_path = html_path.relative_to(output_dir).as_posix()
+        route = output_html_route(relative_html_path)
+        loc = escape(public_url(route, base_url))
+        lastmod = date.fromtimestamp(html_path.stat().st_mtime).isoformat()
+        entries.append(
+            "  <url>\n"
+            f"    <loc>{loc}</loc>\n"
+            f"    <lastmod>{lastmod}</lastmod>\n"
+            "  </url>"
+        )
+
+    sitemap = (
+        "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
+        "<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n"
+        f"{'\n'.join(entries)}\n"
+        "</urlset>\n"
+    )
+    write(output_dir / "sitemap.xml", sitemap)
+
+
+def generate_robots_txt(output_dir: Path, base_url: str) -> None:
+    sitemap_url = public_url("/sitemap.xml", base_url)
+    lines = [
+        "User-agent: *",
+        "Allow: /",
+        "",
+        f"Sitemap: {sitemap_url}",
+    ]
+    if base_url:
+        lines.append(f"Host: {base_url}")
+    lines.append("")
+    write(output_dir / "robots.txt", "\n".join(lines))
+
+
+def generate_llms_txt(output_dir: Path, site: dict[str, Any], base_url: str) -> None:
+    title = str(site.get("title", "Site")).strip() or "Site"
+    subtitle = str(site.get("subtitle", "")).strip()
+
+    lines = [
+        f"# {title}",
+        "",
+    ]
+    if subtitle:
+        lines.extend([subtitle, ""])
+
+    lines.extend(
+        [
+            "## Access and Reuse",
+            "",
+            "All public pages are intentionally open for crawling, indexing, summarization, and retrieval by bots and LLM systems.",
+            "Please prefer canonical pages and preserve context around quoted excerpts.",
+            "",
+            "## Discovery",
+            "",
+            f"- Sitemap: {public_url('/sitemap.xml', base_url)}",
+            f"- Home: {public_url('/', base_url)}",
+            f"- People index: {public_url('/people/', base_url)}",
+            f"- People alpha index: {public_url('/people/alpha.html', base_url)}",
+            f"- Tags index: {public_url('/tags/', base_url)}",
+            f"- Search: {public_url('/search/', base_url)}",
+            "",
+        ]
+    )
+
+    write(output_dir / "llms.txt", "\n".join(lines))
+
+
 def main() -> None:
     parsed = args()
     root = Path(__file__).resolve().parent.parent
     cfg = yaml.safe_load((root / parsed.config).read_text(encoding="utf-8"))
+    base_url = normalize_base_url(cfg.get("site", {}).get("base_url", ""))
 
     output_dir = root / cfg["site"].get("output_dir", "docs")
     build_dir = root / "build"
@@ -699,6 +870,10 @@ def main() -> None:
                         "meeting_id": meeting["id"],
                         "meeting_title": meeting["title"],
                         "motion": vote.get("motion", ""),
+                        "mover_id": vote.get("mover_id", ""),
+                        "mover_name": vote.get("mover_name", ""),
+                        "seconder_id": vote.get("seconder_id", ""),
+                        "seconder_name": vote.get("seconder_name", ""),
                         "vote": vote.get("vote", ""),
                         "start": section["start"],
                         "chunk_index": section["chunk_index"],
@@ -880,6 +1055,10 @@ def main() -> None:
         )
 
     build_pagefind_indexes(root, output_dir, transcript_corpus_dir)
+
+    generate_sitemap(output_dir, base_url)
+    generate_robots_txt(output_dir, base_url)
+    generate_llms_txt(output_dir, cfg["site"], base_url)
 
     print(f"Built static site in {output_dir.relative_to(root)}")
 

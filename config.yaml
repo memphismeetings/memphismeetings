@@ -1,7 +1,7 @@
 site:
   title: Memphis Meetings
   subtitle: Human-annotated records of Memphis public meetings · memphismeetings.org
-  base_url: ""
+  base_url: "https://memphismeetings.org"
   output_dir: docs
 
 bodies:

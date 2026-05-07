@@ -211,6 +211,30 @@ button {
   margin-bottom: 0.4rem;
 }
 
+.vote-row--motion {
+  grid-template-columns: minmax(220px, 2fr) minmax(150px, 1fr) minmax(150px, 1fr) auto;
+}
+
+.vote-row--entry {
+  grid-template-columns: minmax(180px, 1fr) minmax(92px, 0.8fr) auto;
+}
+
+.motion-block {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fcfcfb;
+  padding: 0.45rem;
+  margin-bottom: 0.55rem;
+}
+
+.motion-votes {
+  margin-top: 0.35rem;
+}
+
+.add-motion-vote {
+  margin-top: 0.2rem;
+}
+
 .material-row {
   display: grid;
   grid-template-columns: 1fr auto;
