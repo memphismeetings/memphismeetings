@@ -100,7 +100,7 @@ button {
 
 .line-row {
   display: grid;
-  grid-template-columns: 175px 1.8rem 1fr;
+  grid-template-columns: 175px 1.8rem 1.8rem 1fr;
   gap: 0.4rem;
   align-items: start;
   padding: 0.35rem 0.5rem;
@@ -172,11 +172,43 @@ button {
   padding: 0;
 }
 
-.line-carry {
+.line-carry,
+.line-split {
   padding: 0.15rem 0.25rem;
   font-size: 0.85rem;
   align-self: flex-start;
   margin-top: 2px;
+}
+
+.line-split-wrap {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding-top: 0.3rem;
+  border-top: 1px dashed var(--line);
+  margin-top: 0.2rem;
+}
+
+.line-split-hint {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.line-split-area {
+  width: 100%;
+  font: 0.88rem/1.4 inherit;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 0.4rem;
+  resize: vertical;
+  background: #fefef9;
+}
+
+.line-split-actions {
+  display: flex;
+  gap: 0.4rem;
 }
 
 .line-text {

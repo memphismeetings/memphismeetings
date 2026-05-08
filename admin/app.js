@@ -388,11 +388,69 @@ function lineRow(line) {
     }
   });
 
+  const split = document.createElement('button');
+  split.type = 'button';
+  split.className = 'line-split';
+  split.title = 'Split this turn into two at cursor position';
+  split.textContent = '\u2702';
+  split.addEventListener('click', () => {
+    if (div.querySelector('.line-split-wrap')) return;
+    text.hidden = true;
+    split.hidden = true;
+
+    const splitWrap = document.createElement('div');
+    splitWrap.className = 'line-split-wrap';
+
+    const area = document.createElement('textarea');
+    area.className = 'line-split-area';
+    area.rows = 3;
+    area.value = text.textContent;
+
+    const hint = document.createElement('p');
+    hint.className = 'line-split-hint';
+    hint.textContent = 'Position cursor at the split point, then click \u201cSplit at cursor\u201d.';
+
+    const actions = document.createElement('div');
+    actions.className = 'line-split-actions';
+
+    const confirmBtn = document.createElement('button');
+    confirmBtn.type = 'button';
+    confirmBtn.textContent = 'Split at cursor';
+    confirmBtn.addEventListener('click', () => {
+      const pos = area.selectionStart;
+      const before = area.value.slice(0, pos).trim();
+      const after = area.value.slice(pos).trim();
+      if (!before || !after) {
+        hint.textContent = 'Place the cursor between two words \u2014 both sides must have text.';
+        hint.style.color = '#c00';
+        area.focus();
+        return;
+      }
+      const rowA = lineRow({ text: before, speaker_id: cb.getId(), speaker_name: cb.getName() });
+      const rowB = lineRow({ text: after, speaker_id: '', speaker_name: '' });
+      div.replaceWith(rowA, rowB);
+    });
+
+    const cancelBtn = document.createElement('button');
+    cancelBtn.type = 'button';
+    cancelBtn.textContent = 'Cancel';
+    cancelBtn.addEventListener('click', () => {
+      splitWrap.remove();
+      text.hidden = false;
+      split.hidden = false;
+    });
+
+    actions.append(confirmBtn, cancelBtn);
+    splitWrap.append(hint, area, actions);
+    div.append(splitWrap);
+    area.focus();
+  });
+
   const text = document.createElement('p');
   text.className = 'line-text';
   text.textContent = line.text;
 
-  div.append(cb, carry, text);
+  div.append(cb, carry, split, text);
   return div;
 }
 
