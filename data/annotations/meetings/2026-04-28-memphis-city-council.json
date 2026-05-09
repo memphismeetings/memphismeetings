@@ -195,63 +195,72 @@
       "votes": [
         {
           "motion": "Approve minutes",
-          "person_id": "chase-carlisle",
-          "vote": "yes"
-        },
-        {
-          "motion": "Approve minutes",
-          "person_id": "jeff-warren",
-          "vote": "yes"
-        },
-        {
-          "motion": "Approve minutes",
-          "person_id": "edmund-ford-sr",
-          "vote": "yes"
-        },
-        {
-          "motion": "Approve minutes",
-          "person_id": "j-ford-canale",
-          "vote": "yes"
-        },
-        {
-          "motion": "Approve minutes",
-          "person_id": "jana-swearengen-washington",
-          "vote": "yes"
-        },
-        {
-          "motion": "Approve minutes",
-          "person_id": "janika-white",
-          "vote": "yes"
-        },
-        {
-          "motion": "Approve minutes",
-          "person_id": "jerri-green",
-          "vote": "yes"
-        },
-        {
-          "motion": "Approve minutes",
-          "person_id": "michalyn-easter-thomas",
-          "vote": "yes"
-        },
-        {
-          "motion": "Approve minutes",
-          "person_id": "pearl-eva-walker",
-          "vote": "yes"
-        },
-        {
-          "motion": "Approve minutes",
-          "person_id": "philip-spinosa",
-          "vote": "yes"
-        },
-        {
-          "motion": "Approve minutes",
-          "person_id": "rhonda-logan",
-          "vote": "yes"
-        },
-        {
-          "motion": "Approve minutes",
-          "person_id": "yolanda-cooper-sutton",
-          "vote": "yes"
+          "mover_id": "",
+          "mover_name": "",
+          "seconder_id": "",
+          "seconder_name": "",
+          "votes": [
+            {
+              "person_id": "chase-carlisle",
+              "person_name": "Chase Carlisle",
+              "vote": "yes"
+            },
+            {
+              "person_id": "jeff-warren",
+              "person_name": "Dr. Jeff Warren",
+              "vote": "yes"
+            },
+            {
+              "person_id": "edmund-ford-sr",
+              "person_name": "Edmund Ford, Sr.",
+              "vote": "yes"
+            },
+            {
+              "person_id": "j-ford-canale",
+              "person_name": "J. Ford Canale",
+              "vote": "yes"
+            },
+            {
+              "person_id": "jana-swearengen-washington",
+              "person_name": "Jana Swearengen Washington",
+              "vote": "yes"
+            },
+            {
+              "person_id": "janika-white",
+              "person_name": "Janika White",
+              "vote": "yes"
+            },
+            {
+              "person_id": "jerri-green",
+              "person_name": "Jerri Green",
+              "vote": "yes"
+            },
+            {
+              "person_id": "michalyn-easter-thomas",
+              "person_name": "Michalyn Easter-Thomas",
+              "vote": "yes"
+            },
+            {
+              "person_id": "pearl-eva-walker",
+              "person_name": "Pearl Eva Walker",
+              "vote": "yes"
+            },
+            {
+              "person_id": "philip-spinosa",
+              "person_name": "Philip Spinosa",
+              "vote": "yes"
+            },
+            {
+              "person_id": "rhonda-logan",
+              "person_name": "Rhonda Logan",
+              "vote": "yes"
+            },
+            {
+              "person_id": "yolanda-cooper-sutton",
+              "person_name": "Yolanda Cooper-Sutton",
+              "vote": "yes"
+            }
+          ]
         }
       ],
       "notes": "",
@@ -617,32 +626,42 @@
     },
     {
       "chunk_index": 16,
-      "speaker_id": "",
-      "speaker_name": "",
+      "speaker_id": "jana-swearengen-washington",
+      "speaker_name": "Jana Swearengen Washington",
       "lines": [
         {
-          "text": "number two? Thank you. Item number two is a resolution recognizing and honoring Gina Sweat for her service to the Memphis Fire Department and the city of Memphis. This was held from March 3rd. Councilwoman Green, you're recognized. Thank you. I am truly honored to stand here with Chief Sweat and to present her this honor. I apologize for it being delayed by weather and my illness and all kinds of things, but um you truly are a servant to this city and do this recognition. The resolution reads, \"Whereas Chief Gina Sweat has dedicated more than three decades of exemplary service to the city of Memphis through her distinguished career with the Memphis Fire Department. And whereas Chief Gina Sweat began her service on May 26th, 1992, and rose through the ranks of driver, lieutenant, battalion chief, division chief, and deputy chief through demonstrated professionalism, leadership, and commitment to public safety. And whereas in 2014, Gina Sweat was appointed as the city of Memphis' first-ever female fire director. And in 2016 became the city's first female fire chief breaking barriers and paving the way for future generations of women in public safety. And whereas during her tenure as fire chief, the Memphis Fire Department achieved significant operational advancements including improving the Insurance Services Office Public Protection Class 2 classification from a Class 2 to the highest possible Class 1 rating. And whereas under Chief Sweat's leadership, the department implemented innovative programs such as the Healthcare Navigator Program, expanded youth and workforce recruitment initiatives, and strengthened community-focused emergency response efforts.",
-          "speaker_id": "",
-          "speaker_name": ""
+          "text": "number two? Thank you. Item number two is a resolution recognizing and honoring Gina Sweat for her service to the Memphis Fire Department and the city of Memphis. This was held from March 3rd. Councilwoman Green, you're recognized.",
+          "speaker_id": "jana-swearengen-washington",
+          "speaker_name": "Jana Swearengen Washington"
+        },
+        {
+          "text": "Thank you. I am truly honored to stand here with Chief Sweat and to present her this honor. I apologize for it being delayed by weather and my illness and all kinds of things, but um you truly are a servant to this city and do this recognition. The resolution reads, \"Whereas Chief Gina Sweat has dedicated more than three decades of exemplary service to the city of Memphis through her distinguished career with the Memphis Fire Department. And whereas Chief Gina Sweat began her service on May 26th, 1992, and rose through the ranks of driver, lieutenant, battalion chief, division chief, and deputy chief through demonstrated professionalism, leadership, and commitment to public safety. And whereas in 2014, Gina Sweat was appointed as the city of Memphis' first-ever female fire director. And in 2016 became the city's first female fire chief breaking barriers and paving the way for future generations of women in public safety. And whereas during her tenure as fire chief, the Memphis Fire Department achieved significant operational advancements including improving the Insurance Services Office Public Protection Class 2 classification from a Class 2 to the highest possible Class 1 rating. And whereas under Chief Sweat's leadership, the department implemented innovative programs such as the Healthcare Navigator Program, expanded youth and workforce recruitment initiatives, and strengthened community-focused emergency response efforts.",
+          "speaker_id": "jerri-green",
+          "speaker_name": "Jerri Green"
         }
       ],
       "display_mode": "raw",
       "display_text": "",
-      "summary": "",
-      "tags": [],
-      "mentions": [],
+      "summary": "Item #2: a resolution recognizing and honoring Gina Sweat for her service to the Memphis Fire Department and the city of Memphis.",
+      "tags": [
+        "gina sweat"
+      ],
+      "mentions": [
+        "jerri-green"
+      ],
       "votes": [],
-      "notes": ""
+      "notes": "",
+      "roll_call": []
     },
     {
       "chunk_index": 17,
-      "speaker_id": "",
-      "speaker_name": "",
+      "speaker_id": "jerri-green",
+      "speaker_name": "Jerri Green",
       "lines": [
         {
           "text": "And whereas Chief Gina Sweat led transformative infrastructure and safety investments including major facility renovations, new fire stations, enhanced firefighter health and wellness initiatives, and modernized emergency response equipment. And whereas during the COVID-19 pandemic, the Memphis Fire Department served as the lead agency for vaccinations in Shelby County in 2021 facilitating the delivery of more than 1 million vaccine doses to protect the health and safety of the community. And whereas Gina Sweat retired on October 28th, 2025 concluding a historic 33-year career marked by service, innovation, integrity, and lasting contributions to the city of Memphis and its residents. Now, therefore, be it resolved that the Memphis City Council honors and commends Chief Gina Gina Sweat for her outstanding service, historic leadership, and lasting contributions to the Memphis Fire Department and to the citizens of Memphis. Thank you, Chief Sweat. Thank you for your service. We'll let you speak. Uh City Council,",
-          "speaker_id": "",
-          "speaker_name": ""
+          "speaker_id": "jerri-green",
+          "speaker_name": "Jerri Green"
         },
         {
           "text": "[snorts]",
@@ -652,65 +671,78 @@
         {
           "text": "uh Gina Sweat, just a regular old civilian, citizen of the city of Memphis. Uh I want to thank you for this recognition.",
           "speaker_id": "",
-          "speaker_name": ""
+          "speaker_name": "Gina Sweat"
         },
         {
           "text": "[clears throat]",
           "speaker_id": "",
-          "speaker_name": ""
+          "speaker_name": "Gina Sweat"
         },
         {
           "text": "I had the privilege of working alongside one of the best fire departments in this country. They show up. As [snorts] we say on the street, they show out. They show up on people's worst days and they bring skill, courage, and heart",
           "speaker_id": "",
-          "speaker_name": ""
+          "speaker_name": "Gina Sweat"
         }
       ],
       "display_mode": "raw",
       "display_text": "",
-      "summary": "",
-      "tags": [],
+      "summary": "Item #2: a resolution recognizing and honoring Gina Sweat for her service to the Memphis Fire Department and the city of Memphis.",
+      "tags": [
+        "gina sweat"
+      ],
       "mentions": [],
       "votes": [],
-      "notes": ""
+      "notes": "",
+      "roll_call": []
     },
     {
       "chunk_index": 18,
       "speaker_id": "",
-      "speaker_name": "",
+      "speaker_name": "Gina Sweat",
       "lines": [
         {
           "text": "every single time.",
           "speaker_id": "",
-          "speaker_name": ""
+          "speaker_name": "Gina Sweat"
         },
         {
           "text": "[snorts]",
           "speaker_id": "",
-          "speaker_name": ""
+          "speaker_name": "Gina Sweat"
         },
         {
           "text": "Cuz that's what our profession demands. Uh sorry. This [snorts] work will test you. It will challenge you. And it will require you to stand firm in who you are. It requires you to follow through on what you promised to do, especially when that's not easy. But I've learned this, if you do the work,",
           "speaker_id": "",
-          "speaker_name": ""
+          "speaker_name": "Gina Sweat"
         },
         {
           "text": "[snorts]",
           "speaker_id": "",
-          "speaker_name": ""
+          "speaker_name": "Gina Sweat"
         },
         {
-          "text": "if you stay ready, and if you step forward when the moment calls for, no one can ever take that away from you. I'm proud of the work we've done. I'm proud [snorts] of the people I've served with. And I'm proud of the way I showed up. For those coming behind me, do the work. Be ready. And don't let anything move you off of who you are. Thank you. And I am proud to say that I am her councilwoman. She's in the heart of District 4. We're so thankful for your service and happy retirement. Enjoy yourself. You have definitely earned it. God bless you. We will now move to our Councilman Chairman. I was wondering if I could say a word. Okay, go ahead. Coun- Council- Councilman, go ahead. I just want to say that many people in Memphis are alive today because of Gina Sweat's leadership and the fire department's follow-through during COVID, and I really appreciate them. Thank you.",
+          "text": "if you stay ready, and if you step forward when the moment calls for, no one can ever take that away from you. I'm proud of the work we've done. I'm proud [snorts] of the people I've served with. And I'm proud of the way I showed up. For those coming behind me, do the work. Be ready. And don't let anything move you off of who you are. Thank you.",
           "speaker_id": "",
-          "speaker_name": ""
+          "speaker_name": "Gina Sweat"
+        },
+        {
+          "text": "And I am proud to say that I am her councilwoman. She's in the heart of District 4. We're so thankful for your service and happy retirement. Enjoy yourself. You have definitely earned it. God bless you. We will now move to our Councilman Chairman. I was wondering if I could say a word. Okay, go ahead. Coun- Council- Councilman, go ahead. I just want to say that many people in Memphis are alive today because of Gina Sweat's leadership and the fire department's follow-through during COVID, and I really appreciate them. Thank you.",
+          "speaker_id": "jana-swearengen-washington",
+          "speaker_name": "Jana Swearengen Washington"
         }
       ],
       "display_mode": "raw",
       "display_text": "",
-      "summary": "",
-      "tags": [],
-      "mentions": [],
+      "summary": "Item #2: a resolution recognizing and honoring Gina Sweat for her service to the Memphis Fire Department and the city of Memphis.",
+      "tags": [
+        "gina sweat"
+      ],
+      "mentions": [
+        "jana-swearengen-washington"
+      ],
       "votes": [],
-      "notes": ""
+      "notes": "",
+      "roll_call": []
     },
     {
       "chunk_index": 19,
