@@ -746,41 +746,169 @@
     },
     {
       "chunk_index": 19,
-      "speaker_id": "",
-      "speaker_name": "",
+      "speaker_id": "jana-swearengen-washington",
+      "speaker_name": "Jana Swearengen Washington",
       "lines": [
         {
-          "text": "Amen. Thank you so much for your service. We will now hear our zoning cases, items number three and four. Madam Controller, if you will please call item number three. Item number three is a resolution pursuant to Chapter 9.6 of the Memphis and Shelby County Unified Development Code approving a special use permit at the subject property located at 3568 Lamar Avenue. This resolution is sponsored by the division of planning and development. The case number is SUP 26-02. Thank you, Madam Controller. Councilman Espinosa, you are recognized. Thank you, Madam Chair. This item came downstairs with a positive recommendation. We do have people here if we need to see a presentation, but you know, with our new processes, I'm going to make the motion and I'll recommend that we go ahead and vote. Again, came down with a positive recommendation and I so move. All right. It has been moved by Councilman Espinosa, seconded by Council Councilman Warren. Councilwoman Walker, you're in the queue. Yes, I just wanted to share from last [clears throat] time I didn't get a chance, but I actually had the opportunity to visit the property and walk around. I do think it's a good project, especially with the um the renovation of the Highway 78 corridor. And this is what we want, businesses that are going to locate and if they're going to relocate their new businesses moving forward, we want them to be of a certain quality, of a certain standard. And I just want to say that um the way they were explaining it, they have a small fleet in the front. And the majority of the fleet is on the inside and it's it's a it's a great concept and I would welcome that to that part of the city, my district, next",
+          "text": "Amen. Thank you so much for your service. We will now hear our zoning cases, items number three and four. Madam Controller, if you will please call item number three.",
+          "speaker_id": "jana-swearengen-washington",
+          "speaker_name": "Jana Swearengen Washington"
+        },
+        {
+          "text": "Item number three is a resolution pursuant to Chapter 9.6 of the Memphis and Shelby County Unified Development Code approving a special use permit at the subject property located at 3568 Lamar Avenue. This resolution is sponsored by the division of planning and development. The case number is SUP 26-02. Thank you, Madam Controller.",
           "speaker_id": "",
           "speaker_name": ""
+        },
+        {
+          "text": "Councilman Espinosa, you are recognized.",
+          "speaker_id": "jana-swearengen-washington",
+          "speaker_name": "Jana Swearengen Washington"
+        },
+        {
+          "text": "Thank you, Madam Chair. This item came downstairs with a positive recommendation. We do have people here if we need to see a presentation, but you know, with our new processes, I'm going to make the motion and I'll recommend that we go ahead and vote. Again, came down with a positive recommendation and I so move. All right. It has been moved by Councilman Espinosa, seconded by Council Councilman Warren. Councilwoman Walker, you're in the queue.",
+          "speaker_id": "philip-spinosa",
+          "speaker_name": "Philip Spinosa"
+        },
+        {
+          "text": "Yes, I just wanted to share from last [clears throat] time I didn't get a chance, but I actually had the opportunity to visit the property and walk around. I do think it's a good project, especially with the um the renovation of the Highway 78 corridor. And this is what we want, businesses that are going to locate and if they're going to relocate their new businesses moving forward, we want them to be of a certain quality, of a certain standard. And I just want to say that um the way they were explaining it, they have a small fleet in the front. And the majority of the fleet is on the inside and it's it's a it's a great concept and I would welcome that to that part of the city, my district, next",
+          "speaker_id": "pearl-eva-walker",
+          "speaker_name": "Pearl Eva Walker"
         }
       ],
-      "display_mode": "raw",
+      "display_mode": "sentences",
       "display_text": "",
-      "summary": "",
-      "tags": [],
+      "summary": "A number of permits are approved related to zoning and use permits with the Division of Planning and Development.",
+      "tags": [
+        "Division of Planning and Development",
+        "develop901",
+        "3568 Lamar Avenue",
+        "SUP 26-02"
+      ],
       "mentions": [],
       "votes": [],
-      "notes": ""
+      "notes": "",
+      "roll_call": []
     },
     {
       "chunk_index": 20,
       "speaker_id": "",
-      "speaker_name": "",
+      "speaker_name": "Pearl Eva Walker",
       "lines": [
         {
-          "text": "to your district, as well as the city of Memphis. So, I just wanted to share that. Thank you and I yield the floor. I'm hoping as well it will be a model. It's a concierge car service where they are only putting out a few cars at the same at a time. And the ones that they are putting out, they are putting them inside in the evening. So, it takes down theft. You don't have a lot of cars out. So, hopefully this will be the new norm of the car services and car businesses that we're having. With all that being said, we will take it to a vote. Madam Controller, if you will please prepare the screen for the vote. Canale, yes. Carlisle, yes. Cooper Sutton, yes. Easter-Thomas, yes. Ford, yes. Green, yes. Logan, yes. Espinosa, yes. Walker, yes. Warren, yes. White, yes. Chairwoman Swearingen-Washington, yes. That item passes. Madam Controller, if you will please call item number four. Item number four is a zoning ordinance amending ordinance number 5367 of the code of ordinances, City of Memphis, Tennessee, adopted on August 10th, 2010, as amended, known as the Memphis and Shelby County Unified Development Code, to authorize a zoning use district reclassification for land located on Tully Street and Woodland Street by taking the land out of the residential urban use district and including it in the mixed use district. Up for third and final reading, this ordinance is sponsored by the division of planning and development. The case number is Z26-01. The ordinance number is 5970. Councilman Espinosa, you are recognized. Thank you, Madam Chair. This came downstairs with a positive recommendation. DPD's here if any",
+          "text": "to your district, as well as the city of Memphis. So, I just wanted to share that. Thank you and I yield the floor.",
+          "speaker_id": "",
+          "speaker_name": "Pearl Eva Walker"
+        },
+        {
+          "text": "I'm hoping as well it will be a model. It's a concierge car service where they are only putting out a few cars at the same at a time. And the ones that they are putting out, they are putting them inside in the evening. So, it takes down theft. You don't have a lot of cars out. So, hopefully this will be the new norm of the car services and car businesses that we're having. With all that being said, we will take it to a vote. Madam Controller, if you will please prepare the screen for the vote.",
+          "speaker_id": "jana-swearengen-washington",
+          "speaker_name": "Jana Swearengen Washington"
+        },
+        {
+          "text": "Canale, yes. Carlisle, yes. Cooper Sutton, yes. Easter-Thomas, yes. Ford, yes. Green, yes. Logan, yes. Espinosa, yes. Walker, yes. Warren, yes. White, yes. Chairwoman Swearingen-Washington, yes.",
           "speaker_id": "",
           "speaker_name": ""
+        },
+        {
+          "text": "That item passes. Madam Controller, if you will please call item number four.",
+          "speaker_id": "jana-swearengen-washington",
+          "speaker_name": "Jana Swearengen Washington"
+        },
+        {
+          "text": "Item number four is a zoning ordinance amending ordinance number 5367 of the code of ordinances, City of Memphis, Tennessee, adopted on August 10th, 2010, as amended, known as the Memphis and Shelby County Unified Development Code, to authorize a zoning use district reclassification for land located on Tully Street and Woodland Street by taking the land out of the residential urban use district and including it in the mixed use district. Up for third and final reading, this ordinance is sponsored by the division of planning and development. The case number is Z26-01. The ordinance number is 5970. Councilman Espinosa, you are recognized.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you, Madam Chair. This came downstairs with a positive recommendation. DPD's here if any",
+          "speaker_id": "philip-spinosa",
+          "speaker_name": "Philip Spinosa"
         }
       ],
       "display_mode": "raw",
       "display_text": "",
-      "summary": "",
-      "tags": [],
+      "summary": "A number of permits are approved related to zoning and use permits with the Division of Planning and Development.",
+      "tags": [
+        "Division of Planning and Development",
+        "develop901",
+        "3568 Lamar Avenue",
+        "SUP 26-02",
+        "Z26-01"
+      ],
       "mentions": [],
-      "votes": [],
-      "notes": ""
+      "votes": [
+        {
+          "motion": "SUP 26-02 Approval",
+          "mover_id": "philip-spinosa",
+          "mover_name": "Philip Spinosa",
+          "seconder_id": "jeff-warren",
+          "seconder_name": "Dr. Jeff Warren",
+          "votes": [
+            {
+              "person_id": "j-ford-canale",
+              "person_name": "J. Ford Canale",
+              "vote": "yes"
+            },
+            {
+              "person_id": "chase-carlisle",
+              "person_name": "Chase Carlisle",
+              "vote": "yes"
+            },
+            {
+              "person_id": "yolanda-cooper-sutton",
+              "person_name": "Yolanda Cooper-Sutton",
+              "vote": "yes"
+            },
+            {
+              "person_id": "michalyn-easter-thomas",
+              "person_name": "Michalyn Easter-Thomas",
+              "vote": "yes"
+            },
+            {
+              "person_id": "edmund-ford-sr",
+              "person_name": "Edmund Ford, Sr.",
+              "vote": "yes"
+            },
+            {
+              "person_id": "jerri-green",
+              "person_name": "Jerri Green",
+              "vote": "yes"
+            },
+            {
+              "person_id": "rhonda-logan",
+              "person_name": "Rhonda Logan",
+              "vote": "yes"
+            },
+            {
+              "person_id": "philip-spinosa",
+              "person_name": "Philip Spinosa",
+              "vote": "yes"
+            },
+            {
+              "person_id": "pearl-eva-walker",
+              "person_name": "Pearl Eva Walker",
+              "vote": "yes"
+            },
+            {
+              "person_id": "jeff-warren",
+              "person_name": "Dr. Jeff Warren",
+              "vote": "yes"
+            },
+            {
+              "person_id": "janika-white",
+              "person_name": "Janika White",
+              "vote": "yes"
+            },
+            {
+              "person_id": "jana-swearengen-washington",
+              "person_name": "Jana Swearengen Washington",
+              "vote": "yes"
+            }
+          ]
+        }
+      ],
+      "notes": "",
+      "roll_call": []
     },
     {
       "chunk_index": 21,
