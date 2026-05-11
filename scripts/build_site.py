@@ -934,7 +934,8 @@ def main() -> None:
                     }
                 )
 
-        html = meeting_template.render(site=cfg["site"], meeting=meeting_record)
+        canonical_url = f"{cfg['site']['base_url']}/meetings/{meeting['id']}.html"
+        html = meeting_template.render(site=cfg["site"], meeting=meeting_record, canonical_url=canonical_url)
         write(output_dir / "meetings" / f"{meeting['id']}.html", html)
 
     cutoff_date = (date.today() - timedelta(days=365)).isoformat()
@@ -954,6 +955,7 @@ def main() -> None:
             people_votes.get(person["id"], []),
             cutoff_date,
         )
+        canonical_url = f"{cfg['site']['base_url']}/people/{person['id']}.html"
         person_html = person_template.render(
             site=cfg["site"],
             person=person,
@@ -963,6 +965,7 @@ def main() -> None:
             roll_call_tally=roll_call_tally,
             speaking_turns=speaking_turns,
             stats=person_stats,
+            canonical_url=canonical_url,
         )
         write(output_dir / "people" / f"{person['id']}.html", person_html)
         people_records.append(
@@ -981,11 +984,13 @@ def main() -> None:
         if not entries:
             continue
         tag_label = entries[0]["label"]
+        canonical_url = f"{cfg['site']['base_url']}/tags/{tag_slug}.html"
         tag_html = tag_template.render(
             site=cfg["site"],
             tag_slug=tag_slug,
             tag_label=tag_label,
             entries=sorted(entries, key=lambda x: (x["meeting_id"], x["start"])),
+            canonical_url=canonical_url,
         )
         write(output_dir / "tags" / f"{tag_slug}.html", tag_html)
 
@@ -1024,6 +1029,7 @@ def main() -> None:
         tags=sorted_tags,
         stats=site_stats,
         people=sorted_people,
+        canonical_url=cfg["site"]["base_url"] + "/",
     )
     write(output_dir / "index.html", index_html)
 
@@ -1031,6 +1037,7 @@ def main() -> None:
         site=cfg["site"],
         people=people_by_activity,
         sort_mode="activity",
+        canonical_url=cfg["site"]["base_url"] + "/people/",
     )
     write(output_dir / "people" / "index.html", people_html)
 
@@ -1038,13 +1045,14 @@ def main() -> None:
         site=cfg["site"],
         people=people_alpha_directory,
         sort_mode="alpha",
+        canonical_url=cfg["site"]["base_url"] + "/people/alpha.html",
     )
     write(output_dir / "people" / "alpha.html", people_alpha_html)
 
-    tags_html = tags_template.render(site=cfg["site"], tags=sorted_tags)
+    tags_html = tags_template.render(site=cfg["site"], tags=sorted_tags, canonical_url=cfg["site"]["base_url"] + "/tags/")
     write(output_dir / "tags" / "index.html", tags_html)
 
-    search_html = search_template.render(site=cfg["site"])
+    search_html = search_template.render(site=cfg["site"], canonical_url=cfg["site"]["base_url"] + "/search/")
     write(output_dir / "search" / "index.html", search_html)
 
     for entry in transcript_search_docs:

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ title }} | {{ site.title }}</title>
   <link rel="stylesheet" href="{{ root_path }}/assets/style.css">
+  {% if canonical_url %}<link rel="canonical" href="{{ canonical_url }}">{% endif %}
   {% block extra_head %}{% endblock %}
 </head>
 <body>
