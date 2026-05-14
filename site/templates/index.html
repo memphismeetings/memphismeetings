@@ -37,7 +37,7 @@
   <h2>People</h2>
   <p class="muted">Browse council members and named speakers directly.</p>
   <ul class="chips">
-    <li><a href="people/index.html">All people</a></li>
+    <li><a href="people/">All people</a></li>
     {% for person in people[:12] %}
     <li><a href="people/{{ person.id }}.html">{{ person.name }}</a></li>
     {% endfor %}
@@ -48,7 +48,7 @@
   <h2>Tags</h2>
   <p class="muted">Browse all tags ranked by how often they appear.</p>
   <ul class="chips">
-    <li><a href="tags/index.html">All tags</a></li>
+    <li><a href="tags/">All tags</a></li>
     {% for tag in tags[:24] %}
     <li><a href="tags/{{ tag.slug }}.html">{{ tag.label }}</a></li>
     {% endfor %}

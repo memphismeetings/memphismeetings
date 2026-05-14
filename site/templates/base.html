@@ -10,13 +10,13 @@
 </head>
 <body>
   <header class="site-header">
-    <h1><a href="{{ root_path }}/index.html">{{ site.title }}</a></h1>
+    <h1><a href="{{ root_path }}/">{{ site.title }}</a></h1>
     <p>{{ site.subtitle }}</p>
     <nav class="site-nav" aria-label="Primary">
-      <a href="{{ root_path }}/index.html">Meetings</a>
-      <a href="{{ root_path }}/people/index.html">People</a>
-      <a href="{{ root_path }}/tags/index.html">Tags</a>
-      <a href="{{ root_path }}/search/index.html">Search</a>
+      <a href="{{ root_path }}/">Meetings</a>
+      <a href="{{ root_path }}/people/">People</a>
+      <a href="{{ root_path }}/tags/">Tags</a>
+      <a href="{{ root_path }}/search/">Search</a>
     </nav>
   </header>
   <main {% block main_attrs %}data-pagefind-body{% endblock %}>
