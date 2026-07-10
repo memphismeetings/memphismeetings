@@ -60,63 +60,79 @@
   "sections": [
     {
       "chunk_index": 0,
-      "speaker_id": "",
-      "speaker_name": "",
+      "speaker_id": "jana-swearengen-washington",
+      "speaker_name": "Jana Swearengen Washington",
       "lines": [
         {
           "text": "Sergeant-at-arms, if you will please call our July 7th 2026 council meeting to order.",
-          "speaker_id": "",
-          "speaker_name": ""
+          "speaker_id": "jana-swearengen-washington",
+          "speaker_name": "Jana Swearengen Washington"
         },
         {
           "text": "All right.",
-          "speaker_id": "",
-          "speaker_name": ""
+          "speaker_id": "jana-swearengen-washington",
+          "speaker_name": "Jana Swearengen Washington"
         },
         {
-          "text": "I would like to recognize our chaplain of the day, Pastor Theotus Cochran Jr. of Trinity All Nations Church, invited by Councilwoman Easter Thomas. Pastor Cochran Jr., please lead us in prayer. Shall we pray? Our God and our father, the maker and creator of all things, we come at this opportune time first of all to say thank you. Thank you for another day, another chance, another opportunity you've given to us to get it right. I pray now that we acknowledge you for this council because you said in all the ways that we acknowledge you, you would direct our path. I pray for our city. I pray for our nation. I pray for the people of God everywhere. heal our land that we need to be healed in every corner, every aspect. You're able to do exceedingly abundantly above we can even ask a thing. We put it all in your hand. Even the city of Memphis is in your hands and you're able to work it out. It's in Jesus name I pray. Amen.",
+          "text": "I would like to recognize our chaplain of the day, Pastor Theotus Cochran Jr. of Trinity All Nations Church, invited by Councilwoman Easter Thomas. Pastor Cochran Jr., please lead us in prayer.",
           "speaker_id": "",
-          "speaker_name": ""
+          "speaker_name": "Jana Swearengen Washington"
         },
         {
-          "text": "Please remain standing for the pledge of allegiance. I pledge algiance to the flag of the United States of America and to the republic for which it stands. One nation under God, indivisible, with liberty and justice for all. You may be seated. Councilwoman Easter Thomas, you are recognized. Thank you, chair. Colleagues, I am glad to bring one of the pillar ministers in district 7,",
+          "text": "Shall we pray? Our God and our father, the maker and creator of all things, we come at this opportune time first of all to say thank you. Thank you for another day, another chance, another opportunity you've given to us to get it right. I pray now that we acknowledge you for this council because you said in all the ways that we acknowledge you, you would direct our path. I pray for our city. I pray for our nation. I pray for the people of God everywhere. heal our land that we need to be healed in every corner, every aspect. You're able to do exceedingly abundantly above we can even ask a thing. We put it all in your hand. Even the city of Memphis is in your hands and you're able to work it out. It's in Jesus name I pray. Amen.",
           "speaker_id": "",
-          "speaker_name": ""
+          "speaker_name": "Theotus Cochran"
+        },
+        {
+          "text": "Please remain standing for the pledge of allegiance. I pledge algiance to the flag of the United States of America and to the republic for which it stands. One nation under God, indivisible, with liberty and justice for all. You may be seated. Councilwoman Easter Thomas, you are recognized.",
+          "speaker_id": "",
+          "speaker_name": "Jana Swearengen Washington"
+        },
+        {
+          "text": "Thank you, chair. Colleagues, I am glad to bring one of the pillar ministers in district 7,",
+          "speaker_id": "michalyn-easter-thomas",
+          "speaker_name": "Michalyn Easter-Thomas"
         }
       ],
       "display_mode": "raw",
       "display_text": "",
-      "summary": "",
-      "tags": [],
-      "mentions": [],
+      "summary": "The meeting opens in a prayer from Pastor Theotus Cochran Jr. of Trinity All Nations Church.",
+      "tags": [
+        "trinity all nations church",
+        "theotus cochran"
+      ],
+      "mentions": [
+        "jana-swearengen-washington",
+        "michalyn-easter-thomas"
+      ],
       "roll_call": [],
       "votes": [],
       "notes": ""
     },
     {
       "chunk_index": 1,
-      "speaker_id": "",
-      "speaker_name": "",
+      "speaker_id": "michalyn-easter-thomas",
+      "speaker_name": "Michalyn Easter-Thomas",
       "lines": [
         {
           "text": "pastor Theotus Cochran, and as he celebrates his 27th pastoral anniversary as well. Um, I'd just like to read for Trinity All Nations Church that is in the Hyde Park area of District 7 by the city council. Be it hereby known that Pastor Theotus Cochran Jr. in recognition of a life of exemplary qualities, outstanding service to the city, meritorious involvement in humanitarian affairs, and demonstrated concern for governmental process, has been appointed chaplain of the day of the Memphis City Council, and is hereby entitled to all of the honors, rights, privileges, and prerogatives at pertaining to the office and to the display of this certificate given under this seal. Seventh day of July. Janice Wingen Washington chair presented by Michael Thomas District 7 city council. Thank you for coming and joining us today.",
-          "speaker_id": "",
-          "speaker_name": ""
+          "speaker_id": "michalyn-easter-thomas",
+          "speaker_name": "Michalyn Easter-Thomas"
         },
         {
           "text": "Y'all give it up for our our pastor 27th pastoral anniversary.",
-          "speaker_id": "",
-          "speaker_name": ""
+          "speaker_id": "michalyn-easter-thomas",
+          "speaker_name": "Michalyn Easter-Thomas"
         },
         {
           "text": "Congratulations.",
-          "speaker_id": "",
-          "speaker_name": ""
+          "speaker_id": "jana-swearengen-washington",
+          "speaker_name": "Jana Swearengen Washington"
         },
         {
           "text": "Congratulations. Councilman Canali, I I think you have read the minutes.",
-          "speaker_id": "",
-          "speaker_name": ""
+          "speaker_id": "jana-swearengen-washington",
+          "speaker_name": "Jana Swearengen Washington"
         },
         {
           "text": "Roll call.",
@@ -198,15 +214,84 @@
       "display_text": "",
       "summary": "",
       "tags": [],
-      "mentions": [],
-      "roll_call": [],
+      "mentions": [
+        "jana-swearengen-washington",
+        "michalyn-easter-thomas"
+      ],
+      "roll_call": [
+        {
+          "person_id": "chase-carlisle",
+          "person_name": "Chase Carlisle",
+          "presence": "present"
+        },
+        {
+          "person_id": "jeff-warren",
+          "person_name": "Dr. Jeff Warren",
+          "presence": "present"
+        },
+        {
+          "person_id": "edmund-ford-sr",
+          "person_name": "Edmund Ford, Sr.",
+          "presence": "present"
+        },
+        {
+          "person_id": "j-ford-canale",
+          "person_name": "J. Ford Canale",
+          "presence": "present"
+        },
+        {
+          "person_id": "jana-swearengen-washington",
+          "person_name": "Jana Swearengen Washington",
+          "presence": "present"
+        },
+        {
+          "person_id": "janika-white",
+          "person_name": "Janika White",
+          "presence": "present"
+        },
+        {
+          "person_id": "jb-smiley-jr",
+          "person_name": "JB Smiley, Jr.",
+          "presence": "present"
+        },
+        {
+          "person_id": "jerri-green",
+          "person_name": "Jerri Green",
+          "presence": "present"
+        },
+        {
+          "person_id": "michalyn-easter-thomas",
+          "person_name": "Michalyn Easter-Thomas",
+          "presence": "present"
+        },
+        {
+          "person_id": "pearl-eva-walker",
+          "person_name": "Pearl Eva Walker",
+          "presence": "present"
+        },
+        {
+          "person_id": "philip-spinosa",
+          "person_name": "Philip Spinosa",
+          "presence": "present"
+        },
+        {
+          "person_id": "rhonda-logan",
+          "person_name": "Rhonda Logan",
+          "presence": "present"
+        },
+        {
+          "person_id": "yolanda-cooper-sutton",
+          "person_name": "Yolanda Cooper-Sutton",
+          "presence": "present"
+        }
+      ],
       "votes": [],
       "notes": ""
     },
     {
       "chunk_index": 2,
-      "speaker_id": "",
-      "speaker_name": "",
+      "speaker_id": "jana-swearengen-washington",
+      "speaker_name": "Jana Swearengen Washington",
       "lines": [
         {
           "text": "Yes, Madam Chair. Thank you. I have reviewed the meeting minutes from the June 23rd, 2026 meeting. I find them to be in order and I move for their adoption.",
@@ -215,13 +300,13 @@
         },
         {
           "text": "All right. has been moved by Councilman for Canali, second by Councilman Spinosa. Madame Controller, if you will please prepare the screen for the vote. Council members Canali, yes. Cooper Sutton, yes. Easter Thomas, yes. Ford, yes. Logan, yes. Smiley, yes. Spinosa, yes. Warren, yes. White. Yes. Chairwoman Swearington Washington. Yes.",
-          "speaker_id": "",
-          "speaker_name": ""
+          "speaker_id": "jana-swearengen-washington",
+          "speaker_name": "Jana Swearengen Washington"
         },
         {
           "text": "That item passes. Welcome to the July 7th, 2026 regular meeting of the Memphis City Council. The meetings of the council shall be conducted in an orderly manner to ensure that the public has the full opportunity to be heard and the deliberate process of the council is retained at all times. Our council staff has meeting agendas available up front. Phoebe, if you'll please raise your hand, as well as comment request cards for members of the public wishing to be heard on a specific item. All those wishing to speak on an item must turn in their comment card to staff before the item is heard. If you are not here to speak on a specific item, you can note that your request to give a general comment at the end of the meeting is welcomed. As chair, I will only recognize citizens that properly registered to speak by submitting a completed comment request card to council staff. The administration has withdrawn items number nine and item number 10. We will",
-          "speaker_id": "",
-          "speaker_name": ""
+          "speaker_id": "jana-swearengen-washington",
+          "speaker_name": "Jana Swearengen Washington"
         }
       ],
       "display_mode": "raw",
@@ -230,7 +315,82 @@
       "tags": [],
       "mentions": [],
       "roll_call": [],
-      "votes": [],
+      "votes": [
+        {
+          "motion": "June 23rd, 2026 adopt minutes",
+          "mover_id": "j-ford-canale",
+          "mover_name": "J. Ford Canale",
+          "seconder_id": "philip-spinosa",
+          "seconder_name": "Philip Spinosa",
+          "votes": [
+            {
+              "person_id": "chase-carlisle",
+              "person_name": "Chase Carlisle",
+              "vote": "yes"
+            },
+            {
+              "person_id": "jeff-warren",
+              "person_name": "Dr. Jeff Warren",
+              "vote": "yes"
+            },
+            {
+              "person_id": "edmund-ford-sr",
+              "person_name": "Edmund Ford, Sr.",
+              "vote": "yes"
+            },
+            {
+              "person_id": "j-ford-canale",
+              "person_name": "J. Ford Canale",
+              "vote": "yes"
+            },
+            {
+              "person_id": "jana-swearengen-washington",
+              "person_name": "Jana Swearengen Washington",
+              "vote": "yes"
+            },
+            {
+              "person_id": "janika-white",
+              "person_name": "Janika White",
+              "vote": "yes"
+            },
+            {
+              "person_id": "jb-smiley-jr",
+              "person_name": "JB Smiley, Jr.",
+              "vote": "yes"
+            },
+            {
+              "person_id": "jerri-green",
+              "person_name": "Jerri Green",
+              "vote": "yes"
+            },
+            {
+              "person_id": "michalyn-easter-thomas",
+              "person_name": "Michalyn Easter-Thomas",
+              "vote": "yes"
+            },
+            {
+              "person_id": "pearl-eva-walker",
+              "person_name": "Pearl Eva Walker",
+              "vote": "yes"
+            },
+            {
+              "person_id": "philip-spinosa",
+              "person_name": "Philip Spinosa",
+              "vote": "yes"
+            },
+            {
+              "person_id": "rhonda-logan",
+              "person_name": "Rhonda Logan",
+              "vote": "yes"
+            },
+            {
+              "person_id": "yolanda-cooper-sutton",
+              "person_name": "Yolanda Cooper-Sutton",
+              "vote": "yes"
+            }
+          ]
+        }
+      ],
       "notes": ""
     },
     {
