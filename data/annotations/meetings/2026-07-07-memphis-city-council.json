@@ -1,0 +1,1127 @@
+{
+  "meeting_id": "2026-07-07-memphis-city-council",
+  "councilpeople": [
+    {
+      "id": "chase-carlisle",
+      "name": "Chase Carlisle"
+    },
+    {
+      "id": "jeff-warren",
+      "name": "Dr. Jeff Warren"
+    },
+    {
+      "id": "edmund-ford-sr",
+      "name": "Edmund Ford, Sr."
+    },
+    {
+      "id": "j-ford-canale",
+      "name": "J. Ford Canale"
+    },
+    {
+      "id": "jana-swearengen-washington",
+      "name": "Jana Swearengen Washington"
+    },
+    {
+      "id": "janika-white",
+      "name": "Janika White"
+    },
+    {
+      "id": "jb-smiley-jr",
+      "name": "JB Smiley, Jr."
+    },
+    {
+      "id": "jerri-green",
+      "name": "Jerri Green"
+    },
+    {
+      "id": "michalyn-easter-thomas",
+      "name": "Michalyn Easter-Thomas"
+    },
+    {
+      "id": "pearl-eva-walker",
+      "name": "Pearl Eva Walker"
+    },
+    {
+      "id": "philip-spinosa",
+      "name": "Philip Spinosa"
+    },
+    {
+      "id": "rhonda-logan",
+      "name": "Rhonda Logan"
+    },
+    {
+      "id": "yolanda-cooper-sutton",
+      "name": "Yolanda Cooper-Sutton"
+    }
+  ],
+  "meeting_summary": "",
+  "global_tags": [],
+  "materials": [],
+  "sections": [
+    {
+      "chunk_index": 0,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "Sergeant-at-arms, if you will please call our July 7th 2026 council meeting to order.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "All right.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "I would like to recognize our chaplain of the day, Pastor Theotus Cochran Jr. of Trinity All Nations Church, invited by Councilwoman Easter Thomas. Pastor Cochran Jr., please lead us in prayer. Shall we pray? Our God and our father, the maker and creator of all things, we come at this opportune time first of all to say thank you. Thank you for another day, another chance, another opportunity you've given to us to get it right. I pray now that we acknowledge you for this council because you said in all the ways that we acknowledge you, you would direct our path. I pray for our city. I pray for our nation. I pray for the people of God everywhere. heal our land that we need to be healed in every corner, every aspect. You're able to do exceedingly abundantly above we can even ask a thing. We put it all in your hand. Even the city of Memphis is in your hands and you're able to work it out. It's in Jesus name I pray. Amen.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Please remain standing for the pledge of allegiance. I pledge algiance to the flag of the United States of America and to the republic for which it stands. One nation under God, indivisible, with liberty and justice for all. You may be seated. Councilwoman Easter Thomas, you are recognized. Thank you, chair. Colleagues, I am glad to bring one of the pillar ministers in district 7,",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "roll_call": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 1,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "pastor Theotus Cochran, and as he celebrates his 27th pastoral anniversary as well. Um, I'd just like to read for Trinity All Nations Church that is in the Hyde Park area of District 7 by the city council. Be it hereby known that Pastor Theotus Cochran Jr. in recognition of a life of exemplary qualities, outstanding service to the city, meritorious involvement in humanitarian affairs, and demonstrated concern for governmental process, has been appointed chaplain of the day of the Memphis City Council, and is hereby entitled to all of the honors, rights, privileges, and prerogatives at pertaining to the office and to the display of this certificate given under this seal. Seventh day of July. Janice Wingen Washington chair presented by Michael Thomas District 7 city council. Thank you for coming and joining us today.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Y'all give it up for our our pastor 27th pastoral anniversary.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Congratulations.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Congratulations. Councilman Canali, I I think you have read the minutes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Roll call.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "After our roll call.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you, Madam Chair. Council member Canali",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Carlilele Cooper Sutton",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Easter Thomas",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Ford",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Green Logan",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Smiley Minosa",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Walker",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Warren",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "White",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Chairwoman Swearington Washington",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "present.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Madam Chair, you have a quorum.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you. Councilman Canali.",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "roll_call": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 2,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "Yes, Madam Chair. Thank you. I have reviewed the meeting minutes from the June 23rd, 2026 meeting. I find them to be in order and I move for their adoption.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "All right. has been moved by Councilman for Canali, second by Councilman Spinosa. Madame Controller, if you will please prepare the screen for the vote. Council members Canali, yes. Cooper Sutton, yes. Easter Thomas, yes. Ford, yes. Logan, yes. Smiley, yes. Spinosa, yes. Warren, yes. White. Yes. Chairwoman Swearington Washington. Yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "That item passes. Welcome to the July 7th, 2026 regular meeting of the Memphis City Council. The meetings of the council shall be conducted in an orderly manner to ensure that the public has the full opportunity to be heard and the deliberate process of the council is retained at all times. Our council staff has meeting agendas available up front. Phoebe, if you'll please raise your hand, as well as comment request cards for members of the public wishing to be heard on a specific item. All those wishing to speak on an item must turn in their comment card to staff before the item is heard. If you are not here to speak on a specific item, you can note that your request to give a general comment at the end of the meeting is welcomed. As chair, I will only recognize citizens that properly registered to speak by submitting a completed comment request card to council staff. The administration has withdrawn items number nine and item number 10. We will",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "roll_call": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 3,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "now begin with our presentations. Madame Comproller, if you will please call item number one. Item number one is a resolution honoring Grammy nominated children's music artistnook. This resolution is sponsored by Councilwoman Green. Councilwoman Easter Thomas, you are recognized at this time.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you, Chair. Um, in lie of Councilwoman Green, I am grateful to have the opportunity to present this to Miss Sherry Moon. Um, and just shout out to our new communications person and just seeing these on the screen is just a it's a wonderful touch. It's wonderful touch. Whereas, it is fitting that the city council honor and recognize individuals whose extraordinary talent, leadership, and commitment to enriching the lives of others have brought distinction to the city of Memphis and inspired communities both locally and around the world. Whereas Sherry Moon, born Lana Piggrim and professionally known as Snooknook, is a Grammy nominated singer, songwriter, recording artist, entrepreneur, actress, educator, and children's music advocate whose extraordinary career has inspired audiences across generations. Raised in North Memphis, now I know that's right, Sher. Okay. discovered her passion for music at an early age, performing with the Prim Family Choir, winning numerous talent competitions, and earning recognition as Memphis Teen of the Year, laying the foundation for an accomplished career in music and entertainment. Throughout her accomplished career, she has collaborated internationally with",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "roll_call": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 4,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "renowned artists and producers including Timberland, Jimmy Douglas, Missy Elliot, Danny [clears throat] O'Donn, Kevin Rudolph with her songwriting and vocal performances. Also being featured in national advertising campaigns and television productions, earning a claim across the music industry and on international dance and pop charts. Inspired by motherhood, Sherry Moon embraced a new mission by creating positive, educational, and uplifting music for children under the name Snook Nook. Promoting kindness, diversity, mindfulness, creativity, emotional well-being, and social awareness through music that enriches the lives of young audiences and families. Her unwavering commitment to education and artistic empowerment led to the founding of the SnookNook Cafe in Hollywood, California. a children's performing arts center dedicated to fostering creativity and confidence and educational works including Ain't I a Woman and her contribution to Grammy award-winning artist Fuch Fuch black women in history [snorts] have introduced children to important historical figures and inspired future generations through music. Sherry Moon in 2022 received her first Grammy Award nomination in the best children's music album category as a member of All One Tribe in recognition of her dedication to creating inclusive music that celebrates unity, diversity, and understanding. further honoring her Memphis roots by recording at the legendary Staxs Recording Studios alongside the STAX Music Academy choir and helping bridge the city's music musical legacy that is rich and in our future. Through her accomplishments as a Grammy nominated artist, educator, entrepreneur, and children's advocate,",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "roll_call": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 5,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "Sherry Moon has inspired generations of young people while exemplifying the creativity, compassion, and musical excellence that define the city of Memphis. Now therefore, be it resolved that the Memphis City Council hereby honors and celebrates Miss Sherry Moon for her outstanding contributions to music, education, and empowerment of children and families. Given by our hands of the Memphis City Council, signed by Councilwoman Jerry Green, and I myself, Michaela Thomas. Can we uh give it up for Miss Sher Moon that's here with us today? Thank you. Thank you so much. Memphis, this is I am a product of Memphis. I just want to say that. I have a few words if you guys don't mind. Okay. I want to just say chairman, council members, thank you for this incredible honor. The resolution means the world to me coming from the city that birthed me. And through it, though it does have my name on it, it really belongs to the children everywhere. When people hear the song dome, they may hear musical notes. I hear something else. I hear confidence. I hear children of with joy. I hear children discovering that their voice matters. [snorts] The students at the Stats Music Academy didn't just sing on my song. They didn't sing on a recording. They harmoniously reminded us of something important. Every child deserves to be seen and heard and encouraged. This room spends a lot of time debating roads and buildings and budgets and development. And yes, those things are important, but those things and the future of Memphis is not made of concrete. It is made through the hearts of children. A city becomes what it its children believe that they can become.",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "roll_call": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 6,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "When a child stands in front of a microphone for the first time or raises their hand in a classroom, writes a song, paints a picture, or shares an idea, they are making a decision about who they think they are. The adults around them have an opportunity to help shape that belief. The message behind dome is simple, very simple. Every child has value. Every child has potential. Every child should be able to express themselves freely. I have been blessed to create music to inspire children. But children have given me far more than what I could ever give. They've taught me to be continue to be curious. They've taught me to be kind. They taught me to continue to dream bigger than any circumstance that I may be in. So I accept this honor with gratitude, with huge gratitude from you guys. I hope today is also a reminder that investing in children is not a charity. It is the most important work that we can do. Years from now, not many people will remember every meeting that was put together in this room. But what they will remember from years to come is the opportunity that you've given a child to grow that may indeed change this city. Thank you for supporting the arts. Please continue to support the arts. Thank you for supporting the young people. And please continue to support the young people. Um and thank you for believing in the children of Memphis. And that includes me, a child of Memphis. I want to thank my family for my the support and molding me into the person that I am and always supporting me through the ups and the downs and the roller coasters. And I want to thank God. Thank you guys.",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "roll_call": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 7,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "Madame controller, if you will please call item number three. Item number three is a resolution pursuant to chapter 9.6 of the Memphis and Shelby County Unified Development Code approving a special use permit at the subject property located at 2465 Milbrook Avenue. This resolution is sponsored by the Division of Planning and Development. The case number is SU26-08.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Councilman Spinosa, you are recognized.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you. Thank you, Madam Chair. This item was sent down with a favorable recommendation and um also moved.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Okay, that item has been moved by Councilman Spinosa, second by Councilman Warren. There are no council in the queue, nor do I have any cards. Are there any questions or of council members wishing to speak on this item? All right, madame controller, if you will, Please prepare the screen to vote for item number three. Canali, yes. Cooper Sutton, yes. Easter Thomas, yes. Ford, yes. Logan, yes. Smiley, yes. Spinosa, yes. Warren, yes. Swearing, Washington, yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "That item passes. We will now move to our consent agenda items four, five, six, seven, and eight. Madame Controller, if you will please call the consent agenda items.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you. Item number four is up for second reading. Ordinance number 5974 is sponsored by the administration. Item number five is up for second reading. Ordinance number 5975 is sponsored by the administration. Item",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "roll_call": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 8,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "number six is up for second reading. Ordinance number 5977 is sponsored by Councilman Carile. Item number seven is also up for second reading. Ordinance number 5978 is sponsored by Councilman Carile. Item number eight from engineering is a resolution approving supplemental agreement number two for Memphis Brooks Museum of Art front street improvements and museum perimeter streetscape and accepting bond as security. There is a request for same night minutes for this item. The contract number is CR-5447. Madam Chair, that concludes our consent agenda items.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you. Please note that we are taking off item number eight. So we are voting on four, five, eight, please.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Okay.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Okay. Can I get a motion for the adoption of the consent agenda? It has been moved by Councilman Ford Canali, second by Councilman Warren. Madame Controller, if you will please prepare the screen for the vote on the consent agenda items four, five, six, and seven. Canali, yes. Cooper Sutton, yes. Easter Thomas, yes. Ford, yes. Logan, yes. Smiley, yes. Spinosa, yes. Warren, yes. White, yes. Chairwoman Swaren, Washington, yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "That item passes. Madame controller, if you will please",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "roll_call": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 9,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "call item number eight.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "We took it off consent. It's on the regular agenda item. Item number eight is a resolution approving supplemental agreement number two for Memphis Brooks Museum of Art, Front Street Improvement, and Museum Perimeter Streetscape, and accepting bonds as security. There's a request for same night minutes. The contract number is 5447.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Councilman Ford Canali, you are recognized.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you, Madam Chair. On page one of the supplemental agreement two for the city standard improvement contract 4 CR number 5447 at the bottom where it says now therefore in consideration of the premises and mutual covenants of the parties here and contained. It is agreed and understood that the original standard improvement contract Memphis Brooks Museum of Art CR5477 is hereby revised as follows. A accepting revised plans work to be completed as shown on approved engineering plans. This needs to be amended to say work to be completed as shown on approved engineering plans or as amended by the developer and the city engineer. If uh council will accept that amendment without objection. I",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "I have a question.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "I can't call on you. I'm sorry. It really hurts my feelings that you can't. Ma'am, do we do have a question?",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Councilman Spinosa, you're recognized.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you. And I would have put myself in the queue, but I couldn't. So, I do I do have a question on it and was excited to vote yes on this. Still want to vote yes on this, but I want some clarity if the engineer is here. I wanted",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "here. I'm here in this place.",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "roll_call": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 10,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "Okay. I just wanted to make sure because I know that the university",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "all kind of stuff. There was um there was like a new stoplight or something that was supposed to go in had to do with the university and I wanted to make sure that was in the plans.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "No. Uh I think the issue is about Monroe Avenue. There is a public civic plaza and the plans need to be perhaps amended to make it clear that it is a public civic plaza not Monroe Plaza and it's to be Monroe Avenue is not to be is not being closed. It is simply being expanded to be open to vehicular and pedestrian traffic.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Okay. And so that's why it says the language would be modifying the plans as may be amended by the developer and the engineer.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Gotcha. Understood on that. I think madam chair I was more concerned that if any of the plans had changed and I was open to just hear than make sure",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "it would be a cosmetic change if anything that's",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "okay. So I'm going to assume then that some of the things that were in the original plan are going to be there.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes. including the stoplight and the other stuff.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Whatever's in there is only the cosmetic plans about the plaza.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Okay. So, that's the only change that's being made today.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "That's the only plan that that I know that's being contemplated. Yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Okay. Thank you.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "All right. Madam controller, we're more question. You're not in the queue. I don't see Okay. I don't see your name. Is she? Something's wrong with my screen. Councilwoman Logan, you're recognized.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "I just want to make sure I'm understanding because I definitely thought Monroe was supposed to be closed to car traffic that it was going to be open just for foot traffic and a plaza",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "roll_call": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 11,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "and trees and garden like atmosphere.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "I I I'm going from memory, but I believe if you come from Riverside, you go vehicular traffic into a garage. You don't have complete sessation of vehicular trackers",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "from front down.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yeah.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "I mean it's the same street",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "at front street. There will be ballers there and there will be a pedestrian civic class. After that there will still be a road and you will go into a garage and I said that it would be vehicular and pedestrian travel. Okay.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "It's not being closed completely. No.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Right. Just that little portion of it. Okay. Thank you. Sorry,",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Councilman Spinosa.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "And again, sorry, I would have put myself in the queue. So, I just want to say again for the for the record, like I I'm I want to vote yes on this and I'm planning to vote yes on this. I just wanted to make sure it said engineering plans. It was a street light in front of Caset Library and like a walkway and stuff. So, I just wanted to say that on the record like I'm excit the university is excited about that. It's on Front Street and that's a part of all of this. So, none of that's changing. We're just talking about what we're talking about here today.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes, sir.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Okay, cool. That's all. Thank you. Yeah.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "All right. Are there any other council members in the queue?",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Councilwoman Cooper Sudden, you're recognized.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you. Thank you, chair. So, it's just going to be a oneway",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "from the river. You stop at front. It's vehicular.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "You don't go all the way through. No, that's always been the case.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Okay.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "All right.",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "roll_call": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 12,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "Madame controller, if you will please prepare the screen for the vote. as amended. It's been moved by Councilman Spinosa, second by Councilwoman Dr. Easter Thomas. We're voting on item as amended. Um, I'll get your vote manually. Easter Thomas, yes. Ford, yes. Logan, yes. Spinosa, yes. Warren, yes. Chairwoman Swearington Washington, yes. Please show. Council member Smiley is voting yes. Council member Canali is voting yes. Are there any other council members that'd like to vote on this item?",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you. That item passes. Madame comproller, if you will please call our same night minute items. We'll start with number 11, a resolution to accept grant funds in the amount of $591,000 from the state of Tennessee Office of Criminal Justice Programs, all council districts. This resolution is sponsored by the administration and there is a request for same night minutes. Councilman Canali, you're recognized.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you, Madam Chair. The committee met recommended approval and I so move.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "All right. It has been moved by Councilman Ford Canali,",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "second by Councilman Dr. Warren. Madam Controller, if you will please prepare the screen for item number 11.",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "roll_call": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 13,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "Canal. Yes. Cooper Sutton. Yes. Easter Thomas. Yes. Ford. Yes. Logan. Yes. Smiley. Yes. Spinosa. Yes. Warren. Yes. Chairwoman swearing in Washington. Yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "That item passes. Madam controller, if you will please call item number 12.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Item number 12 is a resolution to establish the Memphis City Council community grant program for FY27. All council districts. This resolution is sponsored by chairwoman swearing in Washington. There is a request for same night minutes. Councilwoman Dr. Easter Thomas, you're recognized.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Chair, the committee recommends approval and I so move, but I I move um verbally since my screen is missed.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Okay, it has been moved by Councilwoman Dr. Easter Thomas, second by Councilman Dr. Warren. Madame controller, if you will please prepare the screen and take a roll call vote as necessary. Our votes are Canali yes on number 12. Easter Thomas yes. Ford yes. Logan yes. Smiley yes. Please show council member Spinosa as voting yes on number 12. Warren yes. And chairwoman swearing in Washington yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "That item passes. Madame Controller, if you will please call item number 13.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Item number 13 is a resolution to amend the Memphis City Council community grant program for FY27. All council districts, this resolution is sponsored by council members Logan and Cooper Sutton. There's",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "roll_call": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 14,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "a request for same night minutes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Councilwoman Dr. Easter Thomas, you're recognized at this time.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Chair, the committee recommends approval and I so move verbally. It has been moved by Councilwoman Dr. Easter Thomas, second by Councilman Spinosa. Madame Controller, if you will please prepare the screen for item number 13, Council Member Canali. Yes. Easter Thomas, yes. Ford, yes. Logan, yes. Smiley, yes. Please show council member Spinosa is voting yes on this item. Warren, yes. And chairwoman swearing in Washington, yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "That item passes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "This now takes us to our comment cards. We will now do our same night minutes. Councilman Port Canali.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you, Madam Chair. The same night minute items are 8, 11, 12, and 13. And with that, I move it to the floor.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "It's been moved by Councilman Ford Canali, second by Councilman Spinosa. All right, now we're ready for our comment cards.",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "roll_call": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 15,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "for the same night minutes. Please show council member Easter Thomas's voting yes. Council member Cooper Sutton as voting yes. Canali as voting yes. Ford yes. Logan yes. Spin Smiley yes. Spinosa yes. Warren. Yes. And chairwoman swearing Washington. Yes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Please show white as voting yes on the same night minutes.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "That item passes. We're now ready to move to our comment cards. Our first comment request card is from Janice Brody Davis and then we'll have Lucy Chainless. Lucy.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "[clears throat]",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Do I start now? My name is Janice Brody Davis. I was a bus driver of Memphis area lower transitive and uh I just want to know let y'all know how Matt [clears throat] did me as a bus driver. They had bought me a bus. The bus didn't have any the brakes went out. Someone hit the back of the bus. I never had no accident. You terminated me. So when you terminated me and my files, I was not working for matter. Another driver had killed somebody on the I40. They said they put it on me. I wasn't even working for them. And also they got other drivers that had accidents in my employee files. It's a whole lot of drivers with their names on it, their badge numbers. They tried to set me up and said I did it. is in their names, their handwriting and everything. But you will put dollar in my employee file. I never had no accident. I was a good driver for matter. I was an ontime performance. I never miss work. I did matter plus and I did the fix route. If y'all have any questions for me, let",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "roll_call": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 16,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "me know. I'mma sit down. Okay. But I just want to be heard because I have been done wrong at Memphis Area Authority Transit. And um y'all know what matter going through. They going through a lot. So I was there with all that was going on when they was stealing their money, everything. I was there. [clears throat] Thank y'all.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "All right. Thank you.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Miss Chainless and then Wania Hyman. My name is Lucy Luchi Chamblas, whatever you want to call me. Um, and I'm here because Tyrron Johnson was murdered Sunday by the National Guard. This is the third murder that we've had by the combination or these soldiers that are in our streets. And I I actually wrote out what I wanted to say so that I wouldn't come in here cussing um like I have on on previous occasions, but I did not expect to see the Pyramid family when I got here. We opened this meeting tonight honoring Darnell Pyram's cousin for her musical achievements. And I'm I'm not saying that she doesn't deserve that. She definitely deserved that honor. But y'all realize that her cousin was killed by the task force just a couple months ago, right? And this body's been quiet. And I realized that you guys don't have a lot of authority when it comes to the task force or to these soldiers that are occupying our city. But Miss Moon said something that hit me in my heart. She said that our future depends on what our children believe that they can be. And this body has shown our children that they can be criminals and that's about it. This body has for decades, not just you guys, your predecessors, have divevested from community resources that actually do prevent crime, that",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "roll_call": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 17,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "reduce crime. You've divested from from from our children, from their futures, and you have given our money over and over and over to MPD. You're showing our children that the only thing that they can be is criminals. And that's why Memphis is in the state that it's in right now. That's why this task force is here. That's why the president sent the military to occupy our city. [snorts] And again, I know there's not a lot that you can do, but MPD does have the author, the authority to disarm those soldiers. They have the authority to tell them that they're not welcome to perform law enforcement duties in our city. And I ask that you put pressure on MPD so that this doesn't keep happening. Thank you.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you so much for coming down.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Why? and then Claudia Heyman.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "All right. Uh, thank you for the opportunity to speak. Blessings to us all. There is a Bermuda Triangle in the south sweeping through the area like [clears throat] a falcon who just saw their prey. If I left my home right now, I could get to XAI's now Anthropics Memphis building, XAI's other Memphis building, Google's West Memphis, Arkansas building in XAI's South Haven, Mississippi building in 1 hour and 22 minutes for a total of 54 miles. The South still has not developed immunity to inhumane plantations. Without plantation immunity, the disease parts learn newer ways to infect and grow. It is not by happen stance that Virginia has the most data centers considering the number of plantations they had during slavery by 1860. I have been engrossed in the [clears throat] teachings of ancestral father Dr. John Henry Clark and he teaches on the [clears throat] peril of pan-African communities. One, not owning their wealth producing resources of their",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "roll_call": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 18,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "land. Two, allowing others not of that land to come in to colonize that land because of its wealth producing resources. Three, having elected and non-elected leaders who who bargain off the people's resources under the guise of free market and trade. And four, reaping little or nothing in comparison to those who colonize that land for its wealth producing resources. For example, I'm talking about our aquafer as a wealth producing resource. Further concerns reports are that XAI also uses coolant that contains antireeze which is going to further complicate that water even being able to be treated in a wastewater treatment plant uh due to how antireeze particles bind to water. Uh there are sand aquifers rapidly depleting all around the world because of overping. Uh, we need city attorneys to look into how we can lawfully obtain access to the NDAs, which you can do when the state of public interest is at stake, and it definitely is. Uh, also, it would be great to have some kind of law that says Greater Memphis Chamber cannot keep signing.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you so much. We will now have Claudia Heyman. and then Miss Glenda Hicks.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Hello to you all giving God to giving honor to God and the ancestors that allow us to be here today. I am Claudia Heyman. I was born and raised in Memphis. I'm here as a warning from the future, a future I hope we never see. I want you all to know that if this future manifests, it is our failure to hold because we are in a place where we can still act. I'm here to talk to you about a pre precious gift that we have been given that we have been asked to steward, which is the Memphis Sand Aquafer. Now, I have practiced in states all",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "roll_call": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 19,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "across the country. As a civil rights attorney, I've practiced in Washington DC, California, Seattle, and Jackson, Mississippi. I want to talk to you a little bit about my time in Jackson, Mississippi. I was a member of the legal team that represented community groups in the emergency petition filed before the US Environmental Protection Agency and also as we intervene in the federal lawsuit filed before the US District Court for the Southern District of Mississippi. The argument we were making is that the community has a right to speak about its water. I'm happy to share the case numbers and materials related to these cases. If you would like them, I'm happy to share them. But I'm here to talk about experiences that the community shared. As part of my role and as a representation for the community, I attended many public meetings. Some of those um hosted by community organizations, some hosted by the Environmental Protection Agency. Residents battled with constant reoccurring boil water notices and electrical fire, complete loss of water pressure, schools closing due to lack of water, contaminated water and/or damaged or destroyed pipes, and many other uh issues due to the water pressure being completely damaged. It would take longer than a few minutes to share what I heard at those meetings, but I wanted to share with you some of the memorable stories and hope that you will not have to listen to these stories coming from your community citizens. One of the stories I heard was from a parent. I'll be back. Thank you so much, Miss Glenda Hicks. and then LG concert.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Good afternoon.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Good afternoon. So, I'm here today with grave concern",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "roll_call": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 20,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "regarding item number five, the intent [clears throat] to increase our sewer fees. How is that justified? It wasn't that long ago that we had a sewer increase. And I do not know the exact amount that you all are talking about, but let's be real. Council members, Memphis is at a critical state. We just got a slight increase on county taxes. The property values, the assessment of property values went up last year, which gave us increase across the board. No one has said a word about that, but I know that based on the assessed value, my taxes increase. I'm paying more. No one has addressed those funds and what's being go done with those funds. You all say, \"Oh, we're not having a rate increase.\" But then you want to pick and choose these little um these little services that should be covered by our taxes but are not solid waste sewer. You increased solid waste last year and now you want to come and talk [clears throat] about a sewer increase. It is not justified. Now I I understand that there has been a serious mismanagement of funds when it comes to the sewer funds. You all need to deal with that without putting that responsibility on the backs of hardworking citizens. I cannot believe that you can sit in these seats and go home at night and feel justified with that action because it is not. So I know this was second reading but please do not",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "roll_call": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 21,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "Thank you so much. We will now have LJ Caset and then Martina X.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes. Hi. I have a presentment from LG Caset, director general of the indigenous people of North America. When Tavan Moore was born in Memphis Regional One Hospital, her mother Noyina wanted her name to be um named nine days after her birth and she didn't want to be vaccinated. Years ago, Noina had told her by her older family that she was indigenous Indian. Everyone in Noina's family had tried for years to change their identity from African-American to American aboriginal, but they were denied. When Noina told the hospital staff that her baby was not going to be vaccinated and didn't need a birth certificate, the hospital staff immediately called Tennessee Department of Human Services and the Memphis Police Department. Number one, no was not obligated to make her child a ward of the state. Number two, by birth and blood from the mother. She had the right to name according to their customs and their bloodline indigenous lifestyle. Number three. Noina knew that her baby was not a Fourth Amendment citizen.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Yes, I",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "thank you. Names are important. Titles are important. I'm LG Cassid because my grandfather was LG Cassid. He was the great great grandson of Frederick Caset who built the Caset Library. I'm concerned about how our young women are being treated here in Shelby County. They're not allowed to this is my body, this is my baby. We're changed to African-American at a whim. We're labeled black as a at a whim. That's a violation of human rights. And I'm asking all of the members of this",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "roll_call": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 22,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "council body who's here today. There was a notice that was passed around a letter to the governor. If you care about the people in your district, then I believe that you will send that letter to your governor and have that governor cease and desist all of the policies that are along the lines of the racial integrity act which has been repealed. I thank you. I'm LG Caset. Thank you.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you, Martina X. and then Nehemiah Hardaway.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Good afternoon, council members. My name is Martina X and I'm here because the city of Memphis cannot continue looking the other way. MLGW is owned by the city of Memphis and his CEO I see is not currently here that is appointed by the mayor and is ultimately accountable to the public. On May 16th, 2024, MLGW allegedly allowed my estranged husband to establish utility service at my home using an outofstate identification and a protection order. I contend that MLGW failed to follow its own verification procedures before reconnecting service. That failure changed my life. I was locked out of my house for 10 months. I was arrested multiple times. I am currently under indictment. And on January 17th, 2025, I lost my home to foreclosure. When I asked for answers, I received denials instead of a transparency. So, I have four simple questions. They were for the CEO, but now since you are responsible for him, who approved this? Why was the property owner never notified? Why were MLGW policies not followed? And who will",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "roll_call": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 23,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "be held accountable? [snorts] I am demanding this council to investigate MLGW's actions. demand accountability from its CEO and ensure no other Memphian resident loses their home and constitutional rights because a city agency such as yourself failed to do its job. You exist to protect the rights of the constituents, not strip them away. Justice delayed is deliberate indifference and I'll see you soon.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you so much. We'll now have Nehemiah Hardaway and then Ricky Lewis. Nemiah is here. All right, we'll move to Ricky Lewis. [clears throat]",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Good afternoon.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Good afternoon.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "My name is Ricky Lewis and I was here a couple of weeks ago and uh as an advocate for the was fired to light gas and water. And once Michael Jackson always said, \"What about the common man? Is anybody concerned about the common?\" I'm asking you guys, do not turn your backs on the ones with fired like gas water. If so, there will be plenty of them behind them. There will be more fire behind them. And I mentioned in the board meeting the other day, light gas and water really needs to be investigated. They had one person that most the ones that had problems with uh this one VP which is Timothy Davis. And I'm asking this city council to somewhere somehow get like gas and water. uh they they need to be investigated because",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "roll_call": [],
+      "votes": [],
+      "notes": ""
+    },
+    {
+      "chunk_index": 24,
+      "speaker_id": "",
+      "speaker_name": "",
+      "lines": [
+        {
+          "text": "eventually it won't be a Memphis Light gas and water. It will be a utility company and that's what we going at the utility company. I'm an advocate for the customers. I have talked with uh VPs about uh about the customers and I'm concerned about the employees that like water and like I will say many of you went to college you may have fraternities and and sororities but I'm going to say now like water is my fraternity and I wish you guys would u have a heart for the customers was fired they like I mean the employees were fired like gas water have a hard to look at it uh as you will. Thank you.",
+          "speaker_id": "",
+          "speaker_name": ""
+        },
+        {
+          "text": "Thank you. That brings us to the end of our meeting agenda. I will entertain a motion to adjourn this meeting. All right. has been moved by Councilman Ford Canali, second by Council",
+          "speaker_id": "",
+          "speaker_name": ""
+        }
+      ],
+      "display_mode": "raw",
+      "display_text": "",
+      "summary": "",
+      "tags": [],
+      "mentions": [],
+      "roll_call": [],
+      "votes": [],
+      "notes": ""
+    }
+  ]
+}
