@@ -395,65 +395,96 @@
     },
     {
       "chunk_index": 3,
-      "speaker_id": "",
-      "speaker_name": "",
+      "speaker_id": "jana-swearengen-washington",
+      "speaker_name": "Jana Swearengen Washington",
       "lines": [
         {
-          "text": "now begin with our presentations. Madame Comproller, if you will please call item number one. Item number one is a resolution honoring Grammy nominated children's music artistnook. This resolution is sponsored by Councilwoman Green. Councilwoman Easter Thomas, you are recognized at this time.",
+          "text": "now begin with our presentations. Madame Comproller, if you will please call item number one.",
+          "speaker_id": "jana-swearengen-washington",
+          "speaker_name": "Jana Swearengen Washington"
+        },
+        {
+          "text": "Item number one is a resolution honoring Grammy nominated children's music artistnook. This resolution is sponsored by Councilwoman Green. Councilwoman Easter Thomas, you are recognized at this time.",
           "speaker_id": "",
           "speaker_name": ""
         },
         {
           "text": "Thank you, Chair. Um, in lie of Councilwoman Green, I am grateful to have the opportunity to present this to Miss Sherry Moon. Um, and just shout out to our new communications person and just seeing these on the screen is just a it's a wonderful touch. It's wonderful touch. Whereas, it is fitting that the city council honor and recognize individuals whose extraordinary talent, leadership, and commitment to enriching the lives of others have brought distinction to the city of Memphis and inspired communities both locally and around the world. Whereas Sherry Moon, born Lana Piggrim and professionally known as Snooknook, is a Grammy nominated singer, songwriter, recording artist, entrepreneur, actress, educator, and children's music advocate whose extraordinary career has inspired audiences across generations. Raised in North Memphis, now I know that's right, Sher. Okay. discovered her passion for music at an early age, performing with the Prim Family Choir, winning numerous talent competitions, and earning recognition as Memphis Teen of the Year, laying the foundation for an accomplished career in music and entertainment. Throughout her accomplished career, she has collaborated internationally with",
-          "speaker_id": "",
-          "speaker_name": ""
+          "speaker_id": "michalyn-easter-thomas",
+          "speaker_name": "Michalyn Easter-Thomas"
         }
       ],
       "display_mode": "raw",
       "display_text": "",
-      "summary": "",
-      "tags": [],
-      "mentions": [],
+      "summary": "An honor for Grammy nominated children's music artist Snooknuk (Cheri Moon)",
+      "tags": [
+        "snooknuk",
+        "Cheri moon"
+      ],
+      "mentions": [
+        "jerri-green",
+        "michalyn-easter-thomas"
+      ],
       "roll_call": [],
       "votes": [],
       "notes": ""
     },
     {
       "chunk_index": 4,
-      "speaker_id": "",
-      "speaker_name": "",
+      "speaker_id": "michalyn-easter-thomas",
+      "speaker_name": "Michalyn Easter-Thomas",
       "lines": [
         {
           "text": "renowned artists and producers including Timberland, Jimmy Douglas, Missy Elliot, Danny [clears throat] O'Donn, Kevin Rudolph with her songwriting and vocal performances. Also being featured in national advertising campaigns and television productions, earning a claim across the music industry and on international dance and pop charts. Inspired by motherhood, Sherry Moon embraced a new mission by creating positive, educational, and uplifting music for children under the name Snook Nook. Promoting kindness, diversity, mindfulness, creativity, emotional well-being, and social awareness through music that enriches the lives of young audiences and families. Her unwavering commitment to education and artistic empowerment led to the founding of the SnookNook Cafe in Hollywood, California. a children's performing arts center dedicated to fostering creativity and confidence and educational works including Ain't I a Woman and her contribution to Grammy award-winning artist Fuch Fuch black women in history [snorts] have introduced children to important historical figures and inspired future generations through music. Sherry Moon in 2022 received her first Grammy Award nomination in the best children's music album category as a member of All One Tribe in recognition of her dedication to creating inclusive music that celebrates unity, diversity, and understanding. further honoring her Memphis roots by recording at the legendary Staxs Recording Studios alongside the STAX Music Academy choir and helping bridge the city's music musical legacy that is rich and in our future. Through her accomplishments as a Grammy nominated artist, educator, entrepreneur, and children's advocate,",
-          "speaker_id": "",
-          "speaker_name": ""
+          "speaker_id": "michalyn-easter-thomas",
+          "speaker_name": "Michalyn Easter-Thomas"
         }
       ],
       "display_mode": "raw",
       "display_text": "",
-      "summary": "",
-      "tags": [],
-      "mentions": [],
+      "summary": "An honor for Grammy nominated children's music artist Snooknuk (Cheri Moon)",
+      "tags": [
+        "snooknuk",
+        "cheri moon",
+        "musicians",
+        "outstanding achievement honor"
+      ],
+      "mentions": [
+        "michalyn-easter-thomas"
+      ],
       "roll_call": [],
       "votes": [],
       "notes": ""
     },
     {
       "chunk_index": 5,
-      "speaker_id": "",
-      "speaker_name": "",
+      "speaker_id": "michalyn-easter-thomas",
+      "speaker_name": "Michalyn Easter-Thomas",
       "lines": [
         {
-          "text": "Sherry Moon has inspired generations of young people while exemplifying the creativity, compassion, and musical excellence that define the city of Memphis. Now therefore, be it resolved that the Memphis City Council hereby honors and celebrates Miss Sherry Moon for her outstanding contributions to music, education, and empowerment of children and families. Given by our hands of the Memphis City Council, signed by Councilwoman Jerry Green, and I myself, Michaela Thomas. Can we uh give it up for Miss Sher Moon that's here with us today? Thank you. Thank you so much. Memphis, this is I am a product of Memphis. I just want to say that. I have a few words if you guys don't mind. Okay. I want to just say chairman, council members, thank you for this incredible honor. The resolution means the world to me coming from the city that birthed me. And through it, though it does have my name on it, it really belongs to the children everywhere. When people hear the song dome, they may hear musical notes. I hear something else. I hear confidence. I hear children of with joy. I hear children discovering that their voice matters. [snorts] The students at the Stats Music Academy didn't just sing on my song. They didn't sing on a recording. They harmoniously reminded us of something important. Every child deserves to be seen and heard and encouraged. This room spends a lot of time debating roads and buildings and budgets and development. And yes, those things are important, but those things and the future of Memphis is not made of concrete. It is made through the hearts of children. A city becomes what it its children believe that they can become.",
+          "text": "Sherry Moon has inspired generations of young people while exemplifying the creativity, compassion, and musical excellence that define the city of Memphis. Now therefore, be it resolved that the Memphis City Council hereby honors and celebrates Miss Sherry Moon for her outstanding contributions to music, education, and empowerment of children and families. Given by our hands of the Memphis City Council, signed by Councilwoman Jerry Green, and I myself, Michaela Thomas. Can we uh give it up for Miss Sher Moon that's here with us today?",
+          "speaker_id": "michalyn-easter-thomas",
+          "speaker_name": "Michalyn Easter-Thomas"
+        },
+        {
+          "text": "Thank you. Thank you so much. Memphis, this is I am a product of Memphis. I just want to say that. I have a few words if you guys don't mind. Okay. I want to just say chairman, council members, thank you for this incredible honor. The resolution means the world to me coming from the city that birthed me. And through it, though it does have my name on it, it really belongs to the children everywhere. When people hear the song dome, they may hear musical notes. I hear something else. I hear confidence. I hear children of with joy. I hear children discovering that their voice matters. [snorts] The students at the Stats Music Academy didn't just sing on my song. They didn't sing on a recording. They harmoniously reminded us of something important. Every child deserves to be seen and heard and encouraged. This room spends a lot of time debating roads and buildings and budgets and development. And yes, those things are important, but those things and the future of Memphis is not made of concrete. It is made through the hearts of children. A city becomes what it its children believe that they can become.",
           "speaker_id": "",
-          "speaker_name": ""
+          "speaker_name": "Cheri Moon"
         }
       ],
       "display_mode": "raw",
       "display_text": "",
-      "summary": "",
-      "tags": [],
-      "mentions": [],
+      "summary": "An honor for Grammy nominated children's music artist Snooknuk (Cheri Moon)",
+      "tags": [
+        "snooknuk",
+        "cheri moon",
+        "musicians",
+        "outstanding achievement honor"
+      ],
+      "mentions": [
+        "jerri-green",
+        "michalyn-easter-thomas"
+      ],
       "roll_call": [],
       "votes": [],
       "notes": ""
@@ -461,18 +492,23 @@
     {
       "chunk_index": 6,
       "speaker_id": "",
-      "speaker_name": "",
+      "speaker_name": "Cheri Moon",
       "lines": [
         {
           "text": "When a child stands in front of a microphone for the first time or raises their hand in a classroom, writes a song, paints a picture, or shares an idea, they are making a decision about who they think they are. The adults around them have an opportunity to help shape that belief. The message behind dome is simple, very simple. Every child has value. Every child has potential. Every child should be able to express themselves freely. I have been blessed to create music to inspire children. But children have given me far more than what I could ever give. They've taught me to be continue to be curious. They've taught me to be kind. They taught me to continue to dream bigger than any circumstance that I may be in. So I accept this honor with gratitude, with huge gratitude from you guys. I hope today is also a reminder that investing in children is not a charity. It is the most important work that we can do. Years from now, not many people will remember every meeting that was put together in this room. But what they will remember from years to come is the opportunity that you've given a child to grow that may indeed change this city. Thank you for supporting the arts. Please continue to support the arts. Thank you for supporting the young people. And please continue to support the young people. Um and thank you for believing in the children of Memphis. And that includes me, a child of Memphis. I want to thank my family for my the support and molding me into the person that I am and always supporting me through the ups and the downs and the roller coasters. And I want to thank God. Thank you guys.",
           "speaker_id": "",
-          "speaker_name": ""
+          "speaker_name": "Cheri Moon"
         }
       ],
       "display_mode": "raw",
       "display_text": "",
-      "summary": "",
-      "tags": [],
+      "summary": "An honor for Grammy nominated children's music artist Snooknuk (Cheri Moon)",
+      "tags": [
+        "snooknuk",
+        "cheri moon",
+        "musicians",
+        "outstanding achievement honor"
+      ],
       "mentions": [],
       "roll_call": [],
       "votes": [],
